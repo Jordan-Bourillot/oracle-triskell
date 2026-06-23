@@ -1,0 +1,16 @@
+{
+  "name": "oracle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "L'Oracle — predictions publiques, datees, chiffrees, jugees par la realite.",
+  "scripts": {
+    "generate": "node --env-file=.env engine/generate.mjs",
+    "resolve": "node --env-file=.env engine/resolve.mjs",
+    "verify": "node engine/verify.mjs",
+    "tick": "node --env-file=.env engine/generate.mjs && node --env-file=.env engine/resolve.mjs"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}

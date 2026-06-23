@@ -1,0 +1,63 @@
+name: oracle
+
+# L'Oracle tourne tout seul, gratuitement, sur l'infrastructure de GitHub.
+#  - chaque jour : il va chercher les résultats réels des échéances passées
+#  - chaque lundi : il publie un nouveau lot de prédictions
+#  - à chaque changement : il fige l'historique (commit) puis publie sur Netlify
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # tous les jours 07:00 UTC : résoudre
+    - cron: "30 6 * * 1" # lundi 06:30 UTC : générer un nouveau lot
+  workflow_dispatch: # bouton « lancer maintenant »
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oracle
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Résoudre les prédictions arrivées à échéance
+        run: node engine/resolve.mjs
+
+      - name: Générer un nouveau lot (lundi ou lancement manuel)
+        if: github.event.schedule == '30 6 * * 1' || github.event_name == 'workflow_dispatch'
+        run: node engine/generate.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+
+      - name: Contrôle d'intégrité (anti-triche)
+        run: node engine/verify.mjs
+
+      - name: Figer l'historique et publier
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain public/data/predictions.json)" ]; then
+            echo "Aucun changement, rien à publier."
+            exit 0
+          fi
+          git config user.name "L'Oracle"
+          git config user.email "oracle@users.noreply.github.com"
+          git add public/data/predictions.json
+          git commit -m "Oracle : mise à jour $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
+          if [ -n "$NETLIFY_AUTH_TOKEN" ] && [ -n "$NETLIFY_SITE_ID" ]; then
+            npx --yes netlify-cli@latest deploy --prod --dir=public --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_AUTH_TOKEN"
+          else
+            echo "Secrets Netlify absents : l'historique est figé sur GitHub, déploiement à configurer."
+          fi

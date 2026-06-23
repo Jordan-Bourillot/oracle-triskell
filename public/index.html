@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>L'Oracle · prédictions publiques, jugées par la réalité</title>
+    <meta
+      name="description"
+      content="Chaque semaine, l'Oracle annonce des prédictions précises, datées et chiffrées en probabilité. À l'échéance, la réalité tranche. Tout est vérifiable, rien n'est effacé."
+    />
+    <meta name="color-scheme" content="light" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f5f1e8'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%232e2a6b' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23a63a2e'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="paper">
+      <!-- EN-TÊTE -->
+      <header class="hero">
+        <p class="kicker">Prédictions publiques · jugées par la réalité</p>
+        <h1 class="title">L'Oracle</h1>
+        <p class="lede">
+          Chaque semaine, l'Oracle annonce des prédictions <strong>précises, datées
+          et chiffrées en probabilité</strong>. À l'échéance, la réalité tranche sur
+          des sources publiques. Tout est vérifiable, et rien n'est effacé,
+          <strong>pas même les échecs</strong>.
+        </p>
+        <p class="updated" id="updated"></p>
+      </header>
+
+      <!-- SCORE -->
+      <section class="band" id="scoreband" aria-label="Tableau de chasse">
+        <div class="stat"><span class="stat-num" id="s-total">—</span><span class="stat-lbl">prédictions</span></div>
+        <div class="stat"><span class="stat-num" id="s-pending">—</span><span class="stat-lbl">en cours</span></div>
+        <div class="stat"><span class="stat-num" id="s-resolved">—</span><span class="stat-lbl">tranchées</span></div>
+        <div class="stat"><span class="stat-num" id="s-rate">—</span><span class="stat-lbl">taux de réussite</span></div>
+        <div class="stat"><span class="stat-num" id="s-brier">—</span><span class="stat-lbl">score de Brier</span></div>
+      </section>
+
+      <!-- CALIBRATION -->
+      <section class="section" id="calibration">
+        <div class="section-head">
+          <span class="section-no">01</span>
+          <h2>La calibration</h2>
+        </div>
+        <p class="section-intro">
+          Le cœur du sujet. Quand l'Oracle annonce <em>70 %</em>, a-t-il raison
+          environ 7 fois sur 10 ? Cette courbe le dit. Chaque point regroupe des
+          prédictions de probabilité voisine. En horizontale, la probabilité
+          annoncée. En vertical, la part réellement réalisée. Plus les points
+          collent à la diagonale, mieux l'Oracle est calibré.
+        </p>
+        <div class="calib-wrap">
+          <div id="calib-plot" class="calib-plot"></div>
+          <div class="calib-legend" id="calib-legend"></div>
+        </div>
+      </section>
+
+      <!-- EN COURS -->
+      <section class="section" id="encours">
+        <div class="section-head">
+          <span class="section-no">02</span>
+          <h2>Prédictions en cours</h2>
+        </div>
+        <p class="section-intro">
+          Annoncées et <strong>figées</strong> avant leur échéance. Impossible de les
+          modifier après coup. Chacune porte son empreinte et sa date de dépôt.
+        </p>
+        <div class="filters" id="filters"></div>
+        <div class="cards" id="pending-list"></div>
+      </section>
+
+      <!-- HISTORIQUE -->
+      <section class="section" id="historique">
+        <div class="section-head">
+          <span class="section-no">03</span>
+          <h2>Historique</h2>
+        </div>
+        <p class="section-intro">
+          Le verdict de la réalité, tel quel. Chaque résultat est lié à sa preuve
+          publique. Les erreurs restent affichées.
+        </p>
+        <div class="cards" id="history-list"></div>
+      </section>
+
+      <!-- COMMENT ÇA MARCHE -->
+      <section class="section" id="methode">
+        <div class="section-head">
+          <span class="section-no">04</span>
+          <h2>Comment ça marche</h2>
+        </div>
+        <div class="method-grid">
+          <div class="method-card">
+            <h3>Une probabilité, pas une opinion</h3>
+            <p>
+              Le pourcentage vient d'un <strong>modèle statistique</strong> sur des
+              données publiques (volatilité d'un actif, dispersion des scénarios
+              météo). Une IA rédige ensuite l'explication en français&nbsp;; elle ne
+              décide jamais du chiffre.
+            </p>
+          </div>
+          <div class="method-card">
+            <h3>Le verrou anti-triche</h3>
+            <p>
+              Chaque prédiction est <strong>horodatée et figée</strong> avant
+              l'échéance. Une empreinte la scelle&nbsp;: changer l'énoncé, la
+              probabilité ou la date casse l'empreinte. L'historique public garde la
+              trace.
+            </p>
+          </div>
+          <div class="method-card">
+            <h3>La réalité tranche, toute seule</h3>
+            <p>
+              Après l'échéance, un programme va chercher le résultat réel sur une
+              <strong>source publique</strong> (prix officiels, relevés météo),
+              marque ✅ ou ❌ et lie la preuve. Sans intervention humaine.
+            </p>
+          </div>
+          <div class="method-card">
+            <h3>Honnête par construction</h3>
+            <p>
+              Le taux de réussite ne dit pas tout. Un bon oracle qui annonce
+              30 % doit se tromper la plupart du temps sur ces cas-là. C'est la
+              <strong>calibration</strong> qui juge, et elle inclut les échecs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>
+          Sources publiques&nbsp;: <a href="https://www.coingecko.com" rel="noopener" target="_blank">CoinGecko</a>
+          (prix crypto) · <a href="https://open-meteo.com" rel="noopener" target="_blank">Open-Meteo</a> (météo).
+        </p>
+        <p id="repo-line"></p>
+        <p class="foot-fine">L'Oracle se met à jour tout seul. La transparence de la calibration est le produit.</p>
+      </footer>
+    </div>
+
+    <!-- gabarit de carte -->
+    <template id="card-tpl">
+      <article class="card">
+        <div class="card-top">
+          <span class="tag"></span>
+          <span class="verdict"></span>
+        </div>
+        <p class="statement"></p>
+        <div class="prob-row">
+          <span class="prob-num"></span>
+          <span class="prob-lbl">de probabilité annoncée</span>
+        </div>
+        <div class="meta"></div>
+        <button class="why" type="button" aria-expanded="false">Voir le raisonnement</button>
+        <div class="reasoning" hidden></div>
+        <div class="lock"></div>
+      </article>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
