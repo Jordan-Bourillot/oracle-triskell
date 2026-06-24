@@ -1,5 +1,5 @@
 {
-  "note": "Prédictions PUBLIQUES de tiers, suivies et jugées par l'Oracle. Chaque entrée est réelle, datée et sourcée (lien vers la prédiction d'origine + lien vers la preuve). Les prédictions encore ouvertes ont une échéance et se tranchent toutes seules le moment venu. Jamais d'invention, jamais d'attaque personnelle.",
+  "note": "Prédictions PUBLIQUES de tiers, suivies et jugées par l'Oracle. Chaque entrée est réelle, datée et sourcée (lien vers la prédiction d'origine + lien vers la preuve). Les prédictions encore ouvertes ont une échéance et se tranchent toutes seules le moment venu. On montre autant ceux qui ont vu juste que ceux qui se sont trompés. Jamais d'invention, jamais d'attaque personnelle.",
   "updated_at": "2026-06-24",
   "claims": [
     {
@@ -38,6 +38,49 @@
       "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
     },
     {
+      "id": "btc2025-coinpedia",
+      "author": "Coinpedia",
+      "role": "Média crypto",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 120 000 $ en 2025.",
+      "target_usd": 120000,
+      "said_on": "début 2025",
+      "source_url": "https://coinpedia.org/price-prediction/bitcoin-price-prediction/",
+      "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "btc2025-cryptonews",
+      "author": "Cryptonews",
+      "role": "Média crypto",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 115 000 $ en 2025.",
+      "target_usd": 115000,
+      "said_on": "début 2025",
+      "source_url": "https://cryptonews.com/price-predictions/bitcoin-price-prediction/",
+      "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "crash2008-burry",
+      "author": "Michael Burry",
+      "role": "Investisseur (Scion Capital)",
+      "category": "bourse",
+      "claim": "Le marché immobilier américain va s'effondrer (pari massif contre les subprimes).",
+      "said_on": "2005",
+      "source_url": "https://en.wikipedia.org/wiki/Michael_Burry",
+      "result": { "outcome": "win", "hit": 1, "reality_label": "La crise des subprimes a éclaté en 2007-2008 ; son pari a rapporté plus de 700 M$ à ses clients.", "evidence_url": "https://en.wikipedia.org/wiki/Michael_Burry" }
+    },
+    {
+      "id": "btc2025-tomlee",
+      "author": "Tom Lee",
+      "role": "Fundstrat",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 250 000 $ en 2025.",
+      "target_usd": 250000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
       "id": "recession-bloomberg-2022",
       "author": "Bloomberg Economics",
       "role": "Recherche économique",
@@ -58,16 +101,6 @@
       "result": { "outcome": "loss", "hit": 0, "reality_label": "L'iPhone est devenu l'un des produits les plus vendus de l'histoire.", "evidence_url": "https://fr.wikipedia.org/wiki/IPhone" }
     },
     {
-      "id": "sport-leicester-2016",
-      "author": "Les bookmakers",
-      "role": "Cotes d'avant-saison",
-      "category": "sport",
-      "claim": "Leicester n'a quasiment aucune chance d'être champion d'Angleterre en 2016 (coté à 5000 contre 1).",
-      "said_on": "août 2015",
-      "source_url": "https://www.skysports.com/football/news/11712/10261535/premier-league-2015-16-how-the-odds-changed-as-leicester-claimed-the-title",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Leicester a été sacré champion d'Angleterre en mai 2016.", "evidence_url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League" }
-    },
-    {
       "id": "bourse-dow36000-1999",
       "author": "« Dow 36 000 » (Glassman et Hassett)",
       "role": "Livre, 1999",
@@ -78,70 +111,14 @@
       "result": { "outcome": "loss", "hit": 0, "reality_label": "Atteint seulement en novembre 2021, 22 ans plus tard.", "evidence_url": "https://fortune.com/2021/11/01/dow-36000-jones-industrial-average-investing-book-record-high-djia-james-glassman-kevin-hassett/" }
     },
     {
-      "id": "btc2025-tomlee",
-      "author": "Tom Lee",
-      "role": "Fundstrat",
-      "category": "crypto",
-      "claim": "Le Bitcoin atteindra 250 000 $ en 2025.",
-      "target_usd": 250000,
-      "said_on": "début 2025",
-      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
-    },
-    {
-      "id": "eth2025-stdchartered",
-      "author": "Standard Chartered",
-      "role": "Banque",
-      "category": "crypto",
-      "claim": "L'Ethereum atteindra 7 500 $ fin 2025.",
-      "target_usd": 7500,
-      "said_on": "2025",
-      "source_url": "https://www.theblock.co/post/366734/standard-chartered-analysts-raise-ethereum-year-end-price-target",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 4 954 $", "evidence_url": "https://finance.yahoo.com/quote/ETH-USD/" }
-    },
-    {
-      "id": "btc2025-stdchartered",
-      "author": "Standard Chartered",
-      "role": "Banque",
-      "category": "crypto",
-      "claim": "Le Bitcoin atteindra 200 000 $ en 2025.",
-      "target_usd": 200000,
-      "said_on": "début 2025",
-      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
-    },
-    {
-      "id": "btc2025-hcwainwright",
-      "author": "H.C. Wainwright",
-      "role": "Banque d'investissement",
-      "category": "crypto",
-      "claim": "Le Bitcoin atteindra 225 000 $ en 2025.",
-      "target_usd": 225000,
-      "said_on": "début 2025",
-      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
-    },
-    {
-      "id": "btc2025-vaneck",
-      "author": "VanEck",
-      "role": "Gestionnaire d'actifs",
-      "category": "crypto",
-      "claim": "Le Bitcoin atteindra 180 000 $ en 2025.",
-      "target_usd": 180000,
-      "said_on": "début 2025",
-      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
-    },
-    {
-      "id": "btc2025-gfox",
-      "author": "GFO-X",
-      "role": "Plateforme d'échange",
-      "category": "crypto",
-      "claim": "Le Bitcoin atteindra 150 000 $ en 2025.",
-      "target_usd": 150000,
-      "said_on": "début 2025",
-      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+      "id": "sport-leicester-2016",
+      "author": "Les bookmakers",
+      "role": "Cotes d'avant-saison",
+      "category": "sport",
+      "claim": "Leicester n'a quasiment aucune chance d'être champion d'Angleterre en 2016 (coté à 5000 contre 1).",
+      "said_on": "août 2015",
+      "source_url": "https://www.skysports.com/football/news/11712/10261535/premier-league-2015-16-how-the-odds-changed-as-leicester-claimed-the-title",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Leicester a été sacré champion d'Angleterre en mai 2016.", "evidence_url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League" }
     }
   ]
 }
