@@ -38,26 +38,24 @@
       "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
     },
     {
-      "id": "btc2025-coinpedia",
-      "author": "Coinpedia",
-      "role": "Média crypto",
-      "category": "crypto",
-      "claim": "Le Bitcoin atteindra 120 000 $ en 2025.",
-      "target_usd": 120000,
-      "said_on": "début 2025",
-      "source_url": "https://coinpedia.org/price-prediction/bitcoin-price-prediction/",
-      "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+      "id": "tech-moore-1965",
+      "author": "Gordon Moore",
+      "role": "Cofondateur d'Intel, 1965",
+      "category": "tech",
+      "claim": "Le nombre de transistors d'une puce doublera environ tous les deux ans.",
+      "said_on": "1965",
+      "source_url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+      "result": { "outcome": "win", "hit": 1, "reality_label": "Vérifié pendant près de 50 ans ; le moteur de toute la révolution informatique.", "evidence_url": "https://en.wikipedia.org/wiki/Moore%27s_law" }
     },
     {
-      "id": "btc2025-cryptonews",
-      "author": "Cryptonews",
-      "role": "Média crypto",
-      "category": "crypto",
-      "claim": "Le Bitcoin atteindra 115 000 $ en 2025.",
-      "target_usd": 115000,
-      "said_on": "début 2025",
-      "source_url": "https://cryptonews.com/price-predictions/bitcoin-price-prediction/",
-      "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+      "id": "sport-ali-liston-1964",
+      "author": "Cassius Clay (Muhammad Ali)",
+      "role": "Boxe, 1964",
+      "category": "sport",
+      "claim": "Je battrai Sonny Liston, alors que je suis donné perdant à 7 contre 1.",
+      "said_on": "février 1964",
+      "source_url": "https://www.history.com/this-day-in-history/february-25/clay-knocks-out-liston",
+      "result": { "outcome": "win", "hit": 1, "reality_label": "Clay a battu Liston et est devenu champion du monde des poids lourds.", "evidence_url": "https://www.history.com/this-day-in-history/february-25/clay-knocks-out-liston" }
     },
     {
       "id": "crash2008-burry",
