@@ -2,7 +2,7 @@
    Liste compacte (une ligne par prédiction) + comptes à rebours vivants
    + barres de probabilité animées + courbe de calibration épurée. */
 
-const REPO_URL = "https://github.com/Jordan-Bourillot/oracle-triskell";
+const REPO_URL = ""; // masqué : l'URL contenait un nom personnel (à rebrancher sous un compte Triskell Studio)
 
 const CAT = {
   crypto: { label: "Crypto", color: "var(--cat-crypto)" },
