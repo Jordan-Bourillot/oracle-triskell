@@ -127,7 +127,6 @@ function renderScore() {
   animateCount($("#s-pending"), STATE.preds.length - res.length);
   animateCount($("#s-resolved"), res.length);
   $("#s-rate").textContent = res.length ? Math.round((wins / res.length) * 100) + " %" : "—";
-  $("#s-brier").textContent = res.length ? (res.reduce((a, p) => a + (p.probability / 100 - p.result.hit) ** 2, 0) / res.length).toFixed(3).replace(".", ",") : "—";
 }
 
 /* ---------- calibration (épurée) ---------- */

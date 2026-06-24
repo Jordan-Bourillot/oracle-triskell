@@ -49,7 +49,7 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .updated { font-family: var(--mono); font-size: 11.5px; color: var(--muted); margin: 26px 0 0; }
 
 /* ---------- PALMARÈS ---------- */
-.band { display: grid; grid-template-columns: repeat(5, 1fr); border-bottom: 1px solid var(--line); }
+.band { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); }
 .stat { padding: 28px 14px 26px; text-align: center; border-right: 1px solid var(--line); }
 .stat:last-child { border-right: 0; }
 .stat-num { display: block; font-family: var(--mono); font-weight: 600; font-size: clamp(28px, 4.4vw, 46px); line-height: 1; color: var(--bone); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
@@ -145,9 +145,9 @@ a { color: var(--accent); text-underline-offset: 2px; }
   .hero { grid-template-columns: 1fr; gap: 30px; }
   .hero-live { justify-content: flex-start; }
   .nextbox { max-width: none; }
-  .band { grid-template-columns: repeat(3, 1fr); }
-  .stat:nth-child(3) { border-right: 0; }
-  .stat:nth-child(4), .stat:nth-child(5) { border-top: 1px solid var(--line); }
+  .band { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2n) { border-right: 0; }
+  .stat:nth-child(n + 3) { border-top: 1px solid var(--line); }
   .calib-wrap, .calib-wrap.is-empty { grid-template-columns: 1fr; gap: 22px; }
   .calib-plot, .calib-wrap.is-empty .calib-plot { max-width: 380px; margin: 0 auto; }
   .method-grid { grid-template-columns: 1fr; }
