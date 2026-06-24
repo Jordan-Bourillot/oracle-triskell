@@ -104,6 +104,7 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .prow-prob { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
 .prow-pct { font-family: var(--mono); font-weight: 600; font-size: 18px; color: var(--accent); font-variant-numeric: tabular-nums; }
 .prow-bar { width: 92px; height: 4px; background: var(--line-2); border-radius: 2px; overflow: hidden; }
+.prow-lbl { font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 .prow-fill { display: block; height: 100%; width: 0; background: var(--accent); border-radius: 2px; transition: width 1s cubic-bezier(0.22, 1, 0.36, 1); }
 .prow-chev { font-family: var(--mono); color: var(--muted); font-size: 20px; line-height: 1; width: 16px; text-align: center; transition: transform 0.2s ease; }
 .prow-chev::before { content: "+"; }
