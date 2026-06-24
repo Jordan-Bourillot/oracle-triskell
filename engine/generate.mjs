@@ -10,6 +10,7 @@ import { generateCrypto } from "./lib/generators/crypto.mjs";
 import { generateMeteo } from "./lib/generators/meteo.mjs";
 import { generateMarkets } from "./lib/generators/markets.mjs";
 import { generateSport } from "./lib/generators/sport.mjs";
+import { generateEconomy } from "./lib/generators/economy.mjs";
 
 function makeId(d) {
   const h = createHash("sha256")
@@ -30,7 +31,7 @@ async function main() {
 
   // Recolte des brouillons (chaque generateur est isole : une panne n'arrete pas l'autre).
   const drafts = [];
-  for (const gen of [generateCrypto, generateMeteo, generateMarkets, generateSport]) {
+  for (const gen of [generateCrypto, generateMeteo, generateMarkets, generateSport, generateEconomy]) {
     try {
       drafts.push(...(await gen(now)));
     } catch (err) {

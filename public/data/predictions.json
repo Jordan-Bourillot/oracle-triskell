@@ -1,12 +1,12 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-06-24T07:15:25.973Z",
+  "updated_at": "2026-06-24T09:56:24.636Z",
   "predictions": [
     {
       "category": "crypto",
       "statement": "Bitcoin (BTC) vaudra 61 000 $ ou plus le 4 juillet 2026.",
-      "probability": 67,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 66,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-04",
       "deadline": "2026-07-04T00:00:00.000Z",
       "resolution": {
@@ -22,7 +22,7 @@
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 62686.46,
+          "prix_initial_usd": 62617.36,
           "volatilite_journaliere": 0.01947,
           "horizon_jours": 10,
           "seuil_usd": 61000,
@@ -30,14 +30,14 @@
         }
       },
       "id": "crypto-2026-06-24-8642eb",
-      "reasoning": "Le Bitcoin évolue actuellement légèrement au-dessus du seuil visé, ce qui signifie qu'une baisse modeste suffirait à l'atteindre. Compte tenu des fluctuations habituelles de cet actif et d'un horizon de dix jours, le prix a statistiquement de bonnes chances de toucher ce niveau au moins une fois, même sans tendance marquée à la hausse ou à la baisse. C'est cette combinaison entre la proximité du seuil et l'amplitude naturelle des mouvements quotidiens qui explique ce niveau de probabilité.",
-      "hash": "14ee64013f9e26f9"
+      "reasoning": "Le Bitcoin évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles du marché sont suffisantes pour franchir cet écart, car le Bitcoin bouge en moyenne de près de deux pour cent par jour. La probabilité reflète donc le fait que ce repli reste accessible dans la fenêtre de temps considérée, sans nécessiter un mouvement exceptionnel.",
+      "hash": "e2988ff9e21b92d1"
     },
     {
       "category": "crypto",
       "statement": "Bitcoin (BTC) vaudra 64 000 $ ou plus le 15 juillet 2026.",
-      "probability": 41,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 40,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-15",
       "deadline": "2026-07-15T00:00:00.000Z",
       "resolution": {
@@ -53,7 +53,7 @@
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 62686.46,
+          "prix_initial_usd": 62617.36,
           "volatilite_journaliere": 0.01947,
           "horizon_jours": 21,
           "seuil_usd": 64000,
@@ -61,14 +61,14 @@
         }
       },
       "id": "crypto-2026-06-24-15a8bc",
-      "reasoning": "Le Bitcoin évolue actuellement sous le seuil visé, et l'écart à combler reste modeste au regard des variations habituelles de cet actif. Pourtant, le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, ce qui signifie que le prix est aussi susceptible de s'éloigner du seuil que de s'en approcher. Sur vingt et un jours, cette incertitude symétrique, combinée à la distance à parcourir, explique que la probabilité reste en dessous du seuil du hasard pur.",
-      "hash": "b2c4a5db7344040f"
+      "reasoning": "Le Bitcoin se trouve actuellement à un niveau légèrement en dessous du seuil visé, et la volatilité quotidienne observée reste modérée pour cet actif. Dans un modèle qui ne suppose aucune tendance haussière ou baissière particulière, atteindre ce seuil en trois semaines est donc possible mais loin d'être certain, car le prix peut tout autant s'éloigner dans la direction opposée. C'est cette symétrie, combinée à la distance encore à parcourir, qui explique une probabilité inférieure à une chance sur deux.",
+      "hash": "3680acf064ebb160"
     },
     {
       "category": "crypto",
       "statement": "Ethereum (ETH) vaudra 1 700 $ ou plus le 15 juillet 2026.",
-      "probability": 45,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 43,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-15",
       "deadline": "2026-07-15T00:00:00.000Z",
       "resolution": {
@@ -84,22 +84,22 @@
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 1673.42,
-          "volatilite_journaliere": 0.02705,
+          "prix_initial_usd": 1665.46,
+          "volatilite_journaliere": 0.02704,
           "horizon_jours": 21,
           "seuil_usd": 1700,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
       "id": "crypto-2026-06-24-5afaae",
-      "reasoning": "Ethereum se trouve actuellement légèrement en dessous du seuil visé, ce qui signifie qu'une hausse modeste suffirait à l'atteindre sur trois semaines. Cependant, la volatilité quotidienne du marché est assez élevée, ce qui rend les mouvements dans les deux sens tout aussi probables, sans tendance marquée dans un sens particulier. Dans ce contexte, dépasser ce seuil reste un scénario incertain, à peine en dessous d'une chance sur deux.",
-      "hash": "ca96a2071df721fd"
+      "reasoning": "Ethereum évolue actuellement près du seuil visé, ce qui le rend accessible en théorie, mais un marché sans tendance marquée rend le franchissement incertain. La volatilité quotidienne est suffisante pour atteindre ce niveau en trois semaines, tout comme elle peut entraîner le prix dans la direction opposée. Le résultat est donc légèrement en dessous d'un pile ou face, sans signal directionnel clair qui pencherait franchement d'un côté.",
+      "hash": "59c84ddcac70f9e7"
     },
     {
       "category": "crypto",
       "statement": "Ethereum (ETH) vaudra 1 600 $ ou plus le 4 juillet 2026.",
-      "probability": 70,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 68,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-04",
       "deadline": "2026-07-04T00:00:00.000Z",
       "resolution": {
@@ -115,22 +115,22 @@
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 1673.42,
-          "volatilite_journaliere": 0.02705,
+          "prix_initial_usd": 1665.46,
+          "volatilite_journaliere": 0.02704,
           "horizon_jours": 10,
           "seuil_usd": 1600,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
       "id": "crypto-2026-06-24-34e090",
-      "reasoning": "Ethereum évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles du prix sont suffisamment larges pour rendre ce repli tout à fait accessible, sans qu'il faille anticiper un mouvement exceptionnel. C'est cette combinaison entre la faible distance à parcourir et l'agitation naturelle du marché qui justifie un niveau de probabilité élevé.",
-      "hash": "0d3d7b0c61f66d91"
+      "reasoning": "Ethereum se négocie actuellement près du seuil visé, ce qui signifie qu'une variation de marché ordinaire suffirait à l'y ramener. Avec une agitation quotidienne du prix de l'ordre de quelques points de pourcentage, atteindre ce niveau en dix jours représente un mouvement modeste par rapport aux fluctuations habituelles de cet actif. Le modèle considère que les hausses et les baisses sont également probables, donc la proximité du seuil est le principal facteur qui explique ce niveau de probabilité élevé.",
+      "hash": "6d8c246c0282565e"
     },
     {
       "category": "crypto",
       "statement": "Solana (SOL) vaudra 67 $ ou plus le 4 juillet 2026.",
-      "probability": 66,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 64,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-04",
       "deadline": "2026-07-04T00:00:00.000Z",
       "resolution": {
@@ -146,7 +146,7 @@
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 69.53,
+          "prix_initial_usd": 69.22,
           "volatilite_journaliere": 0.02821,
           "horizon_jours": 10,
           "seuil_usd": 67,
@@ -154,14 +154,14 @@
         }
       },
       "id": "crypto-2026-06-24-4627e6",
-      "reasoning": "Solana affiche une volatilité journalière notable, ce qui signifie que le prix peut s'écarter sensiblement de son niveau actuel en l'espace de quelques jours. Sur un horizon de dix jours, cette agitation naturelle des cours rend tout à fait plausible un passage sous le seuil de 67 dollars, qui ne se situe qu'à quelques points en dessous du prix actuel. Le modèle utilisé ne suppose ni tendance à la hausse ni tendance à la baisse, il reflète simplement la probabilité que les fluctuations habituelles de l'actif suffisent à franchir ce niveau.",
-      "hash": "a7be21c48b65d171"
+      "reasoning": "Solana s'échange actuellement juste au-dessus du seuil visé, ce qui signifie qu'une baisse modeste suffit à l'atteindre. Avec une agitation quotidienne des prix de l'ordre de quelques points de pourcentage, un mouvement de cette ampleur sur dix jours est tout à fait courant et ne requiert aucun événement particulier. C'est cette combinaison d'un écart faible à franchir et d'une volatilité suffisante pour l'atteindre qui justifie une probabilité majoritaire, sans pour autant être certaine.",
+      "hash": "5f67c4d0162068fb"
     },
     {
       "category": "crypto",
       "statement": "Solana (SOL) vaudra 72 $ ou plus le 15 juillet 2026.",
-      "probability": 39,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 38,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-15",
       "deadline": "2026-07-15T00:00:00.000Z",
       "resolution": {
@@ -177,7 +177,7 @@
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 69.53,
+          "prix_initial_usd": 69.22,
           "volatilite_journaliere": 0.02821,
           "horizon_jours": 21,
           "seuil_usd": 72,
@@ -185,14 +185,14 @@
         }
       },
       "id": "crypto-2026-06-24-c6c8a7",
-      "reasoning": "Solana affiche une volatilité quotidienne notable, ce qui signifie que le prix peut s'écarter dans un sens comme dans l'autre de façon significative chaque jour. Le seuil visé reste proche du prix actuel, mais sur vingt et un jours, les fluctuations peuvent tout aussi bien éloigner le prix vers le bas que le rapprocher de la cible. Le modèle retenu suppose qu'aucune tendance particulière ne pousse le prix dans une direction donnée, ce qui explique que les chances d'atteindre ce seuil restent inférieures à une fois sur deux.",
-      "hash": "4c05d8259fa144d0"
+      "reasoning": "Solana affiche une volatilité quotidienne notable, ce qui lui donne techniquement la capacité d'atteindre 72 dollars en trois semaines. Cependant, le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, ce qui signifie que le prix est aussi susceptible de reculer que d'avancer. Le seuil visé représente une progression d'environ 4 % par rapport au niveau actuel, ce qui reste atteignable mais n'est pas l'issue la plus probable dans ce cadre neutre.",
+      "hash": "b4bd79cfff360169"
     },
     {
       "category": "meteo",
       "statement": "À Paris, la température maximale atteindra 36,5 °C ou plus le 27 juin 2026.",
       "probability": 65,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-27",
       "deadline": "2026-06-27T23:30:00.000Z",
       "resolution": {
@@ -216,14 +216,14 @@
         }
       },
       "id": "meteo-2026-06-24-2a5f28",
-      "reasoning": "La majorité des scénarios simulés placent la température maximale au-dessus du seuil, avec une valeur centrale qui le dépasse nettement. L'éventail des résultats reste large, ce qui reflète l'incertitude naturelle des prévisions à cette échéance, mais le dépassement est plus souvent observé qu'il ne l'est évité. Ce déséquilibre en faveur des scénarios chauds explique le niveau de probabilité retenu.",
-      "hash": "58c3e77b44fa3613"
+      "reasoning": "La majorité des scénarios simulés placent la température au-dessus du seuil retenu, avec une valeur centrale qui le dépasse nettement. L'éventail des résultats reste large, ce qui reflète l'incertitude naturelle sur une journée estivale précise, mais le déséquilibre en faveur des valeurs hautes est marqué. C'est ce rapport entre la médiane et le seuil qui justifie une probabilité clairement au-dessus de cinquante pour cent.",
+      "hash": "6c29d6790e12ca72"
     },
     {
       "category": "meteo",
       "statement": "À Marseille, la température maximale atteindra 31,0 °C ou plus le 27 juin 2026.",
       "probability": 81,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-27",
       "deadline": "2026-06-27T23:30:00.000Z",
       "resolution": {
@@ -247,14 +247,14 @@
         }
       },
       "id": "meteo-2026-06-24-c2a566",
-      "reasoning": "La médiane des scénarios simulés tombe juste au-dessus du seuil de 31 °C, et la quasi-totalité de la fourchette envisagée se situe dans cette zone ou au-delà. Les conditions climatiques habituelles de Marseille fin juin, combinées à la tendance récente au réchauffement estival, rendent un tel niveau de chaleur plus courant qu'exceptionnel à cette période. C'est pourquoi la probabilité de dépasser ce seuil apparaît nettement majoritaire.",
-      "hash": "d8b4d659a1c9f49f"
+      "reasoning": "La médiane des scénarios simulés tombe juste au-dessus du seuil de 31 °C, et la majorité des scénarios explorés franchissent ce seuil. La fourchette de températures envisagées reste relativement resserrée, ce qui renforce la cohérence des résultats entre eux. Marseille en fin juin connaît régulièrement des chaleurs de cet ordre, ce qui rend ce niveau de probabilité cohérent avec le comportement climatique habituel de la ville à cette période.",
+      "hash": "eaccb52db960defa"
     },
     {
       "category": "meteo",
       "statement": "À Lille, la température maximale atteindra 31,0 °C ou plus le 27 juin 2026.",
       "probability": 81,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-27",
       "deadline": "2026-06-27T23:30:00.000Z",
       "resolution": {
@@ -278,14 +278,14 @@
         }
       },
       "id": "meteo-2026-06-24-3bcbf5",
-      "reasoning": "La majorité des scénarios climatiques simulés placent la température de ce jour au-dessus du seuil retenu, avec une valeur centrale qui le dépasse nettement. L'éventail des projections reste large, mais même dans ses valeurs basses il reste proche du seuil, ce qui laisse peu de place aux configurations où celui-ci ne serait pas atteint. Ce contexte de fin juin à Lille, combiné aux tendances récentes des étés en Europe du Nord, renforce la cohérence de ce résultat.",
-      "hash": "c84af48bf5e51e11"
+      "reasoning": "La majorité des scénarios climatiques simulés placent la température médiane nettement au-dessus du seuil de 31 °C, ce qui oriente naturellement la probabilité vers le dépassement. La fourchette des résultats reste large, mais son centre de gravité se situe clairement au-delà du seuil, et seule une minorité de scénarios demeure en dessous. Cela reflète à la fois la tendance générale des étés récents à Lille et la variabilité naturelle des situations météorologiques de fin juin.",
+      "hash": "13e40c82e714a730"
     },
     {
       "category": "meteo",
       "statement": "À Bordeaux, la température maximale atteindra 35,5 °C ou plus le 27 juin 2026.",
       "probability": 45,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-27",
       "deadline": "2026-06-27T23:30:00.000Z",
       "resolution": {
@@ -309,14 +309,14 @@
         }
       },
       "id": "meteo-2026-06-24-8290d2",
-      "reasoning": "La majorité des scénarios simulés placent la température ce jour-là en dessous du seuil, avec une valeur centrale autour de 34,7 °C. Les simulations restent néanmoins très dispersées, certaines atteignant presque 39 °C, ce qui traduit une incertitude réelle sur la journée. Le dépassement est donc possible mais pas le cas le plus probable selon l'ensemble des trajectoires retenues.",
-      "hash": "6643dc6a5feee1e3"
+      "reasoning": "La médiane des scénarios simulés se situe légèrement en dessous du seuil de 35,5 °C, ce qui signifie que la majorité des projections n'atteignent pas ce niveau. Les températures envisagées s'étendent cependant sur une plage large, et une part notable des scénarios dépasse bien ce seuil, ce qui témoigne d'une incertitude réelle autour de cette journée de fin juin à Bordeaux.",
+      "hash": "2f769db521679e8e"
     },
     {
       "category": "marches",
       "statement": "Le CAC 40 clôturera à 8 250 points ou plus le 1 juillet 2026.",
-      "probability": 65,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 67,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-01",
       "deadline": "2026-07-01T22:00:00.000Z",
       "resolution": {
@@ -334,22 +334,22 @@
       "model": {
         "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
         "inputs": {
-          "cours_initial": 8340.71,
-          "volatilite_journaliere": 0.01111,
+          "cours_initial": 8359.83,
+          "volatilite_journaliere": 0.01102,
           "horizon_jours": 7,
           "seuil": 8250,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
       "id": "marches-2026-06-24-b7e628",
-      "reasoning": "Le CAC 40 se trouve actuellement environ 100 points au-dessus du seuil de 8 250 points, ce qui représente un coussin modeste au regard des variations quotidiennes habituelles de l'indice. Sur une semaine, ces fluctuations peuvent s'accumuler et ramener facilement l'indice vers ce niveau, voire en dessous. La probabilité retenue reflète cet équilibre entre la proximité du seuil et la durée limitée de la fenêtre d'observation.",
-      "hash": "cbbe66c0f5ef2e0d"
+      "reasoning": "Le CAC 40 se situe actuellement environ 100 points au-dessus du seuil de 8 250, ce qui représente une marge modeste au regard des fluctuations habituelles de l'indice sur une semaine. Avec une agitation quotidienne de l'ordre de 1,1 %, le marché peut aisément parcourir cet écart dans un sens comme dans l'autre en quelques séances. C'est cette proximité du seuil, combinée à une volatilité suffisante pour le franchir sans difficulté, qui explique que le maintien au-dessus de 8 250 reste probable mais loin d'être acquis.",
+      "hash": "bb0ec761154e09a4"
     },
     {
       "category": "marches",
       "statement": "Le S&P 500 clôturera à 7 450 points ou plus le 15 juillet 2026.",
       "probability": 40,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-15",
       "deadline": "2026-07-15T22:00:00.000Z",
       "resolution": {
@@ -375,14 +375,14 @@
         }
       },
       "id": "marches-2026-06-24-dd11c8",
-      "reasoning": "Le S&P 500 se situe actuellement à 7 375 points et doit franchir 7 450 points en moins de trois semaines, soit une progression d'environ 1 %. Avec une volatilité quotidienne proche de 1 %, le marché fluctue suffisamment pour atteindre ce seuil, mais il peut tout aussi bien s'en éloigner, car le modèle retenu ne suppose aucune tendance particulière à la hausse ou à la baisse. Le seuil est donc atteignable mais pas acquis, ce qui explique une probabilité inférieure à une chance sur deux.",
-      "hash": "b801a0401de5fe68"
+      "reasoning": "Le S&P 500 se trouve actuellement sous le seuil de 7 450 points, et le franchir en 21 jours représente un mouvement qui dépasse légèrement la volatilité habituelle observée sur cet indice. Le modèle utilisé suppose que les hausses et les baisses sont également probables, sans tendance particulière dans un sens ou dans l'autre. C'est cette neutralité, combinée à la distance encore à parcourir, qui explique que la probabilité reste inférieure à une chance sur deux.",
+      "hash": "d787b3b80cf20757"
     },
     {
       "category": "marches",
       "statement": "Le Nasdaq clôturera à 25 200 points ou plus le 1 juillet 2026.",
       "probability": 66,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-01",
       "deadline": "2026-07-01T22:00:00.000Z",
       "resolution": {
@@ -408,22 +408,22 @@
         }
       },
       "id": "marches-2026-06-24-403c5f",
-      "reasoning": "Le Nasdaq évolue actuellement assez loin au-dessus du seuil de 25 200 points, ce qui lui laisse une marge avant de l'atteindre. Cependant, la volatilité quotidienne de l'indice est suffisamment élevée pour qu'une semaine entière de fluctuations puisse combler cet écart, même sans tendance marquée à la baisse. C'est cet équilibre entre la distance au seuil et l'amplitude habituelle des mouvements qui explique un niveau de probabilité majoritairement favorable au maintien au-dessus de 25 200 points, sans pour autant écarter le risque.",
-      "hash": "ae2fb02e041cf3de"
+      "reasoning": "Le Nasdaq évolue actuellement autour de 25 600 points, ce qui lui laisse une marge d'environ 400 points avant d'atteindre le seuil de 25 200. Compte tenu des fluctuations habituelles de l'indice sur une semaine, ce coussin est suffisant pour que le cours reste au-dessus de ce niveau dans la majorité des scénarios, sans pour autant le rendre hors de portée en cas de secousse marquée. C'est cet équilibre entre la distance au seuil et l'amplitude des mouvements quotidiens observés qui fonde ce niveau de probabilité.",
+      "hash": "f1b5a159bef3c2ab"
     },
     {
       "category": "marches",
-      "statement": "L'once d'or clôturera à 4 180 dollars ou plus le 15 juillet 2026.",
-      "probability": 40,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "statement": "L'once d'or clôturera à 4 160 dollars ou plus le 15 juillet 2026.",
+      "probability": 41,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-15",
       "deadline": "2026-07-15T22:00:00.000Z",
       "resolution": {
-        "criterion": "Au 15 juillet 2026, la clôture du cours de l'or (once) relevée sur Yahoo Finance est supérieure ou égale à 4 180 dollars.",
+        "criterion": "Au 15 juillet 2026, la clôture du cours de l'or (once) relevée sur Yahoo Finance est supérieure ou égale à 4 160 dollars.",
         "method": "markets.priceAt",
         "params": {
           "symbol": "GC=F",
-          "threshold": 4180,
+          "threshold": 4160,
           "comparator": ">=",
           "atMs": 1784152800000,
           "decimals": 0,
@@ -433,30 +433,30 @@
       "model": {
         "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
         "inputs": {
-          "cours_initial": 4103.3,
-          "volatilite_journaliere": 0.01668,
+          "cours_initial": 4086.2,
+          "volatilite_journaliere": 0.01671,
           "horizon_jours": 21,
-          "seuil": 4180,
+          "seuil": 4160,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "marches-2026-06-24-eb8386",
-      "reasoning": "L'or s'échange actuellement autour de 4 100 dollars l'once et devrait franchir 4 180 dollars d'ici trois semaines, ce qui représente une hausse d'environ 2 % à partir du niveau actuel. Les fluctuations quotidiennes du métal sont relativement modestes, ce qui rend ce franchissement possible mais pas acquis sur un horizon aussi court. Le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, si bien que la probabilité reflète uniquement la mécanique des variations aléatoires du cours.",
-      "hash": "f111970598be4731"
+      "id": "marches-2026-06-24-55dc0a",
+      "reasoning": "L'or s'échange actuellement autour de 4 080 dollars l'once et devrait dépasser 4 160 dollars dans les trois prochaines semaines, ce qui représente une hausse d'environ 2 %. Les fluctuations quotidiennes du métal sont relativement modérées, ce qui rend ce franchissement possible mais pas acquis sur un horizon aussi court. Le modèle retenu suppose que l'or n'a pas de tendance particulière à la hausse ou à la baisse, ce qui explique que la probabilité reste en deçà d'un résultat sur deux.",
+      "hash": "300f7426543a35a9"
     },
     {
       "category": "marches",
-      "statement": "Le baril de pétrole (WTI) clôturera à 69 dollars ou plus le 1 juillet 2026.",
-      "probability": 66,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "statement": "Le baril de pétrole (WTI) clôturera à 68 dollars ou plus le 1 juillet 2026.",
+      "probability": 67,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-01",
       "deadline": "2026-07-01T22:00:00.000Z",
       "resolution": {
-        "criterion": "Au 1 juillet 2026, la clôture du baril de pétrole WTI relevée sur Yahoo Finance est supérieure ou égale à 69 dollars.",
+        "criterion": "Au 1 juillet 2026, la clôture du baril de pétrole WTI relevée sur Yahoo Finance est supérieure ou égale à 68 dollars.",
         "method": "markets.priceAt",
         "params": {
           "symbol": "CL=F",
-          "threshold": 69,
+          "threshold": 68,
           "comparator": ">=",
           "atMs": 1782943200000,
           "decimals": 0,
@@ -466,22 +466,22 @@
       "model": {
         "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
         "inputs": {
-          "cours_initial": 72.51,
-          "volatilite_journaliere": 0.04617,
+          "cours_initial": 71.81,
+          "volatilite_journaliere": 0.0462,
           "horizon_jours": 7,
-          "seuil": 69,
+          "seuil": 68,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "marches-2026-06-24-405c85",
-      "reasoning": "Le baril de WTI s'échange actuellement à 73 dollars, soit environ 4 dollars au-dessus du seuil de 69 dollars. Avec une agitation quotidienne des prix de l'ordre de celle observée récemment, une chute suffisamment forte pour franchir ce seuil en une semaine reste possible mais demanderait un mouvement inhabituel à la baisse. C'est pourquoi le prix a plus de chances de rester au-dessus de 69 dollars que de passer en dessous d'ici sept jours.",
-      "hash": "ad65fc8849e260db"
+      "id": "marches-2026-06-24-8c05c8",
+      "reasoning": "Le baril de WTI s'échange actuellement à 72 dollars, soit environ 4 dollars au-dessus du seuil de 68 dollars. Avec une agitation quotidienne des prix de l'ordre de quelques dollars, atteindre ce seuil en une semaine représente une baisse significative mais pas hors de portée. Le modèle considère que les mouvements de prix sont imprévisibles dans leur direction, ce qui maintient une probabilité non négligeable de franchir ce niveau à la baisse.",
+      "hash": "d306176119202370"
     },
     {
       "category": "marches",
       "statement": "L'euro clôturera à 1,1400 dollars ou plus le 15 juillet 2026.",
-      "probability": 41,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "probability": 40,
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-07-15",
       "deadline": "2026-07-15T22:00:00.000Z",
       "resolution": {
@@ -499,22 +499,22 @@
       "model": {
         "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
         "inputs": {
-          "cours_initial": 1.135718,
-          "volatilite_journaliere": 0.00365,
+          "cours_initial": 1.135203,
+          "volatilite_journaliere": 0.00366,
           "horizon_jours": 21,
           "seuil": 1.1400000000000001,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
       "id": "marches-2026-06-24-063a53",
-      "reasoning": "L'euro s'échange exactement au niveau du seuil visé, ce qui signifie que la moindre variation dans un sens ou dans l'autre suffit à faire basculer le résultat. Sur trois semaines, les mouvements quotidiens de cette paire de devises restent relativement modestes, ce qui laisse une chance réelle mais pas majoritaire de terminer au-dessus de ce seuil. La probabilité reflète cette situation d'équilibre fragile, légèrement défavorable au franchissement durable vers le haut.",
-      "hash": "eeaba325da24aa46"
+      "reasoning": "L'euro se trouve exactement au niveau du seuil, ce qui signifie que la moindre variation peut faire basculer le cours dans un sens ou dans l'autre. Sur trois semaines, les mouvements quotidiens restent modérés, ce qui limite les grandes amplitudes mais laisse une incertitude réelle. Le résultat est donc proche d'un partage équilibré entre les deux issues, sans qu'aucune direction ne s'impose clairement.",
+      "hash": "36296fd1325fe792"
     },
     {
       "category": "sport",
       "statement": "Bosnia-Herzegovina battra Qatar le 24 juin 2026 (Coupe du Monde).",
       "probability": 49,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-24",
       "deadline": "2026-06-24T23:00:00.000Z",
       "resolution": {
@@ -539,14 +539,14 @@
         }
       },
       "id": "sport-2026-06-24-ae0331",
-      "reasoning": "La Bosnie-Herzégovine aborde ce match avec une cote légèrement supérieure à celle du Qatar, mais l'écart entre les deux équipes reste faible. Dans un contexte de Coupe du Monde où la pression et les enjeux peuvent niveler les performances, aucune des deux sélections ne domine clairement l'autre. Le match nul constitue une issue tout à fait plausible, ce qui reflète l'incertitude réelle qui entoure cette rencontre.",
-      "hash": "40c4b883e9366622"
+      "reasoning": "La Bosnie-Herzégovine aborde ce match avec une cote Elo légèrement supérieure à celle du Qatar, ce qui en fait le favori, mais l'écart entre les deux équipes reste faible. Dans ce contexte de quasi-équilibre, un résultat nul est tout à fait envisageable, et le Qatar dispose d'une réelle capacité à créer la surprise.",
+      "hash": "34e427279334b059"
     },
     {
       "category": "sport",
       "statement": "Switzerland battra Canada le 24 juin 2026 (Coupe du Monde).",
       "probability": 39,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-24",
       "deadline": "2026-06-24T23:00:00.000Z",
       "resolution": {
@@ -571,14 +571,14 @@
         }
       },
       "id": "sport-2026-06-24-128df5",
-      "reasoning": "La Suisse et le Canada affichent des niveaux de force très proches, ce qui rend l'issue de cette rencontre particulièrement incertaine. La Suisse dispose d'un léger avantage à domicile sur la scène internationale, mais cela ne suffit pas à en faire un favori marqué face à une équipe canadienne de valeur comparable. Un match nul reste une issue tout à fait plausible dans ce contexte d'équilibre.",
-      "hash": "4688e86f952a4e82"
+      "reasoning": "La Suisse et le Canada affichent des forces très proches, ce qui rend ce match particulièrement ouvert. La Suisse bénéficie d'un léger avantage en tant que favorite, mais l'écart est si faible qu'aucune des deux équipes ne domine clairement l'autre. Le résultat nul représente une issue tout à fait plausible dans ce contexte d'équilibre.",
+      "hash": "06f924af335c7f5f"
     },
     {
       "category": "sport",
       "statement": "Morocco battra Haiti le 24 juin 2026 (Coupe du Monde).",
       "probability": 63,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-24",
       "deadline": "2026-06-25T02:00:00.000Z",
       "resolution": {
@@ -603,14 +603,14 @@
         }
       },
       "id": "sport-2026-06-24-8b8f6a",
-      "reasoning": "Le Maroc aborde cette rencontre avec un avantage clair sur le plan de la valeur sportive, ce qui en fait le favori logique face à Haïti. L'écart de niveau entre les deux sélections est réel sans être écrasant, ce qui laisse une place non négligeable au match nul ou à une surprise haïtienne. La compétition de la Coupe du Monde ajoute une part d'imprévisibilité qui tempère la domination attendue des Marocains.",
-      "hash": "21421c3396b65fa4"
+      "reasoning": "Le Maroc aborde cette rencontre avec une cote Elo nettement supérieure à celle d'Haïti, ce qui traduit un avantage collectif significatif sur la durée. Dans un contexte de Coupe du Monde, cet écart de niveau se confirme généralement par une domination marocaine, même si Haïti conserve une capacité à contenir le jeu et à provoquer le match nul. Une victoire du Maroc reste le scénario le plus probable, sans que l'issue soit pour autant garantie.",
+      "hash": "8c1560d9d641f449"
     },
     {
       "category": "sport",
       "statement": "Scotland battra Brazil le 24 juin 2026 (Coupe du Monde).",
       "probability": 39,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-24",
       "deadline": "2026-06-25T02:00:00.000Z",
       "resolution": {
@@ -635,14 +635,14 @@
         }
       },
       "id": "sport-2026-06-24-2e8888",
-      "reasoning": "Les deux équipes affichent des forces très proches, ce qui rend le résultat particulièrement difficile à anticiper. L'Écosse dispose d'un léger avantage à domicile ou en tant que favori désigné, mais cet avantage reste mince face à une équipe du Brésil de niveau comparable. Le match nul représente une issue plausible, ce qui dilue naturellement les chances de victoire pour chacun des deux camps.",
-      "hash": "6d56edb86bc4e929"
+      "reasoning": "Les deux équipes affichent des niveaux de force très proches, ce qui rend l'issue du match particulièrement incertaine. L'Écosse est légèrement favorisée à domicile, mais cet avantage reste minime face à une équipe du Brésil de valeur quasi équivalente. Le match nul constitue une issue tout à fait crédible dans ce contexte d'équilibre.",
+      "hash": "d9b5e7ae0f70a37b"
     },
     {
       "category": "sport",
       "statement": "Czechia battra Mexico le 25 juin 2026 (Coupe du Monde).",
       "probability": 36,
-      "created_at": "2026-06-24T07:13:30.572Z",
+      "created_at": "2026-06-24T09:54:28.511Z",
       "target_date": "2026-06-25",
       "deadline": "2026-06-25T05:00:00.000Z",
       "resolution": {
@@ -667,8 +667,74 @@
         }
       },
       "id": "sport-2026-06-24-afc441",
-      "reasoning": "Les deux équipes affichent des niveaux de force très proches, ce qui rend l'issue de cette rencontre particulièrement incertaine. Le Mexique présente même une légère supériorité dans les données utilisées, ce qui limite les chances de la République tchèque malgré son statut de favori affiché. Un match nul reste une issue tout à fait plausible compte tenu de cet équilibre.",
-      "hash": "a4a12b782f83f3eb"
+      "reasoning": "Les deux équipes affichent des niveaux de force très proches, ce qui rend le résultat particulièrement incertain. Le Mexique présente même un léger avantage dans les données de référence, ce qui explique que la République tchèque ne soit pas considérée comme favorite franche malgré son statut annoncé. Un match nul reste une issue tout à fait plausible dans ce contexte d'équilibre.",
+      "hash": "db34fe865b5d0864"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 10 ans clôturera à 4,40 % ou plus le 4 juillet 2026.",
+      "probability": 64,
+      "created_at": "2026-06-24T09:54:28.511Z",
+      "target_date": "2026-07-04",
+      "deadline": "2026-07-04T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 4 juillet 2026, le taux à 10 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 4,40 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TNX",
+          "threshold": 4.4,
+          "comparator": ">=",
+          "atMs": 1783202400000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 4.451,
+          "volatilite_quotidienne": 0.044,
+          "horizon_jours": 10,
+          "seuil_pct": 4.4,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-06-24-86d319",
+      "reasoning": "Le taux à 10 ans américain se situe actuellement légèrement au-dessus du seuil de 4,40 %, ce qui signifie qu'une baisse modeste suffirait à le franchir. Sur dix jours, les mouvements habituels du marché sont tout à fait compatibles avec un tel recul, sans qu'il soit nécessaire d'anticiper un choc particulier. C'est cette combinaison entre la proximité du seuil et l'amplitude normale des variations quotidiennes qui justifie une probabilité majoritaire, sans pour autant exclure le scénario inverse.",
+      "hash": "7845c7744ce7a2f0"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 30 ans clôturera à 4,95 % ou plus le 15 juillet 2026.",
+      "probability": 38,
+      "created_at": "2026-06-24T09:54:28.511Z",
+      "target_date": "2026-07-15",
+      "deadline": "2026-07-15T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 15 juillet 2026, le taux à 30 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 4,95 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TYX",
+          "threshold": 4.95,
+          "comparator": ">=",
+          "atMs": 1784152800000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 4.901,
+          "volatilite_quotidienne": 0.0346,
+          "horizon_jours": 21,
+          "seuil_pct": 4.95,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-06-24-40c67f",
+      "reasoning": "Le taux à 30 ans américain se situe actuellement très près du seuil de 4,95 %, avec seulement quelques centièmes de points d'écart. Les mouvements quotidiens habituels sur ce taux restent modestes, ce qui rend le franchissement du seuil possible mais pas certain sur trois semaines. La probabilité reflète cette situation intermédiaire : le seuil est proche, mais les oscillations quotidiennes sont suffisamment faibles pour qu'il ne soit pas atteint dans la moitié des scénarios envisageables.",
+      "hash": "2732593f849c0fe9"
     }
   ]
 }

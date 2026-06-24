@@ -92,6 +92,25 @@ export function quantile(xs, p) {
   return s[lo] + (s[hi] - s[lo]) * (idx - lo);
 }
 
+/**
+ * Probabilite que le NIVEAU final soit >= K, sous une marche aleatoire
+ * additive sans derive (adaptee a un taux, qui n'est pas multiplicatif).
+ *   niveau_T ~ Normale( s0, sigma^2 * T )
+ *   P(niveau_T >= K) = Phi( (s0 - K) / (sigma * sqrt(T)) )
+ * @param {number} sigmaDaily  ecart-type des variations QUOTIDIENNES du niveau
+ */
+export function probAboveNormal(s0, k, sigmaDaily, tDays) {
+  if (!(sigmaDaily > 0) || !(tDays > 0)) return NaN;
+  return normalCdf((s0 - k) / (sigmaDaily * Math.sqrt(tDays)));
+}
+
+/** Variations (differences) successives d'une serie. */
+export function diffs(xs) {
+  const out = [];
+  for (let i = 1; i < xs.length; i++) out.push(xs[i] - xs[i - 1]);
+  return out;
+}
+
 /** Rendements log journaliers d'une serie de prix. */
 export function logReturns(prices) {
   const out = [];
