@@ -86,7 +86,7 @@
           verdict. Le compte à rebours tourne en direct.
         </p>
         <div class="filters" id="filters"></div>
-        <div class="tiles" id="pending-list"></div>
+        <div class="pred-list" id="pending-list"></div>
       </section>
 
       <!-- VERDICTS -->
@@ -96,7 +96,7 @@
           Ce que la réalité a tranché, tel quel. Chaque résultat est lié à sa preuve
           publique. Les erreurs restent affichées, pour toujours.
         </p>
-        <div class="tiles" id="history-list"></div>
+        <div class="pred-list" id="history-list"></div>
       </section>
 
       <!-- MÉTHODE -->
@@ -130,31 +130,23 @@
       </footer>
     </div>
 
-    <!-- gabarit de tuile -->
-    <template id="card-tpl">
-      <article class="tile">
-        <div class="tile-head">
-          <span class="cat"><span class="dot"></span><span class="cat-name"></span></span>
-          <span class="status">En jeu</span>
-        </div>
-        <p class="statement"></p>
-        <div class="tile-body">
-          <div class="ring">
-            <svg viewBox="0 0 84 84">
-              <circle class="ring-bg" cx="42" cy="42" r="36" />
-              <circle class="ring-fg" cx="42" cy="42" r="36" />
-            </svg>
-            <span class="ring-num"></span>
-          </div>
-          <div class="tile-info">
-            <div class="countdown"></div>
-            <button class="why" type="button" aria-expanded="false">Le raisonnement</button>
-          </div>
-        </div>
-        <div class="reasoning" hidden></div>
-        <div class="meta"></div>
-        <div class="lock"></div>
-      </article>
+    <!-- gabarit de ligne -->
+    <template id="row-tpl">
+      <div class="prow-wrap">
+        <button class="prow" type="button" aria-expanded="false">
+          <span class="prow-dot"></span>
+          <span class="prow-main">
+            <span class="prow-statement"></span>
+            <span class="prow-sub"></span>
+          </span>
+          <span class="prow-prob">
+            <span class="prow-pct"></span>
+            <span class="prow-bar"><span class="prow-fill"></span></span>
+          </span>
+          <span class="prow-chev" aria-hidden="true"></span>
+        </button>
+        <div class="prow-detail" hidden></div>
+      </div>
     </template>
 
     <script src="./app.js" defer></script>
