@@ -45,6 +45,9 @@ jobs:
       - name: Contrôle d'intégrité (anti-triche)
         run: node engine/verify.mjs
 
+      - name: Construire les pages partageables (une par prédiction)
+        run: node engine/build_pages.mjs
+
       - name: Figer l'historique et publier
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

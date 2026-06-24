@@ -130,10 +130,10 @@ function drawClaims() {
       const head = `<div class="claim-head"><span class="claim-cat" style="color:${cat.color}">${cat.label}</span><span class="claim-author">${esc(c.author)}</span> <span class="claim-role">${esc(c.role || "")}</span></div>`;
       const stmt = `<p class="claim-text">« ${esc(c.claim)} »</p>`;
       if (!c.result) {
-        return `<article class="claim pending"><span class="claim-pill pending">En attente</span><div class="claim-body">${head}${stmt}<p class="claim-real">Verdict le ${dfmt(c.deadline)} · <span class="cd" data-deadline="${new Date(c.deadline).getTime()}">…</span> · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a></p></div></article>`;
+        return `<article class="claim pending"><span class="claim-pill pending">En attente</span><div class="claim-body">${head}${stmt}<p class="claim-real">Verdict le ${dfmt(c.deadline)} · <span class="cd" data-deadline="${new Date(c.deadline).getTime()}">…</span> · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a> · <a href="v/${c.id}.html" class="claim-share">partager</a></p></div></article>`;
       }
       const cls = c.result.hit ? "win" : "loss";
-      return `<article class="claim ${cls}"><span class="claim-pill ${cls}">${c.result.hit ? "Réalisé" : "Raté"}</span><div class="claim-body">${head}${stmt}<p class="claim-real">${esc(c.result.reality_label || "")} · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a> · <a href="${esc(c.result.evidence_url)}" target="_blank" rel="noopener">la preuve</a></p></div></article>`;
+      return `<article class="claim ${cls}"><span class="claim-pill ${cls}">${c.result.hit ? "Réalisé" : "Raté"}</span><div class="claim-body">${head}${stmt}<p class="claim-real">${esc(c.result.reality_label || "")} · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a> · <a href="${esc(c.result.evidence_url)}" target="_blank" rel="noopener">la preuve</a> · <a href="v/${c.id}.html" class="claim-share">partager</a></p></div></article>`;
     })
     .join("");
   const empty = $("#claims-empty");

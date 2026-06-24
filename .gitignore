@@ -3,3 +3,7 @@
 node_modules/
 .netlify/
 tmp/
+# pages générées (régénérées à chaque build, déployées mais pas suivies)
+public/v/
+public/sitemap.xml
+public/robots.txt
