@@ -1,7 +1,19 @@
 {
-  "note": "Prédictions PUBLIQUES de tiers, suivies et jugées par l'Oracle. Chaque entrée est réelle, datée et sourcée (lien vers la prédiction d'origine + lien vers la preuve du résultat). Jamais d'invention, jamais d'attaque personnelle : on compare ce qui a été annoncé à ce que la réalité a fait.",
+  "note": "Prédictions PUBLIQUES de tiers, suivies et jugées par l'Oracle. Chaque entrée est réelle, datée et sourcée (lien vers la prédiction d'origine + lien vers la preuve). Les prédictions encore ouvertes ont une échéance et se tranchent toutes seules le moment venu. Jamais d'invention, jamais d'attaque personnelle.",
   "updated_at": "2026-06-24",
   "claims": [
+    {
+      "id": "btc2026-stdchartered",
+      "author": "Standard Chartered",
+      "role": "Banque (Geoffrey Kendrick)",
+      "category": "crypto",
+      "claim": "Le Bitcoin terminera 2026 à 100 000 $ ou plus.",
+      "target_usd": 100000,
+      "said_on": "février 2026",
+      "source_url": "https://www.coindesk.com/markets/2026/02/12/standard-chartered-sees-bitcoin-sliding-to-usd50-000-ether-to-usd1-400-before-recovery",
+      "deadline": "2026-12-31T22:00:00.000Z",
+      "resolution": { "method": "markets.priceAt", "params": { "symbol": "BTC-USD", "threshold": 100000, "comparator": ">=" } }
+    },
     {
       "id": "btc2025-10xresearch",
       "author": "10x Research",
@@ -22,6 +34,16 @@
       "said_on": "octobre 2022",
       "source_url": "https://www.bloomberg.com/news/articles/2022-10-17/forecast-for-us-recession-within-year-hits-100-in-blow-to-biden",
       "result": { "outcome": "loss", "hit": 0, "reality_label": "Aucune récession ; l'économie américaine a crû en 2023.", "evidence_url": "https://www.axios.com/2023/12/22/2023-economy-predictions-wrong-recession" }
+    },
+    {
+      "id": "tech-ballmer-iphone-2007",
+      "author": "Steve Ballmer",
+      "role": "PDG de Microsoft (2007)",
+      "category": "tech",
+      "claim": "L'iPhone n'obtiendra aucune part de marché significative. Aucune chance.",
+      "said_on": "avril 2007",
+      "source_url": "https://www.cultofmac.com/apple-history/apple-history-steve-ballmer-iphone-freakout",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "L'iPhone est devenu l'un des produits les plus vendus de l'histoire.", "evidence_url": "https://fr.wikipedia.org/wiki/IPhone" }
     },
     {
       "id": "btc2025-tomlee",

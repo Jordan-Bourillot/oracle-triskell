@@ -165,6 +165,8 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .claim-pill { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 11px; border-radius: 999px; white-space: nowrap; margin-top: 3px; }
 .claim-pill.win { background: var(--win); color: #06281b; }
 .claim-pill.loss { background: var(--loss); color: #2e0c08; }
+.claim-pill.pending { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.claim.pending .cd.soon { color: var(--accent); }
 .claim-body { min-width: 0; }
 .claim-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .claim-author { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bone); font-weight: 600; }

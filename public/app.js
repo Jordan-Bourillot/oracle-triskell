@@ -12,6 +12,7 @@ const CAT = {
   economie: { label: "Économie", color: "var(--cat-economie)" },
   macro: { label: "Macro", color: "var(--cat-economie)" },
   bourse: { label: "Bourse", color: "var(--cat-marches)" },
+  tech: { label: "Tech", color: "var(--cat-meteo)" },
 };
 const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 
@@ -80,24 +81,38 @@ function renderClaims(claims) {
   const section = $("#verdicts-publics");
   if (!list) return;
   if (!claims.length) { if (section) section.hidden = true; return; }
-  const order = [...claims].sort((a, b) => b.result.hit - a.result.hit);
-  list.innerHTML = order
+  const open = claims.filter((c) => !c.result);
+  const done = claims.filter((c) => c.result).sort((a, b) => b.result.hit - a.result.hit);
+  const dfmt = (iso) => new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" }).format(new Date(iso));
+  list.innerHTML = [...open, ...done]
     .map((c) => {
-      const cls = c.result.hit ? "win" : "loss";
       const cat = CAT[c.category] || { label: c.category, color: "var(--muted)" };
+      const head = `<div class="claim-head"><span class="claim-cat" style="color:${cat.color}">${cat.label}</span><span class="claim-author">${esc(c.author)}</span> <span class="claim-role">${esc(c.role || "")}</span></div>`;
+      const stmt = `<p class="claim-text">« ${esc(c.claim)} »</p>`;
+      if (!c.result) {
+        return `<article class="claim pending">
+          <span class="claim-pill pending">En attente</span>
+          <div class="claim-body">${head}${stmt}
+            <p class="claim-real">Verdict le ${dfmt(c.deadline)} · <span class="cd" data-deadline="${new Date(c.deadline).getTime()}">…</span> · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a></p>
+          </div>
+        </article>`;
+      }
+      const cls = c.result.hit ? "win" : "loss";
       return `<article class="claim ${cls}">
         <span class="claim-pill ${cls}">${c.result.hit ? "Réalisé" : "Raté"}</span>
-        <div class="claim-body">
-          <div class="claim-head"><span class="claim-cat" style="color:${cat.color}">${cat.label}</span><span class="claim-author">${esc(c.author)}</span> <span class="claim-role">${esc(c.role || "")}</span></div>
-          <p class="claim-text">« ${esc(c.claim)} »</p>
+        <div class="claim-body">${head}${stmt}
           <p class="claim-real">${esc(c.result.reality_label || "")} · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a> · <a href="${esc(c.result.evidence_url)}" target="_blank" rel="noopener">la preuve</a></p>
         </div>
       </article>`;
     })
     .join("");
-  const wins = claims.filter((c) => c.result.hit === 1).length;
+  const wins = done.filter((c) => c.result.hit === 1).length;
   const tally = $("#claims-tally");
-  if (tally) tally.textContent = `Sur ${claims.length} suivies, ${wins > 1 ? wins + " se sont réalisées" : wins + " s'est réalisée"}.`;
+  if (tally) {
+    let t = `${done.length} prédiction${done.length > 1 ? "s" : ""} déjà tranchée${done.length > 1 ? "s" : ""}, dont ${wins} réalisée${wins > 1 ? "s" : ""}`;
+    if (open.length) t += ` ; ${open.length} en attente de verdict`;
+    tally.textContent = t + ".";
+  }
 }
 
 /* ---------- palmarès ---------- */

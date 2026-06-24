@@ -31,6 +31,9 @@ jobs:
       - name: Résoudre les prédictions arrivées à échéance
         run: node engine/resolve.mjs
 
+      - name: Trancher les prédictions publiques arrivées à échéance
+        run: node engine/resolve_claims.mjs
+
       - name: Générer un nouveau lot (lundi ou lancement manuel)
         if: github.event.schedule == '30 6 * * 1' || github.event_name == 'workflow_dispatch'
         run: node engine/generate.mjs
@@ -47,13 +50,13 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: |
-          if [ -z "$(git status --porcelain public/data/predictions.json)" ]; then
+          if [ -z "$(git status --porcelain public/data/predictions.json public/data/claims.json)" ]; then
             echo "Aucun changement, rien à publier."
             exit 0
           fi
           git config user.name "L'Oracle"
           git config user.email "oracle@users.noreply.github.com"
-          git add public/data/predictions.json
+          git add public/data/predictions.json public/data/claims.json
           git commit -m "Oracle : mise à jour $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
           if [ -n "$NETLIFY_AUTH_TOKEN" ] && [ -n "$NETLIFY_SITE_ID" ]; then
