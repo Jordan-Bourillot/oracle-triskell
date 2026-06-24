@@ -10,6 +10,8 @@ const CAT = {
   marches: { label: "Marchés", color: "var(--cat-marches)" },
   sport: { label: "Sport", color: "var(--cat-sport)" },
   economie: { label: "Économie", color: "var(--cat-economie)" },
+  macro: { label: "Macro", color: "var(--cat-economie)" },
+  bourse: { label: "Bourse", color: "var(--cat-marches)" },
 };
 const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 
@@ -78,14 +80,15 @@ function renderClaims(claims) {
   const section = $("#verdicts-publics");
   if (!list) return;
   if (!claims.length) { if (section) section.hidden = true; return; }
-  const order = [...claims].sort((a, b) => (b.result.hit - a.result.hit) || (b.target_usd || 0) - (a.target_usd || 0));
+  const order = [...claims].sort((a, b) => b.result.hit - a.result.hit);
   list.innerHTML = order
     .map((c) => {
       const cls = c.result.hit ? "win" : "loss";
+      const cat = CAT[c.category] || { label: c.category, color: "var(--muted)" };
       return `<article class="claim ${cls}">
         <span class="claim-pill ${cls}">${c.result.hit ? "Réalisé" : "Raté"}</span>
         <div class="claim-body">
-          <div class="claim-head"><span class="claim-author">${esc(c.author)}</span> <span class="claim-role">${esc(c.role || "")}</span></div>
+          <div class="claim-head"><span class="claim-cat" style="color:${cat.color}">${cat.label}</span><span class="claim-author">${esc(c.author)}</span> <span class="claim-role">${esc(c.role || "")}</span></div>
           <p class="claim-text">« ${esc(c.claim)} »</p>
           <p class="claim-real">${esc(c.result.reality_label || "")} · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a> · <a href="${esc(c.result.evidence_url)}" target="_blank" rel="noopener">la preuve</a></p>
         </div>

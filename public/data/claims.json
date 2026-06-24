@@ -1,5 +1,5 @@
 {
-  "note": "Prédictions PUBLIQUES de tiers, suivies et jugées par l'Oracle. Chaque entrée est réelle, datée et sourcée. Jamais d'invention, jamais d'attaque personnelle : on compare ce qui a été annoncé à ce que la réalité a fait, preuve à l'appui.",
+  "note": "Prédictions PUBLIQUES de tiers, suivies et jugées par l'Oracle. Chaque entrée est réelle, datée et sourcée (lien vers la prédiction d'origine + lien vers la preuve du résultat). Jamais d'invention, jamais d'attaque personnelle : on compare ce qui a été annoncé à ce que la réalité a fait.",
   "updated_at": "2026-06-24",
   "claims": [
     {
@@ -11,35 +11,39 @@
       "target_usd": 122000,
       "said_on": "début 2025",
       "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "source_label": "recensé par The Crypto Basic, mai 2025",
-      "criterion": "Le Bitcoin a-t-il atteint 122 000 $ à un moment de 2025  ?",
       "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
     },
     {
-      "id": "btc2025-gfox",
-      "author": "GFO-X",
-      "role": "Plateforme d'échange",
+      "id": "recession-bloomberg-2022",
+      "author": "Bloomberg Economics",
+      "role": "Recherche économique",
+      "category": "macro",
+      "claim": "100 % de probabilité de récession aux États-Unis d'ici octobre 2023.",
+      "said_on": "octobre 2022",
+      "source_url": "https://www.bloomberg.com/news/articles/2022-10-17/forecast-for-us-recession-within-year-hits-100-in-blow-to-biden",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Aucune récession ; l'économie américaine a crû en 2023.", "evidence_url": "https://www.axios.com/2023/12/22/2023-economy-predictions-wrong-recession" }
+    },
+    {
+      "id": "btc2025-tomlee",
+      "author": "Tom Lee",
+      "role": "Fundstrat",
       "category": "crypto",
-      "claim": "Le Bitcoin atteindra 150 000 $ en 2025.",
-      "target_usd": 150000,
+      "claim": "Le Bitcoin atteindra 250 000 $ en 2025.",
+      "target_usd": 250000,
       "said_on": "début 2025",
       "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "source_label": "recensé par The Crypto Basic, mai 2025",
-      "criterion": "Le Bitcoin a-t-il atteint 150 000 $ à un moment de 2025 ?",
       "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
     },
     {
-      "id": "btc2025-vaneck",
-      "author": "VanEck",
-      "role": "Gestionnaire d'actifs",
+      "id": "eth2025-stdchartered",
+      "author": "Standard Chartered",
+      "role": "Banque",
       "category": "crypto",
-      "claim": "Le Bitcoin atteindra 180 000 $ en 2025.",
-      "target_usd": 180000,
-      "said_on": "début 2025",
-      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "source_label": "recensé par The Crypto Basic, mai 2025",
-      "criterion": "Le Bitcoin a-t-il atteint 180 000 $ à un moment de 2025 ?",
-      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+      "claim": "L'Ethereum atteindra 7 500 $ fin 2025.",
+      "target_usd": 7500,
+      "said_on": "2025",
+      "source_url": "https://www.theblock.co/post/366734/standard-chartered-analysts-raise-ethereum-year-end-price-target",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 4 954 $", "evidence_url": "https://finance.yahoo.com/quote/ETH-USD/" }
     },
     {
       "id": "btc2025-stdchartered",
@@ -50,8 +54,6 @@
       "target_usd": 200000,
       "said_on": "début 2025",
       "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "source_label": "recensé par The Crypto Basic, mai 2025",
-      "criterion": "Le Bitcoin a-t-il atteint 200 000 $ à un moment de 2025 ?",
       "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
     },
     {
@@ -63,21 +65,28 @@
       "target_usd": 225000,
       "said_on": "début 2025",
       "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "source_label": "recensé par The Crypto Basic, mai 2025",
-      "criterion": "Le Bitcoin a-t-il atteint 225 000 $ à un moment de 2025 ?",
       "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
     },
     {
-      "id": "btc2025-tomlee",
-      "author": "Tom Lee",
-      "role": "Fundstrat",
+      "id": "btc2025-vaneck",
+      "author": "VanEck",
+      "role": "Gestionnaire d'actifs",
       "category": "crypto",
-      "claim": "Le Bitcoin atteindra 250 000 $ en 2025.",
-      "target_usd": 250000,
+      "claim": "Le Bitcoin atteindra 180 000 $ en 2025.",
+      "target_usd": 180000,
       "said_on": "début 2025",
       "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
-      "source_label": "recensé par The Crypto Basic, mai 2025",
-      "criterion": "Le Bitcoin a-t-il atteint 250 000 $ à un moment de 2025 ?",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "btc2025-gfox",
+      "author": "GFO-X",
+      "role": "Plateforme d'échange",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 150 000 $ en 2025.",
+      "target_usd": 150000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
       "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
     }
   ]
