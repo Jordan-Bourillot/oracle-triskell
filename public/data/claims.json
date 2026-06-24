@@ -15,6 +15,18 @@
       "resolution": { "method": "markets.priceAt", "params": { "symbol": "BTC-USD", "threshold": 100000, "comparator": ">=" } }
     },
     {
+      "id": "eth2026-stdchartered",
+      "author": "Standard Chartered",
+      "role": "Banque (Geoffrey Kendrick)",
+      "category": "crypto",
+      "claim": "L'Ethereum atteindra 12 000 $ fin 2026.",
+      "target_usd": 12000,
+      "said_on": "2025",
+      "source_url": "https://www.theblock.co/post/366734/standard-chartered-analysts-raise-ethereum-year-end-price-target",
+      "deadline": "2026-12-31T22:00:00.000Z",
+      "resolution": { "method": "markets.priceAt", "params": { "symbol": "ETH-USD", "threshold": 12000, "comparator": ">=" } }
+    },
+    {
       "id": "btc2025-10xresearch",
       "author": "10x Research",
       "role": "Cabinet d'analyse",
@@ -44,6 +56,26 @@
       "said_on": "avril 2007",
       "source_url": "https://www.cultofmac.com/apple-history/apple-history-steve-ballmer-iphone-freakout",
       "result": { "outcome": "loss", "hit": 0, "reality_label": "L'iPhone est devenu l'un des produits les plus vendus de l'histoire.", "evidence_url": "https://fr.wikipedia.org/wiki/IPhone" }
+    },
+    {
+      "id": "sport-leicester-2016",
+      "author": "Les bookmakers",
+      "role": "Cotes d'avant-saison",
+      "category": "sport",
+      "claim": "Leicester n'a quasiment aucune chance d'être champion d'Angleterre en 2016 (coté à 5000 contre 1).",
+      "said_on": "août 2015",
+      "source_url": "https://www.skysports.com/football/news/11712/10261535/premier-league-2015-16-how-the-odds-changed-as-leicester-claimed-the-title",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Leicester a été sacré champion d'Angleterre en mai 2016.", "evidence_url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League" }
+    },
+    {
+      "id": "bourse-dow36000-1999",
+      "author": "« Dow 36 000 » (Glassman et Hassett)",
+      "role": "Livre, 1999",
+      "category": "bourse",
+      "claim": "Le Dow Jones atteindra 36 000 points d'ici 3 à 5 ans.",
+      "said_on": "1999",
+      "source_url": "https://en.wikipedia.org/wiki/Dow_36,000",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Atteint seulement en novembre 2021, 22 ans plus tard.", "evidence_url": "https://fortune.com/2021/11/01/dow-36000-jones-industrial-average-investing-book-record-high-djia-james-glassman-kevin-hassett/" }
     },
     {
       "id": "btc2025-tomlee",
