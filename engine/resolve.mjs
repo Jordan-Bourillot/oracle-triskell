@@ -8,7 +8,7 @@ import { isUntampered } from "./lib/hash.mjs";
 import { priceAt } from "./lib/sources/crypto.mjs";
 import { observedTmax } from "./lib/sources/meteo.mjs";
 import { priceAt as marketPriceAt } from "./lib/sources/markets.mjs";
-import { eventResult } from "./lib/sources/sport.mjs";
+import { matchOutcome } from "./lib/sources/sport.mjs";
 import { frNumber } from "./lib/dates.mjs";
 
 function compare(actual, comparator, threshold) {
@@ -62,10 +62,9 @@ async function measure(pred) {
   }
 
   if (method === "sport.matchResult") {
-    const r = await eventResult(params.idEvent);
-    if (!r.finished) return null; // match pas encore joue / score absent
-    const winner = r.home > r.away ? "home" : r.home < r.away ? "away" : "draw";
-    const hit = winner === params.side;
+    const r = await matchOutcome(params.slug, params.idEvent, params.matchMs);
+    if (!r.finished) return null; // match pas encore joue
+    const hit = r.winner === params.side;
     return {
       hit,
       actual: null,
