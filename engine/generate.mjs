@@ -8,6 +8,10 @@ import { load, save, addPrediction, integrityViolations, pending } from "./lib/l
 import { explain } from "./lib/ai.mjs";
 import { generateCrypto } from "./lib/generators/crypto.mjs";
 import { generateMeteo } from "./lib/generators/meteo.mjs";
+import { generateMarkets } from "./lib/generators/markets.mjs";
+// Sport (Elo) prêt mais en attente d'une source de données complète
+// (la clé gratuite ne renvoie qu'un match) + saisons européennes reprenant fin août.
+// import { generateSport } from "./lib/generators/sport.mjs";
 
 function makeId(d) {
   const h = createHash("sha256")
@@ -28,7 +32,7 @@ async function main() {
 
   // Recolte des brouillons (chaque generateur est isole : une panne n'arrete pas l'autre).
   const drafts = [];
-  for (const gen of [generateCrypto, generateMeteo]) {
+  for (const gen of [generateCrypto, generateMeteo, generateMarkets]) {
     try {
       drafts.push(...(await gen(now)));
     } catch (err) {

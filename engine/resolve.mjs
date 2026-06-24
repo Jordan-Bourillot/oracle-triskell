@@ -7,6 +7,8 @@ import { load, save, due, integrityViolations } from "./lib/ledger.mjs";
 import { isUntampered } from "./lib/hash.mjs";
 import { priceAt } from "./lib/sources/crypto.mjs";
 import { observedTmax } from "./lib/sources/meteo.mjs";
+import { priceAt as marketPriceAt } from "./lib/sources/markets.mjs";
+import { eventResult } from "./lib/sources/sport.mjs";
 import { frNumber } from "./lib/dates.mjs";
 
 function compare(actual, comparator, threshold) {
@@ -41,6 +43,33 @@ async function measure(pred) {
       hit,
       actual: +r.tmax.toFixed(1),
       actual_label: `${r.tmax.toFixed(1)} °C`,
+      evidence_url: r.sourceUrl,
+      measured_at: new Date().toISOString(),
+    };
+  }
+
+  if (method === "markets.priceAt") {
+    const r = await marketPriceAt(params.symbol, params.atMs);
+    if (!r) return null; // cloture pas encore disponible -> on reessaiera
+    const hit = compare(r.price, params.comparator, params.threshold);
+    return {
+      hit,
+      actual: +r.price.toFixed(params.decimals ?? 2),
+      actual_label: `${frNumber(r.price, params.decimals ?? 2)} ${params.unit || ""}`.trim(),
+      evidence_url: r.sourceUrl,
+      measured_at: new Date(r.at).toISOString(),
+    };
+  }
+
+  if (method === "sport.matchResult") {
+    const r = await eventResult(params.idEvent);
+    if (!r.finished) return null; // match pas encore joue / score absent
+    const winner = r.home > r.away ? "home" : r.home < r.away ? "away" : "draw";
+    const hit = winner === params.side;
+    return {
+      hit,
+      actual: null,
+      actual_label: r.label,
       evidence_url: r.sourceUrl,
       measured_at: new Date().toISOString(),
     };

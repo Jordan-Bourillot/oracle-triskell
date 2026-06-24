@@ -8,23 +8,33 @@
       name="description"
       content="Chaque semaine, l'Oracle annonce des prédictions précises, datées et chiffrées en probabilité. À l'échéance, la réalité tranche. Tout est vérifiable, rien n'est effacé."
     />
-    <meta name="color-scheme" content="light" />
+    <meta name="color-scheme" content="dark" />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f5f1e8'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%232e2a6b' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23a63a2e'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0e23'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23e7c879' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23f4d98b'/%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="paper">
+    <div id="sky" class="sky" aria-hidden="true"></div>
+
+    <div class="wrap">
       <!-- EN-TÊTE -->
       <header class="hero">
+        <div class="hero-orbit" aria-hidden="true">
+          <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid meet">
+            <ellipse cx="300" cy="180" rx="270" ry="120" />
+            <ellipse cx="300" cy="180" rx="190" ry="78" />
+            <circle class="orbit-star" cx="563" cy="206" r="5" />
+            <circle class="orbit-star faint" cx="118" cy="118" r="3" />
+          </svg>
+        </div>
         <p class="kicker">Prédictions publiques · jugées par la réalité</p>
         <h1 class="title">L'Oracle</h1>
         <p class="lede">
@@ -39,7 +49,7 @@
       <!-- SCORE -->
       <section class="band" id="scoreband" aria-label="Tableau de chasse">
         <div class="stat"><span class="stat-num" id="s-total">—</span><span class="stat-lbl">prédictions</span></div>
-        <div class="stat"><span class="stat-num" id="s-pending">—</span><span class="stat-lbl">en cours</span></div>
+        <div class="stat"><span class="stat-num" id="s-pending">—</span><span class="stat-lbl">en sursis</span></div>
         <div class="stat"><span class="stat-num" id="s-resolved">—</span><span class="stat-lbl">tranchées</span></div>
         <div class="stat"><span class="stat-num" id="s-rate">—</span><span class="stat-lbl">taux de réussite</span></div>
         <div class="stat"><span class="stat-num" id="s-brier">—</span><span class="stat-lbl">score de Brier</span></div>
@@ -53,10 +63,10 @@
         </div>
         <p class="section-intro">
           Le cœur du sujet. Quand l'Oracle annonce <em>70 %</em>, a-t-il raison
-          environ 7 fois sur 10 ? Cette courbe le dit. Chaque point regroupe des
-          prédictions de probabilité voisine. En horizontale, la probabilité
+          environ 7 fois sur 10 ? Cette trajectoire le dit. Chaque point regroupe
+          des prédictions de probabilité voisine. En horizontale, la probabilité
           annoncée. En vertical, la part réellement réalisée. Plus les points
-          collent à la diagonale, mieux l'Oracle est calibré.
+          suivent la diagonale, plus l'Oracle est juste.
         </p>
         <div class="calib-wrap">
           <div id="calib-plot" class="calib-plot"></div>
@@ -71,8 +81,9 @@
           <h2>Prédictions en cours</h2>
         </div>
         <p class="section-intro">
-          Annoncées et <strong>figées</strong> avant leur échéance. Impossible de les
-          modifier après coup. Chacune porte son empreinte et sa date de dépôt.
+          Des astres en sursis. Chacune est <strong>annoncée et figée</strong> avant
+          son échéance, puis attend que la réalité l'allume ou l'éteigne. Impossible
+          de la modifier après coup. Chacune porte son empreinte et sa date de dépôt.
         </p>
         <div class="filters" id="filters"></div>
         <div class="cards" id="pending-list"></div>
@@ -82,11 +93,11 @@
       <section class="section" id="historique">
         <div class="section-head">
           <span class="section-no">03</span>
-          <h2>Historique</h2>
+          <h2>Les verdicts</h2>
         </div>
         <p class="section-intro">
-          Le verdict de la réalité, tel quel. Chaque résultat est lié à sa preuve
-          publique. Les erreurs restent affichées.
+          Ce que la réalité a tranché, tel quel. Étoiles allumées, étoiles éteintes.
+          Chaque résultat est lié à sa preuve publique. Les erreurs restent affichées.
         </p>
         <div class="cards" id="history-list"></div>
       </section>
@@ -102,33 +113,32 @@
             <h3>Une probabilité, pas une opinion</h3>
             <p>
               Le pourcentage vient d'un <strong>modèle statistique</strong> sur des
-              données publiques (volatilité d'un actif, dispersion des scénarios
-              météo). Une IA rédige ensuite l'explication en français&nbsp;; elle ne
-              décide jamais du chiffre.
+              données publiques (volatilité d'un marché, dispersion des scénarios
+              météo). Une IA rédige ensuite l'explication en français. Elle ne décide
+              jamais du chiffre.
             </p>
           </div>
           <div class="method-card">
             <h3>Le verrou anti-triche</h3>
             <p>
               Chaque prédiction est <strong>horodatée et figée</strong> avant
-              l'échéance. Une empreinte la scelle&nbsp;: changer l'énoncé, la
-              probabilité ou la date casse l'empreinte. L'historique public garde la
-              trace.
+              l'échéance. Une empreinte la scelle. Changer l'énoncé, la probabilité
+              ou la date casse l'empreinte, et l'historique public garde la trace.
             </p>
           </div>
           <div class="method-card">
-            <h3>La réalité tranche, toute seule</h3>
+            <h3>La réalité tranche, seule</h3>
             <p>
               Après l'échéance, un programme va chercher le résultat réel sur une
               <strong>source publique</strong> (prix officiels, relevés météo),
-              marque ✅ ou ❌ et lie la preuve. Sans intervention humaine.
+              allume ✦ ou éteint l'étoile et lie la preuve. Sans intervention humaine.
             </p>
           </div>
           <div class="method-card">
             <h3>Honnête par construction</h3>
             <p>
-              Le taux de réussite ne dit pas tout. Un bon oracle qui annonce
-              30 % doit se tromper la plupart du temps sur ces cas-là. C'est la
+              Le taux de réussite ne dit pas tout. Un bon oracle qui annonce 30 % doit
+              se tromper la plupart du temps sur ces cas-là. C'est la
               <strong>calibration</strong> qui juge, et elle inclut les échecs.
             </p>
           </div>
@@ -137,8 +147,9 @@
 
       <footer class="foot">
         <p>
-          Sources publiques&nbsp;: <a href="https://www.coingecko.com" rel="noopener" target="_blank">CoinGecko</a>
-          (prix crypto) · <a href="https://open-meteo.com" rel="noopener" target="_blank">Open-Meteo</a> (météo).
+          Sources publiques · <a href="https://www.coingecko.com" rel="noopener" target="_blank">CoinGecko</a>
+          (crypto) · <a href="https://finance.yahoo.com" rel="noopener" target="_blank">Yahoo Finance</a>
+          (marchés) · <a href="https://open-meteo.com" rel="noopener" target="_blank">Open-Meteo</a> (météo).
         </p>
         <p id="repo-line"></p>
         <p class="foot-fine">L'Oracle se met à jour tout seul. La transparence de la calibration est le produit.</p>
@@ -149,6 +160,7 @@
     <template id="card-tpl">
       <article class="card">
         <div class="card-top">
+          <span class="star-slot" aria-hidden="true"></span>
           <span class="tag"></span>
           <span class="verdict"></span>
         </div>

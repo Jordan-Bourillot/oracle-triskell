@@ -1,298 +1,205 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-06-23T22:39:04.212Z",
+  "updated_at": "2026-06-24T06:47:49.245Z",
   "predictions": [
     {
       "category": "crypto",
-      "statement": "Bitcoin (BTC) vaudra 61 000 $ ou plus le 3 juillet 2026.",
-      "probability": 65,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-07-03",
-      "deadline": "2026-07-03T00:00:00.000Z",
+      "statement": "Bitcoin (BTC) vaudra 61 000 $ ou plus le 4 juillet 2026.",
+      "probability": 67,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-04",
+      "deadline": "2026-07-04T00:00:00.000Z",
       "resolution": {
-        "criterion": "Au 3 juillet 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 61 000 $.",
+        "criterion": "Au 4 juillet 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 61 000 $.",
         "method": "crypto.priceAt",
         "params": {
           "id": "bitcoin",
           "threshold": 61000,
           "comparator": ">=",
-          "atMs": 1783036800000
+          "atMs": 1783123200000
         }
       },
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 62484.7,
-          "volatilite_journaliere": 0.01985,
+          "prix_initial_usd": 62695.5,
+          "volatilite_journaliere": 0.01947,
           "horizon_jours": 10,
           "seuil_usd": 61000,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "crypto-2026-06-23-369d6d",
-      "reasoning": "Le Bitcoin affiche une volatilité journalière notable, ce qui signifie que des mouvements de plusieurs centaines de dollars en dix jours sont tout à fait courants, même sans tendance marquée dans un sens ou dans l'autre. Le seuil de 61 000 dollars se situe suffisamment près du prix actuel pour qu'une telle baisse reste accessible dans cette fenêtre de temps, sans nécessiter un choc particulier. C'est cette combinaison entre la proximité du seuil et l'agitation naturelle du marché qui explique que le passage sous ce niveau soit considéré comme plus probable que son inverse.",
-      "hash": "a9702cff15f02495"
+      "id": "crypto-2026-06-24-8642eb",
+      "reasoning": "Le bitcoin évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles du bitcoin sont tout à fait suffisantes pour couvrir cet écart, ce qui rend l'événement relativement probable. Le modèle retenu suppose que les mouvements futurs sont aussi susceptibles d'aller vers le bas que vers le haut, sans tendance particulière dans un sens ou dans l'autre.",
+      "hash": "6257de44802d4eb8"
     },
     {
       "category": "crypto",
-      "statement": "Bitcoin (BTC) vaudra 64 000 $ ou plus le 14 juillet 2026.",
-      "probability": 40,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-07-14",
-      "deadline": "2026-07-14T00:00:00.000Z",
+      "statement": "Bitcoin (BTC) vaudra 64 000 $ ou plus le 15 juillet 2026.",
+      "probability": 41,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-15",
+      "deadline": "2026-07-15T00:00:00.000Z",
       "resolution": {
-        "criterion": "Au 14 juillet 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 64 000 $.",
+        "criterion": "Au 15 juillet 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 64 000 $.",
         "method": "crypto.priceAt",
         "params": {
           "id": "bitcoin",
           "threshold": 64000,
           "comparator": ">=",
-          "atMs": 1783987200000
+          "atMs": 1784073600000
         }
       },
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 62484.7,
-          "volatilite_journaliere": 0.01985,
+          "prix_initial_usd": 62695.5,
+          "volatilite_journaliere": 0.01947,
           "horizon_jours": 21,
           "seuil_usd": 64000,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "crypto-2026-06-23-49e370",
-      "reasoning": "Le bitcoin se situe actuellement un peu en dessous du seuil visé, ce qui représente un écart relativement modeste à combler en trois semaines. Cependant, le modèle utilisé ne suppose aucune tendance haussière ou baissière particulière, ce qui signifie que les fluctuations quotidiennes peuvent aussi bien éloigner le prix de l'objectif que l'en rapprocher. Dans ce contexte de marché sans direction présumée, atteindre ce seuil reste possible mais n'a rien d'acquis.",
-      "hash": "f98714349954dce9"
+      "id": "crypto-2026-06-24-15a8bc",
+      "reasoning": "Le bitcoin se trouve actuellement légèrement en dessous du seuil visé, ce qui signifie qu'une hausse modeste suffirait à l'atteindre. Cependant, avec une volatilité quotidienne notable, les mouvements du prix sont largement imprévisibles sur trois semaines, et le marché a autant de chances de reculer que d'avancer. La probabilité reflète donc cette incertitude symétrique, tempérée par la proximité du seuil.",
+      "hash": "190ff2a89831aef9"
     },
     {
       "category": "crypto",
-      "statement": "Ethereum (ETH) vaudra 1 700 $ ou plus le 14 juillet 2026.",
-      "probability": 43,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-07-14",
-      "deadline": "2026-07-14T00:00:00.000Z",
+      "statement": "Ethereum (ETH) vaudra 1 700 $ ou plus le 15 juillet 2026.",
+      "probability": 45,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-15",
+      "deadline": "2026-07-15T00:00:00.000Z",
       "resolution": {
-        "criterion": "Au 14 juillet 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 700 $.",
+        "criterion": "Au 15 juillet 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 700 $.",
         "method": "crypto.priceAt",
         "params": {
           "id": "ethereum",
           "threshold": 1700,
           "comparator": ">=",
-          "atMs": 1783987200000
+          "atMs": 1784073600000
         }
       },
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 1662.37,
-          "volatilite_journaliere": 0.02755,
+          "prix_initial_usd": 1672.61,
+          "volatilite_journaliere": 0.02705,
           "horizon_jours": 21,
           "seuil_usd": 1700,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "crypto-2026-06-23-e66164",
-      "reasoning": "Ethereum évolue actuellement sous le seuil visé, avec un écart modeste à combler en trois semaines. La volatilité quotidienne du prix est significative, ce qui laisse une réelle chance d'atteindre ce niveau, mais les mouvements de marché sont imprévisibles et peuvent aussi bien s'éloigner du seuil que s'en approcher. Le modèle retenu suppose qu'aucune tendance particulière ne favorise la hausse ou la baisse, ce qui explique que la probabilité reste en dessous du seuil de bascule.",
-      "hash": "f5930323cb61b864"
+      "id": "crypto-2026-06-24-5afaae",
+      "reasoning": "Ethereum se situe légèrement en dessous du seuil de 1 700 dollars, ce qui représente un écart modeste à combler sur trois semaines. Toutefois, la volatilité quotidienne du cours est significative, ce qui signifie que les mouvements à la hausse comme à la baisse restent tout aussi probables l'un que l'autre sur cet horizon. Le modèle utilisé ne suppose aucune tendance particulière, ce qui explique que la probabilité d'atteindre ce seuil reste proche d'une chance sur deux sans pencher franchement dans un sens.",
+      "hash": "d720a4109c3f64db"
     },
     {
       "category": "crypto",
-      "statement": "Ethereum (ETH) vaudra 1 600 $ ou plus le 3 juillet 2026.",
-      "probability": 67,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-07-03",
-      "deadline": "2026-07-03T00:00:00.000Z",
+      "statement": "Ethereum (ETH) vaudra 1 600 $ ou plus le 4 juillet 2026.",
+      "probability": 70,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-04",
+      "deadline": "2026-07-04T00:00:00.000Z",
       "resolution": {
-        "criterion": "Au 3 juillet 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 600 $.",
+        "criterion": "Au 4 juillet 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 600 $.",
         "method": "crypto.priceAt",
         "params": {
           "id": "ethereum",
           "threshold": 1600,
           "comparator": ">=",
-          "atMs": 1783036800000
+          "atMs": 1783123200000
         }
       },
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 1662.37,
-          "volatilite_journaliere": 0.02755,
+          "prix_initial_usd": 1672.61,
+          "volatilite_journaliere": 0.02705,
           "horizon_jours": 10,
           "seuil_usd": 1600,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "crypto-2026-06-23-925c75",
-      "reasoning": "Ethereum se négocie actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles du cours sont suffisantes pour franchir ce niveau à la baisse, sans qu'il soit besoin d'un choc particulier. C'est cette combinaison entre la faible distance à parcourir et l'agitation naturelle du marché qui explique que le scénario soit jugé probable.",
-      "hash": "52d8fca6c9bf8ebf"
+      "id": "crypto-2026-06-24-34e090",
+      "reasoning": "Ethereum évolue actuellement au-dessus du seuil visé, ce qui signifie qu'un recul est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles de l'actif sont suffisamment amples pour rendre ce mouvement baissier tout à fait accessible, sans qu'il soit besoin d'un choc particulier. C'est cette combinaison entre la faible distance à franchir et l'agitation naturelle des prix qui explique le niveau de probabilité retenu.",
+      "hash": "02ed522d509dab8d"
     },
     {
       "category": "crypto",
-      "statement": "Solana (SOL) vaudra 67 $ ou plus le 3 juillet 2026.",
-      "probability": 65,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-07-03",
-      "deadline": "2026-07-03T00:00:00.000Z",
+      "statement": "Solana (SOL) vaudra 67 $ ou plus le 4 juillet 2026.",
+      "probability": 67,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-04",
+      "deadline": "2026-07-04T00:00:00.000Z",
       "resolution": {
-        "criterion": "Au 3 juillet 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 67 $.",
+        "criterion": "Au 4 juillet 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 67 $.",
         "method": "crypto.priceAt",
         "params": {
           "id": "solana",
           "threshold": 67,
           "comparator": ">=",
-          "atMs": 1783036800000
+          "atMs": 1783123200000
         }
       },
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 69.4,
-          "volatilite_journaliere": 0.02887,
+          "prix_initial_usd": 69.75,
+          "volatilite_journaliere": 0.02821,
           "horizon_jours": 10,
           "seuil_usd": 67,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "crypto-2026-06-23-001cd4",
-      "reasoning": "Solana se négocie actuellement juste au-dessus du seuil visé, ce qui signifie qu'une baisse modeste suffirait à l'atteindre. Avec une volatilité quotidienne significative, le prix a statistiquement de bonnes chances d'effleurer ce niveau au moins une fois sur dix jours, même en l'absence de tendance marquée à la hausse ou à la baisse.",
-      "hash": "a70d80c292be9974"
+      "id": "crypto-2026-06-24-4627e6",
+      "reasoning": "Solana affiche une volatilité quotidienne modérée, ce qui signifie que des mouvements de plusieurs dollars en dix jours sont tout à fait courants. Le seuil de 67 dollars ne se situe qu'à quelques dollars en dessous du prix actuel, soit un recul limité au regard des fluctuations habituelles de cet actif. Sur un horizon de dix jours, la probabilité que le cours touche ce niveau au moins une fois est donc élevée, même sans supposer de tendance particulière à la hausse ou à la baisse.",
+      "hash": "9d67c57fafed7f38"
     },
     {
       "category": "crypto",
-      "statement": "Solana (SOL) vaudra 72 $ ou plus le 14 juillet 2026.",
-      "probability": 39,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-07-14",
-      "deadline": "2026-07-14T00:00:00.000Z",
+      "statement": "Solana (SOL) vaudra 73 $ ou plus le 15 juillet 2026.",
+      "probability": 36,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-15",
+      "deadline": "2026-07-15T00:00:00.000Z",
       "resolution": {
-        "criterion": "Au 14 juillet 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 72 $.",
+        "criterion": "Au 15 juillet 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 73 $.",
         "method": "crypto.priceAt",
         "params": {
           "id": "solana",
-          "threshold": 72,
+          "threshold": 73,
           "comparator": ">=",
-          "atMs": 1783987200000
+          "atMs": 1784073600000
         }
       },
       "model": {
         "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
         "inputs": {
-          "prix_initial_usd": 69.4,
-          "volatilite_journaliere": 0.02887,
+          "prix_initial_usd": 69.75,
+          "volatilite_journaliere": 0.02821,
           "horizon_jours": 21,
-          "seuil_usd": 72,
+          "seuil_usd": 73,
           "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
         }
       },
-      "id": "crypto-2026-06-23-741598",
-      "reasoning": "Solana affiche une volatilité journalière notable, ce qui lui permet en théorie d'atteindre 72 dollars en moins de trois semaines. Cependant, le modèle utilisé ne suppose aucune tendance haussière ou baissière particulière, ce qui signifie que la hausse espérée est loin d'être garantie. Le seuil visé reste suffisamment proche du prix actuel pour rester accessible, mais l'incertitude propre aux marchés cryptographiques pèse sur la probabilité d'y parvenir dans le délai imparti.",
-      "hash": "fc6c2eaa047dedd3"
+      "id": "crypto-2026-06-24-8b7eee",
+      "reasoning": "Solana affiche une volatilité journalière notable, mais atteindre 73 dollars depuis 70 dollars en trois semaines reste un mouvement modeste en valeur absolue. Le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, ce qui signifie que le prix a autant de chances de dériver dans un sens que dans l'autre. Dans ce contexte, le seuil visé est atteignable mais loin d'être acquis, car la progression nécessaire, bien que limitée, dépend entièrement des fluctuations aléatoires du marché.",
+      "hash": "19bcb557aaf6419d"
     },
     {
       "category": "meteo",
-      "statement": "À Paris, la température maximale atteindra 37,5 °C ou plus le 27 juin 2026.",
+      "statement": "À Paris, la température maximale atteindra 36,5 °C ou plus le 27 juin 2026.",
       "probability": 65,
-      "created_at": "2026-06-23T22:38:19.701Z",
+      "created_at": "2026-06-24T06:46:32.501Z",
       "target_date": "2026-06-27",
       "deadline": "2026-06-27T23:30:00.000Z",
       "resolution": {
-        "criterion": "Le 27 juin 2026, la température maximale relevée à Paris (Open-Meteo) est supérieure ou égale à 37,5 °C.",
+        "criterion": "Le 27 juin 2026, la température maximale relevée à Paris (Open-Meteo) est supérieure ou égale à 36,5 °C.",
         "method": "meteo.observedTmax",
         "params": {
           "city": "paris",
-          "dateISO": "2026-06-27",
-          "threshold": 37.5,
-          "comparator": ">="
-        }
-      },
-      "model": {
-        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
-        "inputs": {
-          "nb_scenarios": 31,
-          "mediane_celsius": 38.7,
-          "min_celsius": 31.8,
-          "max_celsius": 42.2,
-          "seuil_celsius": 37.5
-        }
-      },
-      "id": "meteo-2026-06-23-887204",
-      "reasoning": "La majorité des scénarios climatiques simulés pour ce jour placent la température au-dessus du seuil, avec une médiane nettement supérieure à 37,5 °C. L'éventail des résultats reste cependant large, ce qui reflète l'incertitude naturelle des prévisions à cette échéance. C'est cette combinaison d'une tendance centrale élevée et d'une dispersion significative qui explique le niveau de probabilité retenu.",
-      "hash": "25b81dae63da638f"
-    },
-    {
-      "category": "meteo",
-      "statement": "À Marseille, la température maximale atteindra 31,5 °C ou plus le 27 juin 2026.",
-      "probability": 42,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-06-27",
-      "deadline": "2026-06-27T23:30:00.000Z",
-      "resolution": {
-        "criterion": "Le 27 juin 2026, la température maximale relevée à Marseille (Open-Meteo) est supérieure ou égale à 31,5 °C.",
-        "method": "meteo.observedTmax",
-        "params": {
-          "city": "marseille",
-          "dateISO": "2026-06-27",
-          "threshold": 31.5,
-          "comparator": ">="
-        }
-      },
-      "model": {
-        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
-        "inputs": {
-          "nb_scenarios": 31,
-          "mediane_celsius": 31.3,
-          "min_celsius": 30.1,
-          "max_celsius": 32.5,
-          "seuil_celsius": 31.5
-        }
-      },
-      "id": "meteo-2026-06-23-aeb6e6",
-      "reasoning": "À Marseille fin juin, des températures autour de 31 degrés sont tout à fait habituelles, ce qui place le seuil de 31,5 °C dans une zone de transition où les scénarios se répartissent de façon assez équilibrée. La médiane des projections se situe légèrement en dessous de ce seuil, ce qui signifie que la majorité des trajectoires climatiques simulées n'atteignent pas tout à fait cette valeur. Le dépassement reste donc possible mais moins probable que l'inverse, sans qu'un écart marqué ne s'impose clairement dans un sens ou dans l'autre.",
-      "hash": "f7527cd6b85801d1"
-    },
-    {
-      "category": "meteo",
-      "statement": "À Lille, la température maximale atteindra 32,5 °C ou plus le 27 juin 2026.",
-      "probability": 81,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-06-27",
-      "deadline": "2026-06-27T23:30:00.000Z",
-      "resolution": {
-        "criterion": "Le 27 juin 2026, la température maximale relevée à Lille (Open-Meteo) est supérieure ou égale à 32,5 °C.",
-        "method": "meteo.observedTmax",
-        "params": {
-          "city": "lille",
-          "dateISO": "2026-06-27",
-          "threshold": 32.5,
-          "comparator": ">="
-        }
-      },
-      "model": {
-        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
-        "inputs": {
-          "nb_scenarios": 31,
-          "mediane_celsius": 34,
-          "min_celsius": 29,
-          "max_celsius": 40.7,
-          "seuil_celsius": 32.5
-        }
-      },
-      "id": "meteo-2026-06-23-ad0181",
-      "reasoning": "La majorité des scénarios climatiques simulés pour cette journée placent la température au-dessus du seuil, avec une médiane nettement supérieure à celui-ci. La fourchette des résultats reste large, ce qui reflète l'incertitude naturelle des projections à cette échéance, mais les valeurs basses restent minoritaires. C'est cette concentration des scénarios au-dessus du seuil qui justifie un niveau de probabilité élevé.",
-      "hash": "1d1e36f4e03343c3"
-    },
-    {
-      "category": "meteo",
-      "statement": "À Bordeaux, la température maximale atteindra 36,5 °C ou plus le 27 juin 2026.",
-      "probability": 48,
-      "created_at": "2026-06-23T22:38:19.701Z",
-      "target_date": "2026-06-27",
-      "deadline": "2026-06-27T23:30:00.000Z",
-      "resolution": {
-        "criterion": "Le 27 juin 2026, la température maximale relevée à Bordeaux (Open-Meteo) est supérieure ou égale à 36,5 °C.",
-        "method": "meteo.observedTmax",
-        "params": {
-          "city": "bordeaux",
           "dateISO": "2026-06-27",
           "threshold": 36.5,
           "comparator": ">="
@@ -302,15 +209,306 @@
         "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
         "inputs": {
           "nb_scenarios": 31,
-          "mediane_celsius": 36.4,
-          "min_celsius": 29.4,
-          "max_celsius": 41.1,
+          "mediane_celsius": 37.4,
+          "min_celsius": 30.8,
+          "max_celsius": 41.4,
           "seuil_celsius": 36.5
         }
       },
-      "id": "meteo-2026-06-23-92cf49",
-      "reasoning": "La médiane des scénarios simulés tombe juste en dessous du seuil, ce qui place la probabilité très près du partage égal entre dépassement et non-dépassement. L'éventail des températures possibles est particulièrement large, reflétant l'incertitude naturelle sur une échéance aussi lointaine en pleine période estivale à Bordeaux. Ce résultat traduit une situation réellement indécise, sans signal dominant d'un côté ou de l'autre.",
-      "hash": "27a932507c369151"
+      "id": "meteo-2026-06-24-2a5f28",
+      "reasoning": "La majorité des scénarios climatiques simulés placent la température ce jour-là au-dessus du seuil, avec une valeur centrale qui le dépasse nettement. L'éventail des résultats reste large, allant de températures modérées à des valeurs franchement caniculaires, ce qui reflète l'incertitude naturelle des projections à cette échéance. Paris en fin juin est par ailleurs une période où les épisodes de chaleur intense sont devenus plus fréquents, ce qui oriente l'ensemble des scénarios vers le haut.",
+      "hash": "3f6ba87253e3d621"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Marseille, la température maximale atteindra 31,0 °C ou plus le 27 juin 2026.",
+      "probability": 81,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-06-27",
+      "deadline": "2026-06-27T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 27 juin 2026, la température maximale relevée à Marseille (Open-Meteo) est supérieure ou égale à 31,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "marseille",
+          "dateISO": "2026-06-27",
+          "threshold": 31,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 31.1,
+          "min_celsius": 30,
+          "max_celsius": 32.4,
+          "seuil_celsius": 31
+        }
+      },
+      "id": "meteo-2026-06-24-c2a566",
+      "reasoning": "La médiane des scénarios simulés tombe juste au-dessus du seuil de 31 °C, ce qui indique que dépasser cette limite est le cas le plus courant parmi les trajectoires envisagées. La fourchette des résultats reste resserrée autour de ce seuil, sans s'en éloigner vraiment vers le bas, ce qui renforce la cohérence du signal. À Marseille fin juin, les températures élevées sont climatiquement attendues, et l'ensemble des scénarios converge dans ce sens.",
+      "hash": "f0e4470568666973"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Lille, la température maximale atteindra 31,0 °C ou plus le 27 juin 2026.",
+      "probability": 81,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-06-27",
+      "deadline": "2026-06-27T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 27 juin 2026, la température maximale relevée à Lille (Open-Meteo) est supérieure ou égale à 31,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "lille",
+          "dateISO": "2026-06-27",
+          "threshold": 31,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 32.7,
+          "min_celsius": 28.6,
+          "max_celsius": 40.4,
+          "seuil_celsius": 31
+        }
+      },
+      "id": "meteo-2026-06-24-3bcbf5",
+      "reasoning": "La majorité des scénarios climatiques simulés placent la température de ce jour au-dessus du seuil retenu, avec une valeur centrale qui le dépasse nettement. La fourchette des résultats reste large, ce qui traduit une incertitude réelle, mais l'essentiel des trajectoires converge vers une journée chaude. C'est cette concentration des scénarios au-dessus du seuil qui fonde un niveau de probabilité élevé.",
+      "hash": "ef96e2598b2c41cc"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Bordeaux, la température maximale atteindra 35,5 °C ou plus le 27 juin 2026.",
+      "probability": 45,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-06-27",
+      "deadline": "2026-06-27T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 27 juin 2026, la température maximale relevée à Bordeaux (Open-Meteo) est supérieure ou égale à 35,5 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "bordeaux",
+          "dateISO": "2026-06-27",
+          "threshold": 35.5,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 34.7,
+          "min_celsius": 30,
+          "max_celsius": 38.8,
+          "seuil_celsius": 35.5
+        }
+      },
+      "id": "meteo-2026-06-24-8290d2",
+      "reasoning": "La médiane des scénarios simulés se situe légèrement en dessous du seuil, ce qui signifie que la majorité des projections n'atteignent pas 35,5 °C. Cependant, la fourchette des températures possibles est large et inclut des valeurs nettement supérieures au seuil, ce qui maintient une part non négligeable de scénarios au-dessus. Le résultat reflète donc une situation équilibrée, où dépasser ce seuil reste plausible sans être le cas le plus probable.",
+      "hash": "ccfea3880f41b89b"
+    },
+    {
+      "category": "marches",
+      "statement": "Le CAC 40 clôturera à 8 250 points ou plus le 1 juillet 2026.",
+      "probability": 65,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-01",
+      "deadline": "2026-07-01T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 1 juillet 2026, la clôture du CAC 40 relevée sur Yahoo Finance est supérieure ou égale à 8 250 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^FCHI",
+          "threshold": 8250,
+          "comparator": ">=",
+          "atMs": 1782943200000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 8340.71,
+          "volatilite_journaliere": 0.01102,
+          "horizon_jours": 7,
+          "seuil": 8250,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-06-24-b7e628",
+      "reasoning": "Le CAC 40 évolue actuellement à 8 350 points, soit environ 100 points au-dessus du seuil de 8 250. Avec une volatilité journalière de l'ordre de 1,1 %, l'indice peut raisonnablement parcourir cette distance en quelques séances, ce qui rend un passage sous ce seuil d'ici sept jours tout à fait envisageable. Le modèle retenu suppose qu'aucune tendance particulière ne favorise la hausse ou la baisse, si bien que la proximité du seuil par rapport aux mouvements habituels du marché suffit à expliquer ce niveau de probabilité.",
+      "hash": "d3adbb8c598cca18"
+    },
+    {
+      "category": "marches",
+      "statement": "Le S&P 500 clôturera à 7 450 points ou plus le 15 juillet 2026.",
+      "probability": 40,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-15",
+      "deadline": "2026-07-15T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 15 juillet 2026, la clôture du S&P 500 relevée sur Yahoo Finance est supérieure ou égale à 7 450 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^GSPC",
+          "threshold": 7450,
+          "comparator": ">=",
+          "atMs": 1784152800000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 7365.46,
+          "volatilite_journaliere": 0.00981,
+          "horizon_jours": 21,
+          "seuil": 7450,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-06-24-dd11c8",
+      "reasoning": "Le S&P 500 se trouve actuellement sous le seuil de 7 450 points, et l'écart à combler reste modeste par rapport aux mouvements habituels de l'indice sur trois semaines. Cependant, le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, ce qui signifie que le marché doit franchir ce niveau uniquement par la force de ses fluctuations naturelles. Dans ce contexte, la probabilité de dépasser ce seuil d'ici vingt et un jours reflète un scénario possible mais qui demeure minoritaire.",
+      "hash": "f76048ac06fed187"
+    },
+    {
+      "category": "marches",
+      "statement": "Le Nasdaq clôturera à 25 200 points ou plus le 1 juillet 2026.",
+      "probability": 66,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-01",
+      "deadline": "2026-07-01T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 1 juillet 2026, la clôture du Nasdaq Composite relevée sur Yahoo Finance est supérieure ou égale à 25 200 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^IXIC",
+          "threshold": 25200,
+          "comparator": ">=",
+          "atMs": 1782943200000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 25587.04,
+          "volatilite_journaliere": 0.01422,
+          "horizon_jours": 7,
+          "seuil": 25200,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-06-24-403c5f",
+      "reasoning": "Le Nasdaq Composite évolue actuellement autour de 25 600 points, soit un écart d'environ 400 points au-dessus du seuil de 25 200. Avec une volatilité journalière de l'ordre de 1,42 %, sept séances représentent une amplitude de fluctuation significative, mais pas suffisante pour rendre un recul de cette ampleur très probable. Le seuil reste donc atteignable, sans pour autant constituer le scénario le plus vraisemblable sur cet horizon.",
+      "hash": "819d38ad756a9555"
+    },
+    {
+      "category": "marches",
+      "statement": "L'once d'or clôturera à 4 180 dollars ou plus le 15 juillet 2026.",
+      "probability": 41,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-15",
+      "deadline": "2026-07-15T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 15 juillet 2026, la clôture du cours de l'or (once) relevée sur Yahoo Finance est supérieure ou égale à 4 180 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "GC=F",
+          "threshold": 4180,
+          "comparator": ">=",
+          "atMs": 1784152800000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 4106.8,
+          "volatilite_journaliere": 0.01667,
+          "horizon_jours": 21,
+          "seuil": 4180,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-06-24-eb8386",
+      "reasoning": "L'or cote actuellement 4 100 dollars l'once et doit progresser d'environ 2 % pour atteindre le seuil de 4 180 dollars d'ici trois semaines. Les fluctuations quotidiennes du métal restent modérées, ce qui rend ce franchissement possible mais pas acquis sur une si courte période. Le modèle retenu suppose que les mouvements futurs ne prolongent aucune tendance particulière, ce qui pèse légèrement contre une hausse ciblée dans un délai aussi serré.",
+      "hash": "28d422856f541181"
+    },
+    {
+      "category": "marches",
+      "statement": "Le baril de pétrole (WTI) clôturera à 69 dollars ou plus le 1 juillet 2026.",
+      "probability": 66,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-01",
+      "deadline": "2026-07-01T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 1 juillet 2026, la clôture du baril de pétrole WTI relevée sur Yahoo Finance est supérieure ou égale à 69 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "CL=F",
+          "threshold": 69,
+          "comparator": ">=",
+          "atMs": 1782943200000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 72.51,
+          "volatilite_journaliere": 0.04617,
+          "horizon_jours": 7,
+          "seuil": 69,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-06-24-405c85",
+      "reasoning": "Le baril de WTI s'échange actuellement à 73 dollars, soit environ 4 dollars au-dessus du seuil de 69 dollars. Compte tenu de l'agitation habituelle des prix du pétrole sur une semaine, une baisse de cette ampleur reste tout à fait envisageable, même sans événement particulier. C'est pourquoi la probabilité que le cours reste au-dessus de 69 dollars d'ici sept jours est jugée modérément favorable, sans être une quasi-certitude.",
+      "hash": "7f7008a147aecb4c"
+    },
+    {
+      "category": "marches",
+      "statement": "L'euro clôturera à 1,1400 dollars ou plus le 15 juillet 2026.",
+      "probability": 44,
+      "created_at": "2026-06-24T06:46:32.501Z",
+      "target_date": "2026-07-15",
+      "deadline": "2026-07-15T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 15 juillet 2026, la clôture du taux euro / dollar relevée sur Yahoo Finance est supérieure ou égale à 1,1400 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "EURUSD=X",
+          "threshold": 1.1400000000000001,
+          "comparator": ">=",
+          "atMs": 1784152800000,
+          "decimals": 4,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 1.137139,
+          "volatilite_journaliere": 0.00363,
+          "horizon_jours": 21,
+          "seuil": 1.1400000000000001,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-06-24-063a53",
+      "reasoning": "L'euro s'échange actuellement exactement au niveau du seuil, ce qui place d'emblée la situation à la frontière entre les deux scénarios possibles. Sur un horizon de trois semaines, les mouvements quotidiens de cette paire de devises sont relativement modestes, ce qui limite la probabilité que le cours s'éloigne franchement dans un sens ou dans l'autre. Le modèle retenu suppose qu'aucune tendance particulière ne pousse le taux à la hausse ou à la baisse, ce qui explique que les chances se répartissent de façon presque équilibrée autour de ce seuil.",
+      "hash": "0c6c44f1d01d3045"
     }
   ]
 }
