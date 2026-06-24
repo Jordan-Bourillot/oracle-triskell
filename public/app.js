@@ -77,42 +77,67 @@ async function loadClaims() {
   renderClaims(claims);
 }
 function renderClaims(claims) {
-  const list = $("#claims-list");
   const section = $("#verdicts-publics");
-  if (!list) return;
   if (!claims.length) { if (section) section.hidden = true; return; }
-  const open = claims.filter((c) => !c.result);
-  const done = claims.filter((c) => c.result).sort((a, b) => b.result.hit - a.result.hit);
+  STATE.claims = claims;
+  STATE.claimCat = STATE.claimCat || "all";
+  STATE.claimQ = STATE.claimQ || "";
+
+  // filtres par univers
+  const cats = ["all", ...new Set(claims.map((c) => c.category))];
+  const fbox = $("#claim-filters");
+  if (fbox) {
+    fbox.innerHTML = cats.map((c) => `<button class="filter-btn" data-cat="${c}" aria-pressed="${c === STATE.claimCat}">${c === "all" ? "Tout" : CAT[c]?.label || c}</button>`).join("");
+    fbox.querySelectorAll(".filter-btn").forEach((b) =>
+      b.addEventListener("click", () => {
+        STATE.claimCat = b.dataset.cat;
+        fbox.querySelectorAll(".filter-btn").forEach((x) => x.setAttribute("aria-pressed", x.dataset.cat === STATE.claimCat));
+        drawClaims();
+      }),
+    );
+  }
+  // recherche libre
+  const search = $("#claim-search");
+  if (search && !search.dataset.wired) {
+    search.dataset.wired = "1";
+    search.addEventListener("input", () => { STATE.claimQ = search.value.toLowerCase().trim(); drawClaims(); });
+  }
+  // bilan global (sur l'ensemble, jamais filtré)
+  const done = claims.filter((c) => c.result);
+  const wins = done.filter((c) => c.result.hit === 1).length;
+  const open = claims.length - done.length;
+  const tally = $("#claims-tally");
+  if (tally) {
+    let t = `${done.length} prédiction${done.length > 1 ? "s" : ""} déjà tranchée${done.length > 1 ? "s" : ""}, dont ${wins} réalisée${wins > 1 ? "s" : ""}`;
+    if (open) t += ` ; ${open} en attente de verdict`;
+    tally.textContent = t + ".";
+  }
+  drawClaims();
+}
+
+function drawClaims() {
+  const list = $("#claims-list");
+  if (!list) return;
   const dfmt = (iso) => new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" }).format(new Date(iso));
+  let items = STATE.claims || [];
+  if (STATE.claimCat && STATE.claimCat !== "all") items = items.filter((c) => c.category === STATE.claimCat);
+  if (STATE.claimQ) items = items.filter((c) => `${c.author} ${c.claim} ${c.role || ""} ${CAT[c.category]?.label || ""}`.toLowerCase().includes(STATE.claimQ));
+  const open = items.filter((c) => !c.result);
+  const done = items.filter((c) => c.result).sort((a, b) => b.result.hit - a.result.hit);
   list.innerHTML = [...open, ...done]
     .map((c) => {
       const cat = CAT[c.category] || { label: c.category, color: "var(--muted)" };
       const head = `<div class="claim-head"><span class="claim-cat" style="color:${cat.color}">${cat.label}</span><span class="claim-author">${esc(c.author)}</span> <span class="claim-role">${esc(c.role || "")}</span></div>`;
       const stmt = `<p class="claim-text">« ${esc(c.claim)} »</p>`;
       if (!c.result) {
-        return `<article class="claim pending">
-          <span class="claim-pill pending">En attente</span>
-          <div class="claim-body">${head}${stmt}
-            <p class="claim-real">Verdict le ${dfmt(c.deadline)} · <span class="cd" data-deadline="${new Date(c.deadline).getTime()}">…</span> · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a></p>
-          </div>
-        </article>`;
+        return `<article class="claim pending"><span class="claim-pill pending">En attente</span><div class="claim-body">${head}${stmt}<p class="claim-real">Verdict le ${dfmt(c.deadline)} · <span class="cd" data-deadline="${new Date(c.deadline).getTime()}">…</span> · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a></p></div></article>`;
       }
       const cls = c.result.hit ? "win" : "loss";
-      return `<article class="claim ${cls}">
-        <span class="claim-pill ${cls}">${c.result.hit ? "Réalisé" : "Raté"}</span>
-        <div class="claim-body">${head}${stmt}
-          <p class="claim-real">${esc(c.result.reality_label || "")} · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a> · <a href="${esc(c.result.evidence_url)}" target="_blank" rel="noopener">la preuve</a></p>
-        </div>
-      </article>`;
+      return `<article class="claim ${cls}"><span class="claim-pill ${cls}">${c.result.hit ? "Réalisé" : "Raté"}</span><div class="claim-body">${head}${stmt}<p class="claim-real">${esc(c.result.reality_label || "")} · <a href="${esc(c.source_url)}" target="_blank" rel="noopener">la prédiction</a> · <a href="${esc(c.result.evidence_url)}" target="_blank" rel="noopener">la preuve</a></p></div></article>`;
     })
     .join("");
-  const wins = done.filter((c) => c.result.hit === 1).length;
-  const tally = $("#claims-tally");
-  if (tally) {
-    let t = `${done.length} prédiction${done.length > 1 ? "s" : ""} déjà tranchée${done.length > 1 ? "s" : ""}, dont ${wins} réalisée${wins > 1 ? "s" : ""}`;
-    if (open.length) t += ` ; ${open.length} en attente de verdict`;
-    tally.textContent = t + ".";
-  }
+  const empty = $("#claims-empty");
+  if (empty) empty.hidden = items.length > 0;
 }
 
 /* ---------- palmarès ---------- */

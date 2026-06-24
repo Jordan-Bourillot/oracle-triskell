@@ -166,6 +166,11 @@ a { color: var(--accent); text-underline-offset: 2px; }
 }
 
 /* ---------- QUI AVAIT RAISON (prédictions publiques) ---------- */
+.claim-tools { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; margin-bottom: 18px; }
+.claim-tools .filters { margin-bottom: 0; }
+.claim-search { font-family: var(--mono); font-size: 13px; padding: 9px 16px; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--bone); border-radius: 999px; min-width: 200px; flex: 1 1 220px; max-width: 320px; }
+.claim-search::placeholder { color: var(--muted); }
+.claim-search:focus { outline: none; border-color: var(--accent); }
 .claim-list { border-top: 1px solid var(--line); }
 .claim { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: start; padding: 18px 8px; border-bottom: 1px solid var(--line); }
 .claim-pill { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 11px; border-radius: 999px; white-space: nowrap; margin-top: 3px; }

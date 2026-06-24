@@ -70,11 +70,17 @@
       <section class="section reveal" id="verdicts-publics">
         <div class="section-head"><span class="section-no">01</span><h2>Qui avait raison ?</h2></div>
         <p class="section-intro">
-          Des prédictions <strong>publiques et datées</strong>, lancées par des banques,
-          des cabinets et des analystes, confrontées à ce que la réalité a vraiment fait.
-          <span id="claims-tally"></span> Chacune renvoie à sa source d'origine et à sa preuve.
+          Le réflexe utile : <strong>avant de croire une prédiction, regarde le bilan de
+          celui qui la fait.</strong> Des annonces publiques et datées, confrontées à ce
+          que la réalité a vraiment fait. <span id="claims-tally"></span> Chacune renvoie à
+          sa source et à sa preuve.
         </p>
+        <div class="claim-tools">
+          <input id="claim-search" class="claim-search" type="search" placeholder="Chercher un nom, un sujet…" aria-label="Chercher une prédiction" />
+          <div class="filters" id="claim-filters"></div>
+        </div>
         <div class="claim-list" id="claims-list"></div>
+        <p class="empty-note" id="claims-empty" hidden>Aucune prédiction ne correspond à ta recherche.</p>
       </section>
 
       <!-- CALIBRATION -->
