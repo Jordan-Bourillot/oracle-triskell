@@ -1,0 +1,84 @@
+{
+  "note": "Prédictions PUBLIQUES de tiers, suivies et jugées par l'Oracle. Chaque entrée est réelle, datée et sourcée. Jamais d'invention, jamais d'attaque personnelle : on compare ce qui a été annoncé à ce que la réalité a fait, preuve à l'appui.",
+  "updated_at": "2026-06-24",
+  "claims": [
+    {
+      "id": "btc2025-10xresearch",
+      "author": "10x Research",
+      "role": "Cabinet d'analyse",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 122 000 $ en 2025.",
+      "target_usd": 122000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
+      "source_label": "recensé par The Crypto Basic, mai 2025",
+      "criterion": "Le Bitcoin a-t-il atteint 122 000 $ à un moment de 2025  ?",
+      "result": { "outcome": "win", "hit": 1, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "btc2025-gfox",
+      "author": "GFO-X",
+      "role": "Plateforme d'échange",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 150 000 $ en 2025.",
+      "target_usd": 150000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
+      "source_label": "recensé par The Crypto Basic, mai 2025",
+      "criterion": "Le Bitcoin a-t-il atteint 150 000 $ à un moment de 2025 ?",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "btc2025-vaneck",
+      "author": "VanEck",
+      "role": "Gestionnaire d'actifs",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 180 000 $ en 2025.",
+      "target_usd": 180000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
+      "source_label": "recensé par The Crypto Basic, mai 2025",
+      "criterion": "Le Bitcoin a-t-il atteint 180 000 $ à un moment de 2025 ?",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "btc2025-stdchartered",
+      "author": "Standard Chartered",
+      "role": "Banque",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 200 000 $ en 2025.",
+      "target_usd": 200000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
+      "source_label": "recensé par The Crypto Basic, mai 2025",
+      "criterion": "Le Bitcoin a-t-il atteint 200 000 $ à un moment de 2025 ?",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "btc2025-hcwainwright",
+      "author": "H.C. Wainwright",
+      "role": "Banque d'investissement",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 225 000 $ en 2025.",
+      "target_usd": 225000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
+      "source_label": "recensé par The Crypto Basic, mai 2025",
+      "criterion": "Le Bitcoin a-t-il atteint 225 000 $ à un moment de 2025 ?",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    },
+    {
+      "id": "btc2025-tomlee",
+      "author": "Tom Lee",
+      "role": "Fundstrat",
+      "category": "crypto",
+      "claim": "Le Bitcoin atteindra 250 000 $ en 2025.",
+      "target_usd": 250000,
+      "said_on": "début 2025",
+      "source_url": "https://thecryptobasic.com/2025/05/02/here-are-the-top-8-bitcoin-2025-price-predictions-from-banks-and-hedge-funds/",
+      "source_label": "recensé par The Crypto Basic, mai 2025",
+      "criterion": "Le Bitcoin a-t-il atteint 250 000 $ à un moment de 2025 ?",
+      "result": { "outcome": "loss", "hit": 0, "reality_label": "Plus-haut 2025 : 126 200 $", "evidence_url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    }
+  ]
+}
