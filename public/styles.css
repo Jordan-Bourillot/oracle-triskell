@@ -74,10 +74,12 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .calib-legend .lg-row { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px dotted var(--line-2); }
 .calib-legend .lg-row:first-child { color: var(--muted); }
 .calib-legend .lg-row span:last-child { color: var(--accent); font-weight: 600; }
-.calib-empty { font-family: var(--ui); font-size: 15px; color: var(--muted); line-height: 1.55; }
+.calib-empty { font-family: var(--ui); font-size: 15.5px; color: var(--text); line-height: 1.55; }
 .calib-empty b { color: var(--bone); font-weight: 600; }
-.calib-wrap.is-empty { grid-template-columns: 220px minmax(0, 1fr); gap: 34px; }
-.calib-wrap.is-empty .calib-plot { max-width: 220px; }
+.ce-lead { display: block; font-family: var(--display); font-weight: 600; font-size: 23px; color: var(--bone); line-height: 1.25; margin-bottom: 10px; }
+.ce-cd { display: block; font-family: var(--mono); font-size: 14px; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 14px; }
+.calib-wrap.is-empty { grid-template-columns: 300px minmax(0, 1fr); gap: 38px; align-items: center; }
+.calib-wrap.is-empty .calib-plot { max-width: 300px; }
 
 /* ---------- FILTRES ---------- */
 .filters { display: flex; gap: 9px; margin-bottom: 22px; flex-wrap: wrap; }

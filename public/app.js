@@ -95,7 +95,10 @@ function renderCalibration() {
   if (!bins.length) {
     wrap.classList.add("is-empty");
     $("#calib-plot").innerHTML = emptyCalibSvg();
-    $("#calib-legend").innerHTML = '<p class="calib-empty">Aucune prédiction n\'est encore arrivée à échéance. <b>Le premier verdict arrive très bientôt.</b> La courbe se dessinera ensuite, point par point, au fil des résultats.</p>';
+    const next = pending()[0];
+    const cd = next ? `<span class="ce-cd">Premier verdict dans <span class="cd" data-deadline="${new Date(next.deadline).getTime()}">…</span></span>` : "";
+    $("#calib-legend").innerHTML =
+      `<p class="calib-empty"><span class="ce-lead">Le tableau de chasse est encore vierge.</span>${cd}Dès qu'une prédiction est tranchée, <b>un point se pose ici</b>. Plus ils collent à la diagonale, plus l'Oracle est juste.</p>`;
     return;
   }
   wrap.classList.remove("is-empty");
@@ -106,12 +109,14 @@ function renderCalibration() {
 }
 const C_LINE = "#2b2820", C_AXIS = "#5a5240", C_TXT = "#8b8270", C_ACC = "#ff5a3c";
 function emptyCalibSvg() {
-  return `<svg viewBox="0 0 240 240" role="img" aria-label="Courbe de calibration (à venir)">
-    <rect x="26" y="12" width="200" height="200" fill="none" stroke="${C_LINE}" stroke-width="1" stroke-dasharray="2 6"/>
-    <line x1="26" y1="212" x2="226" y2="12" stroke="${C_AXIS}" stroke-width="1.2" stroke-dasharray="5 4"/>
-    <circle cx="78" cy="160" r="6" fill="${C_ACC}" opacity="0.16"/>
-    <circle cx="128" cy="112" r="7" fill="${C_ACC}" opacity="0.12"/>
-    <circle cx="176" cy="66" r="6" fill="${C_ACC}" opacity="0.16"/>
+  const pts = [[95, 206], [150, 152], [205, 99], [247, 60]];
+  const dots = pts.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="9" fill="${C_ACC}" opacity="0.16"/><circle cx="${x}" cy="${y}" r="4" fill="${C_ACC}" opacity="0.75"/>`).join("");
+  return `<svg viewBox="0 0 300 300" role="img" aria-label="Courbe de calibration (à venir)">
+    <line x1="40" y1="30" x2="40" y2="260" stroke="${C_AXIS}" stroke-width="1.4"/>
+    <line x1="40" y1="260" x2="280" y2="260" stroke="${C_AXIS}" stroke-width="1.4"/>
+    <line x1="40" y1="260" x2="270" y2="36" stroke="${C_ACC}" stroke-width="1.6" stroke-dasharray="6 5" opacity="0.6"/>
+    <text x="268" y="52" fill="${C_TXT}" font-family="monospace" font-size="11" text-anchor="end">objectif</text>
+    ${dots}
   </svg>`;
 }
 function plotCalibSvg(bins) {
