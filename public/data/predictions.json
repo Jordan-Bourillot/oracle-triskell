@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-06-24T09:56:24.636Z",
+  "updated_at": "2026-06-25T10:00:10.017Z",
   "predictions": [
     {
       "category": "crypto",
@@ -540,7 +540,16 @@
       },
       "id": "sport-2026-06-24-ae0331",
       "reasoning": "La Bosnie-Herzégovine aborde ce match avec une cote Elo légèrement supérieure à celle du Qatar, ce qui en fait le favori, mais l'écart entre les deux équipes reste faible. Dans ce contexte de quasi-équilibre, un résultat nul est tout à fait envisageable, et le Qatar dispose d'une réelle capacité à créer la surprise.",
-      "hash": "34e427279334b059"
+      "hash": "34e427279334b059",
+      "result": {
+        "resolved_at": "2026-06-25T10:00:09.600Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Bosnia-Herzegovina 3-1 Qatar",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260622-20260626",
+        "measured_at": "2026-06-25T10:00:09.899Z"
+      }
     },
     {
       "category": "sport",
@@ -572,7 +581,16 @@
       },
       "id": "sport-2026-06-24-128df5",
       "reasoning": "La Suisse et le Canada affichent des forces très proches, ce qui rend ce match particulièrement ouvert. La Suisse bénéficie d'un léger avantage en tant que favorite, mais l'écart est si faible qu'aucune des deux équipes ne domine clairement l'autre. Le résultat nul représente une issue tout à fait plausible dans ce contexte d'équilibre.",
-      "hash": "06f924af335c7f5f"
+      "hash": "06f924af335c7f5f",
+      "result": {
+        "resolved_at": "2026-06-25T10:00:09.600Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Switzerland 2-1 Canada",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260622-20260626",
+        "measured_at": "2026-06-25T10:00:09.917Z"
+      }
     },
     {
       "category": "sport",
@@ -604,7 +622,16 @@
       },
       "id": "sport-2026-06-24-8b8f6a",
       "reasoning": "Le Maroc aborde cette rencontre avec une cote Elo nettement supérieure à celle d'Haïti, ce qui traduit un avantage collectif significatif sur la durée. Dans un contexte de Coupe du Monde, cet écart de niveau se confirme généralement par une domination marocaine, même si Haïti conserve une capacité à contenir le jeu et à provoquer le match nul. Une victoire du Maroc reste le scénario le plus probable, sans que l'issue soit pour autant garantie.",
-      "hash": "8c1560d9d641f449"
+      "hash": "8c1560d9d641f449",
+      "result": {
+        "resolved_at": "2026-06-25T10:00:09.600Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Morocco 4-2 Haiti",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260622-20260626",
+        "measured_at": "2026-06-25T10:00:09.932Z"
+      }
     },
     {
       "category": "sport",
@@ -636,7 +663,16 @@
       },
       "id": "sport-2026-06-24-2e8888",
       "reasoning": "Les deux équipes affichent des niveaux de force très proches, ce qui rend l'issue du match particulièrement incertaine. L'Écosse est légèrement favorisée à domicile, mais cet avantage reste minime face à une équipe du Brésil de valeur quasi équivalente. Le match nul constitue une issue tout à fait crédible dans ce contexte d'équilibre.",
-      "hash": "d9b5e7ae0f70a37b"
+      "hash": "d9b5e7ae0f70a37b",
+      "result": {
+        "resolved_at": "2026-06-25T10:00:09.600Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "Scotland 0-3 Brazil",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260622-20260626",
+        "measured_at": "2026-06-25T10:00:09.949Z"
+      }
     },
     {
       "category": "sport",
@@ -668,7 +704,16 @@
       },
       "id": "sport-2026-06-24-afc441",
       "reasoning": "Les deux équipes affichent des niveaux de force très proches, ce qui rend le résultat particulièrement incertain. Le Mexique présente même un léger avantage dans les données de référence, ce qui explique que la République tchèque ne soit pas considérée comme favorite franche malgré son statut annoncé. Un match nul reste une issue tout à fait plausible dans ce contexte d'équilibre.",
-      "hash": "db34fe865b5d0864"
+      "hash": "db34fe865b5d0864",
+      "result": {
+        "resolved_at": "2026-06-25T10:00:09.600Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "Czechia 0-3 Mexico",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260623-20260627",
+        "measured_at": "2026-06-25T10:00:10.017Z"
+      }
     },
     {
       "category": "economie",
