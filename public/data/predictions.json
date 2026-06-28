@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-06-25T10:00:10.017Z",
+  "updated_at": "2026-06-28T09:50:39.914Z",
   "predictions": [
     {
       "category": "crypto",
@@ -217,7 +217,16 @@
       },
       "id": "meteo-2026-06-24-2a5f28",
       "reasoning": "La majorité des scénarios simulés placent la température au-dessus du seuil retenu, avec une valeur centrale qui le dépasse nettement. L'éventail des résultats reste large, ce qui reflète l'incertitude naturelle sur une journée estivale précise, mais le déséquilibre en faveur des valeurs hautes est marqué. C'est ce rapport entre la médiane et le seuil qui justifie une probabilité clairement au-dessus de cinquante pour cent.",
-      "hash": "6c29d6790e12ca72"
+      "hash": "6c29d6790e12ca72",
+      "result": {
+        "resolved_at": "2026-06-28T09:50:38.580Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 36.4,
+        "actual_label": "36.4 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-06-28T09:50:39.360Z"
+      }
     },
     {
       "category": "meteo",
@@ -248,7 +257,16 @@
       },
       "id": "meteo-2026-06-24-c2a566",
       "reasoning": "La médiane des scénarios simulés tombe juste au-dessus du seuil de 31 °C, et la majorité des scénarios explorés franchissent ce seuil. La fourchette de températures envisagées reste relativement resserrée, ce qui renforce la cohérence des résultats entre eux. Marseille en fin juin connaît régulièrement des chaleurs de cet ordre, ce qui rend ce niveau de probabilité cohérent avec le comportement climatique habituel de la ville à cette période.",
-      "hash": "eaccb52db960defa"
+      "hash": "eaccb52db960defa",
+      "result": {
+        "resolved_at": "2026-06-28T09:50:38.580Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 31.8,
+        "actual_label": "31.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-06-28T09:50:39.602Z"
+      }
     },
     {
       "category": "meteo",
@@ -279,7 +297,16 @@
       },
       "id": "meteo-2026-06-24-3bcbf5",
       "reasoning": "La majorité des scénarios climatiques simulés placent la température médiane nettement au-dessus du seuil de 31 °C, ce qui oriente naturellement la probabilité vers le dépassement. La fourchette des résultats reste large, mais son centre de gravité se situe clairement au-delà du seuil, et seule une minorité de scénarios demeure en dessous. Cela reflète à la fois la tendance générale des étés récents à Lille et la variabilité naturelle des situations météorologiques de fin juin.",
-      "hash": "13e40c82e714a730"
+      "hash": "13e40c82e714a730",
+      "result": {
+        "resolved_at": "2026-06-28T09:50:38.580Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 32.2,
+        "actual_label": "32.2 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-06-28T09:50:39.761Z"
+      }
     },
     {
       "category": "meteo",
@@ -310,7 +337,16 @@
       },
       "id": "meteo-2026-06-24-8290d2",
       "reasoning": "La médiane des scénarios simulés se situe légèrement en dessous du seuil de 35,5 °C, ce qui signifie que la majorité des projections n'atteignent pas ce niveau. Les températures envisagées s'étendent cependant sur une plage large, et une part notable des scénarios dépasse bien ce seuil, ce qui témoigne d'une incertitude réelle autour de cette journée de fin juin à Bordeaux.",
-      "hash": "2f769db521679e8e"
+      "hash": "2f769db521679e8e",
+      "result": {
+        "resolved_at": "2026-06-28T09:50:38.580Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 35.8,
+        "actual_label": "35.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-06-28T09:50:39.914Z"
+      }
     },
     {
       "category": "marches",
