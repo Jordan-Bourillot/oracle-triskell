@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-06-29T11:30:04.035Z",
+  "updated_at": "2026-06-30T10:22:02.684Z",
   "predictions": [
     {
       "category": "crypto",
@@ -1355,7 +1355,16 @@
       },
       "id": "sport-2026-06-29-15b9a5",
       "reasoning": "Le niveau de probabilité reflète la légère supériorité estimée du Japon sur le Brésil, avec une force de jeu un peu plus élevée. Les deux équipes étant proches en niveau, une issue nulle reste également plausible.",
-      "hash": "b64cd2705c6a2ea9"
+      "hash": "b64cd2705c6a2ea9",
+      "result": {
+        "resolved_at": "2026-06-30T10:22:02.204Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "Brazil 2-1 Japan",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260627-20260701",
+        "measured_at": "2026-06-30T10:22:02.513Z"
+      }
     },
     {
       "category": "sport",
@@ -1387,7 +1396,16 @@
       },
       "id": "sport-2026-06-29-c2e2a5",
       "reasoning": "L’écart de force estimée entre l’Allemagne et le Paraguay suggère que l’équipe allemande part avec un léger avantage, ce qui explique une probabilité de victoire plus élevée. La proximité des valeurs indique aussi une possibilité non négligeable de match nul, reflétant une rencontre équilibrée malgré la supériorité relative du favori.",
-      "hash": "2cb4c1a5b6996375"
+      "hash": "2cb4c1a5b6996375",
+      "result": {
+        "resolved_at": "2026-06-30T10:22:02.204Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "Germany 1-1 Paraguay",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260627-20260701",
+        "measured_at": "2026-06-30T10:22:02.566Z"
+      }
     },
     {
       "category": "sport",
@@ -1419,7 +1437,16 @@
       },
       "id": "sport-2026-06-29-683f61",
       "reasoning": "Le Maroc est donné favori dans ce match grâce à une légère avance dans la force estimée par rapport aux Pays-Bas. La probabilité de victoire marocaine reflète cette différence, tandis que le risque de match nul reste présent en raison de l'équilibre relatif entre les deux équipes.",
-      "hash": "92a6dc369a3332e9"
+      "hash": "92a6dc369a3332e9",
+      "result": {
+        "resolved_at": "2026-06-30T10:22:02.204Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Netherlands 1-1 Morocco",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260628-20260702",
+        "measured_at": "2026-06-30T10:22:02.684Z"
+      }
     },
     {
       "category": "sport",
