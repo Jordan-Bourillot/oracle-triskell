@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-06-30T10:22:02.684Z",
+  "updated_at": "2026-07-01T10:36:29.709Z",
   "predictions": [
     {
       "category": "crypto",
@@ -1478,7 +1478,16 @@
       },
       "id": "sport-2026-06-29-ccc59c",
       "reasoning": "Les forces estimées des deux équipes sont très proches, ce qui rend le match incertain. La légère supériorité du favori se traduit par une probabilité de victoire plus élevée, mais sans écart marqué. Le résultat nul reste une issue plausible compte tenu de l'équilibre global.",
-      "hash": "3319efdb2bfe88d0"
+      "hash": "3319efdb2bfe88d0",
+      "result": {
+        "resolved_at": "2026-07-01T10:36:29.360Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Ivory Coast 1-2 Norway",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260628-20260702",
+        "measured_at": "2026-07-01T10:36:29.669Z"
+      }
     },
     {
       "category": "sport",
@@ -1510,7 +1519,16 @@
       },
       "id": "sport-2026-06-29-65920c",
       "reasoning": "La probabilité estimée reflète un écart de force entre les deux équipes, la France étant considérée comme légèrement supérieure à la Suède dans ce contexte. Les données disponibles suggèrent un avantage pour le favori, sans garantir une victoire certaine.",
-      "hash": "65370e8695c11807"
+      "hash": "65370e8695c11807",
+      "result": {
+        "resolved_at": "2026-07-01T10:36:29.360Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "France 3-0 Sweden",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260628-20260702",
+        "measured_at": "2026-07-01T10:36:29.709Z"
+      }
     },
     {
       "category": "economie",
