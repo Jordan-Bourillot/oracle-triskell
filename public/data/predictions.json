@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-01T10:36:29.709Z",
+  "updated_at": "2026-07-02T09:50:14.187Z",
   "predictions": [
     {
       "category": "crypto",
@@ -379,7 +379,16 @@
       },
       "id": "marches-2026-06-24-b7e628",
       "reasoning": "Le CAC 40 se situe actuellement environ 100 points au-dessus du seuil de 8 250, ce qui représente une marge modeste au regard des fluctuations habituelles de l'indice sur une semaine. Avec une agitation quotidienne de l'ordre de 1,1 %, le marché peut aisément parcourir cet écart dans un sens comme dans l'autre en quelques séances. C'est cette proximité du seuil, combinée à une volatilité suffisante pour le franchir sans difficulté, qui explique que le maintien au-dessus de 8 250 reste probable mais loin d'être acquis.",
-      "hash": "bb0ec761154e09a4"
+      "hash": "bb0ec761154e09a4",
+      "result": {
+        "resolved_at": "2026-07-02T09:50:12.248Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 8394,
+        "actual_label": "8 394 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFCHI?period1=1782252000&period2=1783634400&interval=1d",
+        "measured_at": "2026-07-02T07:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -445,7 +454,16 @@
       },
       "id": "marches-2026-06-24-403c5f",
       "reasoning": "Le Nasdaq évolue actuellement autour de 25 600 points, ce qui lui laisse une marge d'environ 400 points avant d'atteindre le seuil de 25 200. Compte tenu des fluctuations habituelles de l'indice sur une semaine, ce coussin est suffisant pour que le cours reste au-dessus de ce niveau dans la majorité des scénarios, sans pour autant le rendre hors de portée en cas de secousse marquée. C'est cet équilibre entre la distance au seuil et l'amplitude des mouvements quotidiens observés qui fonde ce niveau de probabilité.",
-      "hash": "f1b5a159bef3c2ab"
+      "hash": "f1b5a159bef3c2ab",
+      "result": {
+        "resolved_at": "2026-07-02T09:50:12.248Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 26040,
+        "actual_label": "26 040 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1782252000&period2=1783634400&interval=1d",
+        "measured_at": "2026-07-01T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -511,7 +529,16 @@
       },
       "id": "marches-2026-06-24-8c05c8",
       "reasoning": "Le baril de WTI s'échange actuellement à 72 dollars, soit environ 4 dollars au-dessus du seuil de 68 dollars. Avec une agitation quotidienne des prix de l'ordre de quelques dollars, atteindre ce seuil en une semaine représente une baisse significative mais pas hors de portée. Le modèle considère que les mouvements de prix sont imprévisibles dans leur direction, ce qui maintient une probabilité non négligeable de franchir ce niveau à la baisse.",
-      "hash": "d306176119202370"
+      "hash": "d306176119202370",
+      "result": {
+        "resolved_at": "2026-07-02T09:50:12.248Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 67,
+        "actual_label": "67 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1782252000&period2=1783634400&interval=1d",
+        "measured_at": "2026-07-02T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
