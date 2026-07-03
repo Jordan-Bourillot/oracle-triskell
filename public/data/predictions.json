@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-02T09:50:14.187Z",
+  "updated_at": "2026-07-03T09:48:10.500Z",
   "predictions": [
     {
       "category": "crypto",
@@ -1059,7 +1059,16 @@
       },
       "id": "meteo-2026-06-29-93fa75",
       "reasoning": "À Paris le 2 juillet 2026, la température pourrait atteindre ou dépasser 30°C dans près de sept scénarios sur dix, ce qui explique cette probabilité. La médiane des prévisions se situe à 31°C, au-dessus du seuil, avec une large majorité des simulations dans une fourchette où ce niveau est plausible.",
-      "hash": "9e66aa668bbc4fc7"
+      "hash": "9e66aa668bbc4fc7",
+      "result": {
+        "resolved_at": "2026-07-03T09:48:09.372Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 25.8,
+        "actual_label": "25.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-03T09:48:10.001Z"
+      }
     },
     {
       "category": "meteo",
@@ -1090,7 +1099,16 @@
       },
       "id": "meteo-2026-06-29-c07122",
       "reasoning": "La probabilité annoncée reflète le fait que la température prévue à Marseille le 2 juillet 2026 est proche du seuil de 31,5 °C, avec une médiane légèrement en dessous. La répartition des scénarios montre que près de la moitié d’entre eux dépassent ce seuil, ce qui justifie ce niveau de probabilité.",
-      "hash": "1019066db290dc62"
+      "hash": "1019066db290dc62",
+      "result": {
+        "resolved_at": "2026-07-03T09:48:09.372Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 32.9,
+        "actual_label": "32.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-03T09:48:10.211Z"
+      }
     },
     {
       "category": "meteo",
@@ -1121,7 +1139,16 @@
       },
       "id": "meteo-2026-06-29-ed801c",
       "reasoning": "À Lille le 2 juillet 2026, la température médiane prévue est de 26,8 °C, ce qui dépasse le seuil de 25 °C. Avec 74 % des scénarios au-dessus de ce seuil, la probabilité reflète une tendance majoritaire vers des températures élevées.",
-      "hash": "d3b8ae4f1c011642"
+      "hash": "d3b8ae4f1c011642",
+      "result": {
+        "resolved_at": "2026-07-03T09:48:09.372Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 24,
+        "actual_label": "24.0 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-03T09:48:10.352Z"
+      }
     },
     {
       "category": "meteo",
@@ -1152,7 +1179,16 @@
       },
       "id": "meteo-2026-06-29-390f61",
       "reasoning": "La probabilité annoncée reflète une situation où la température médiane prévue reste proche du seuil critique, avec une partie significative des scénarios dépassant la valeur limite. Les écarts observés entre les températures minimales et maximales montrent une variabilité notable, ce qui explique le niveau de risque retenu.",
-      "hash": "cbc338a599eb5612"
+      "hash": "cbc338a599eb5612",
+      "result": {
+        "resolved_at": "2026-07-03T09:48:09.372Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 28.2,
+        "actual_label": "28.2 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-03T09:48:10.500Z"
+      }
     },
     {
       "category": "marches",
