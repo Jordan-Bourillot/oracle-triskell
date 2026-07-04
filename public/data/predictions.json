@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-03T09:48:10.500Z",
+  "updated_at": "2026-07-04T09:11:57.338Z",
   "predictions": [
     {
       "category": "crypto",
@@ -31,7 +31,16 @@
       },
       "id": "crypto-2026-06-24-8642eb",
       "reasoning": "Le Bitcoin évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles du marché sont suffisantes pour franchir cet écart, car le Bitcoin bouge en moyenne de près de deux pour cent par jour. La probabilité reflète donc le fait que ce repli reste accessible dans la fenêtre de temps considérée, sans nécessiter un mouvement exceptionnel.",
-      "hash": "e2988ff9e21b92d1"
+      "hash": "e2988ff9e21b92d1",
+      "result": {
+        "resolved_at": "2026-07-04T09:11:52.282Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 62553.59,
+        "actual_label": "62 554 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1782993600&to=1783252800",
+        "measured_at": "2026-07-04T00:01:05.787Z"
+      }
     },
     {
       "category": "crypto",
@@ -124,7 +133,16 @@
       },
       "id": "crypto-2026-06-24-34e090",
       "reasoning": "Ethereum se négocie actuellement près du seuil visé, ce qui signifie qu'une variation de marché ordinaire suffirait à l'y ramener. Avec une agitation quotidienne du prix de l'ordre de quelques points de pourcentage, atteindre ce niveau en dix jours représente un mouvement modeste par rapport aux fluctuations habituelles de cet actif. Le modèle considère que les hausses et les baisses sont également probables, donc la proximité du seuil est le principal facteur qui explique ce niveau de probabilité élevé.",
-      "hash": "6d8c246c0282565e"
+      "hash": "6d8c246c0282565e",
+      "result": {
+        "resolved_at": "2026-07-04T09:11:52.282Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 1756.83,
+        "actual_label": "1 757 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1782993600&to=1783252800",
+        "measured_at": "2026-07-04T00:01:16.797Z"
+      }
     },
     {
       "category": "crypto",
@@ -155,7 +173,16 @@
       },
       "id": "crypto-2026-06-24-4627e6",
       "reasoning": "Solana s'échange actuellement juste au-dessus du seuil visé, ce qui signifie qu'une baisse modeste suffit à l'atteindre. Avec une agitation quotidienne des prix de l'ordre de quelques points de pourcentage, un mouvement de cette ampleur sur dix jours est tout à fait courant et ne requiert aucun événement particulier. C'est cette combinaison d'un écart faible à franchir et d'une volatilité suffisante pour l'atteindre qui justifie une probabilité majoritaire, sans pour autant être certaine.",
-      "hash": "5f67c4d0162068fb"
+      "hash": "5f67c4d0162068fb",
+      "result": {
+        "resolved_at": "2026-07-04T09:11:52.282Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 82.28,
+        "actual_label": "82 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1782993600&to=1783252800",
+        "measured_at": "2026-07-04T00:02:38.659Z"
+      }
     },
     {
       "category": "crypto",
