@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-04T09:11:57.338Z",
+  "updated_at": "2026-07-05T09:33:03.565Z",
   "predictions": [
     {
       "category": "crypto",
@@ -836,7 +836,16 @@
       },
       "id": "economie-2026-06-24-86d319",
       "reasoning": "Le taux à 10 ans américain se situe actuellement légèrement au-dessus du seuil de 4,40 %, ce qui signifie qu'une baisse modeste suffirait à le franchir. Sur dix jours, les mouvements habituels du marché sont tout à fait compatibles avec un tel recul, sans qu'il soit nécessaire d'anticiper un choc particulier. C'est cette combinaison entre la proximité du seuil et l'amplitude normale des variations quotidiennes qui justifie une probabilité majoritaire, sans pour autant exclure le scénario inverse.",
-      "hash": "7845c7744ce7a2f0"
+      "hash": "7845c7744ce7a2f0",
+      "result": {
+        "resolved_at": "2026-07-05T09:33:03.439Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.49,
+        "actual_label": "4,49 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1782511200&period2=1783893600&interval=1d",
+        "measured_at": "2026-07-02T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
