@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-05T09:33:03.565Z",
+  "updated_at": "2026-07-06T11:12:30.064Z",
   "predictions": [
     {
       "category": "crypto",
@@ -1694,6 +1694,740 @@
       "id": "economie-2026-06-29-85a448",
       "reasoning": "Le niveau de probabilité s’explique par la proximité du taux actuel avec le seuil fixé à 4,90 %. Le modèle, basé sur une marche aléatoire, anticipe des mouvements limités sur 21 jours, ce qui réduit la chance de franchir ce seuil malgré une volatilité quotidienne mesurée.",
       "hash": "afeed121c821d649"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 61 000 $ ou plus le 16 juillet 2026.",
+      "probability": 68,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-16",
+      "deadline": "2026-07-16T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 16 juillet 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 61 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 61000,
+          "comparator": ">=",
+          "atMs": 1784160000000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 62767.04,
+          "volatilite_journaliere": 0.01912,
+          "horizon_jours": 10,
+          "seuil_usd": 61000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-07-06-33e2c1",
+      "reasoning": "Le Bitcoin évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour l'atteindre. Sur dix jours, les fluctuations habituelles du Bitcoin sont suffisantes pour couvrir cet écart dans un sens comme dans l'autre, ce qui rend le franchissement de ce niveau tout à fait accessible. La probabilité reflète donc le fait que, compte tenu de l'agitation naturelle du marché, le prix a des chances significatives de redescendre jusqu'à ce seuil, sans qu'aucune tendance particulière ne soit supposée.",
+      "hash": "f40edf42aef34b25"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 64 000 $ ou plus le 27 juillet 2026.",
+      "probability": 41,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-27",
+      "deadline": "2026-07-27T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 27 juillet 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 64 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 64000,
+          "comparator": ">=",
+          "atMs": 1785110400000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 62767.04,
+          "volatilite_journaliere": 0.01912,
+          "horizon_jours": 21,
+          "seuil_usd": 64000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-07-06-06eb6b",
+      "reasoning": "Le Bitcoin se trouve actuellement légèrement en dessous du seuil visé, ce qui signifie qu'il n'a besoin que d'une progression modeste pour l'atteindre dans les trois semaines à venir. Cependant, avec une volatilité quotidienne notable, les mouvements du prix sont imprévisibles dans les deux sens, et rien ne garantit que la tendance sera favorable plutôt que défavorable. Le modèle retenu suppose qu'aucune direction n'est privilégiée a priori, ce qui explique que la probabilité reste inférieure à une chance sur deux malgré la faible distance au seuil.",
+      "hash": "92d0c656c4ac9fbe"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 1 800 $ ou plus le 27 juillet 2026.",
+      "probability": 44,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-27",
+      "deadline": "2026-07-27T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 27 juillet 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 800 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 1800,
+          "comparator": ">=",
+          "atMs": 1785110400000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 1767.27,
+          "volatilite_journaliere": 0.0268,
+          "horizon_jours": 21,
+          "seuil_usd": 1800,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-07-06-abffb1",
+      "reasoning": "Ethereum se trouve légèrement en dessous du seuil visé, à un peu moins de deux pourcents de distance, ce qui rend l'objectif accessible en vingt et un jours compte tenu des amplitudes de variation habituelles de ce marché. Toutefois, le modèle utilisé ne suppose aucune tendance favorable ou défavorable, ce qui signifie que la hausse comme la baisse restent également plausibles sur cette période. Le résultat reflète donc une situation réellement incertaine, proche d'un pile ou face légèrement défavorable.",
+      "hash": "140cd2f81944e324"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 1 700 $ ou plus le 16 juillet 2026.",
+      "probability": 68,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-16",
+      "deadline": "2026-07-16T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 16 juillet 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 700 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 1700,
+          "comparator": ">=",
+          "atMs": 1784160000000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 1767.27,
+          "volatilite_journaliere": 0.0268,
+          "horizon_jours": 10,
+          "seuil_usd": 1700,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-07-06-5ff845",
+      "reasoning": "Ethereum évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles du prix sont suffisamment importantes pour rendre ce recul plausible, sans qu'il soit pour autant certain. Le modèle considère que le marché n'a pas de tendance particulière, ce qui laisse une probabilité notable que le prix descende toucher ce niveau avant l'échéance.",
+      "hash": "c255db7a253e0010"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 78 $ ou plus le 16 juillet 2026.",
+      "probability": 64,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-16",
+      "deadline": "2026-07-16T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 16 juillet 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 78 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 78,
+          "comparator": ">=",
+          "atMs": 1784160000000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 80.64,
+          "volatilite_journaliere": 0.02899,
+          "horizon_jours": 10,
+          "seuil_usd": 78,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-07-06-8831ab",
+      "reasoning": "Solana affiche une volatilité quotidienne notable, ce qui signifie que son prix fluctue suffisamment pour atteindre le seuil de 78 dollars en l'espace de dix jours, même sans tendance particulière à la baisse. Le modèle utilisé suppose que les mouvements futurs sont imprévisibles et symétriques, ce qui donne une chance raisonnable que le prix descende jusqu'à ce niveau, mais aussi qu'il reparte à la hausse sans jamais l'atteindre. Le seuil visé est relativement proche du prix actuel, ce qui explique que la probabilité soit modérée sans pour autant être certaine.",
+      "hash": "5fc03dedcc20d196"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 84 $ ou plus le 27 juillet 2026.",
+      "probability": 38,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-27",
+      "deadline": "2026-07-27T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 27 juillet 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 84 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 84,
+          "comparator": ">=",
+          "atMs": 1785110400000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 80.64,
+          "volatilite_journaliere": 0.02899,
+          "horizon_jours": 21,
+          "seuil_usd": 84,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-07-06-e5392c",
+      "reasoning": "Solana se négocie actuellement à 81 dollars et le seuil visé de 84 dollars représente une hausse d'environ 4 %, soit plus d'une journée entière de mouvement moyen pour cet actif. Le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, il considère simplement que les prix évoluent de façon aléatoire autour de leur niveau actuel. Sur vingt et un jours, atteindre ce seuil reste donc possible mais demeure minoritaire, car la probabilité de rester en dessous est plus forte que celle de franchir la cible.",
+      "hash": "1836c004840b845d"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Paris, la température maximale atteindra 35,0 °C ou plus le 9 juillet 2026.",
+      "probability": 65,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-09",
+      "deadline": "2026-07-09T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 9 juillet 2026, la température maximale relevée à Paris (Open-Meteo) est supérieure ou égale à 35,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "paris",
+          "dateISO": "2026-07-09",
+          "threshold": 35,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 36.5,
+          "min_celsius": 31.7,
+          "max_celsius": 41.4,
+          "seuil_celsius": 35
+        }
+      },
+      "id": "meteo-2026-07-06-747ce8",
+      "reasoning": "La majorité des scénarios simulés placent la température au-dessus du seuil, avec une valeur centrale qui le dépasse nettement. L'éventail des résultats reste large, ce qui reflète l'incertitude naturelle sur une échéance estivale à Paris, mais le déséquilibre vers les valeurs élevées est marqué. C'est ce rapport entre scénarios chauds et scénarios modérés qui fonde le niveau de probabilité retenu.",
+      "hash": "16bfefbea613aeab"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Marseille, la température maximale atteindra 30,5 °C ou plus le 9 juillet 2026.",
+      "probability": 45,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-09",
+      "deadline": "2026-07-09T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 9 juillet 2026, la température maximale relevée à Marseille (Open-Meteo) est supérieure ou égale à 30,5 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "marseille",
+          "dateISO": "2026-07-09",
+          "threshold": 30.5,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 30.3,
+          "min_celsius": 29.4,
+          "max_celsius": 33.5,
+          "seuil_celsius": 30.5
+        }
+      },
+      "id": "meteo-2026-07-06-7c7948",
+      "reasoning": "À Marseille début juillet, les températures dépassent fréquemment 30 °C mais ce seuil n'est pas systématiquement franchi, et la médiane des scénarios simulés se situe légèrement en dessous de 30,5 °C. La fourchette des projections est assez large, ce qui reflète une réelle incertitude sur l'intensité de la chaleur ce jour précis. C'est pourquoi la probabilité de dépasser ce seuil reste proche d'un résultat sur deux, sans pencher nettement d'un côté.",
+      "hash": "6594133890433755"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Lille, la température maximale atteindra 31,0 °C ou plus le 9 juillet 2026.",
+      "probability": 65,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-09",
+      "deadline": "2026-07-09T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 9 juillet 2026, la température maximale relevée à Lille (Open-Meteo) est supérieure ou égale à 31,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "lille",
+          "dateISO": "2026-07-09",
+          "threshold": 31,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 31.7,
+          "min_celsius": 27.7,
+          "max_celsius": 38.7,
+          "seuil_celsius": 31
+        }
+      },
+      "id": "meteo-2026-07-06-2250e8",
+      "reasoning": "La médiane des scénarios simulés se situe légèrement au-dessus du seuil de 31 °C, ce qui signifie que dans la majorité des cas modélisés, ce seuil est franchi. La dispersion des scénarios reste toutefois importante, avec des valeurs qui s'étendent de près de 28 °C à presque 39 °C, ce qui reflète l'incertitude naturelle des prévisions à cette échéance pour Lille. C'est cette combinaison d'une médiane au-dessus du seuil et d'une variabilité significative qui explique une probabilité de dépassement clairement majoritaire, sans pour autant être certaine.",
+      "hash": "49cbd29aa353df78"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Bordeaux, la température maximale atteindra 40,0 °C ou plus le 9 juillet 2026.",
+      "probability": 48,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-09",
+      "deadline": "2026-07-09T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 9 juillet 2026, la température maximale relevée à Bordeaux (Open-Meteo) est supérieure ou égale à 40,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "bordeaux",
+          "dateISO": "2026-07-09",
+          "threshold": 40,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 39.8,
+          "min_celsius": 31.6,
+          "max_celsius": 43.5,
+          "seuil_celsius": 40
+        }
+      },
+      "id": "meteo-2026-07-06-3cdc7d",
+      "reasoning": "La médiane des scénarios simulés tombe juste en dessous du seuil de 40 °C, ce qui place l'événement dans une zone d'incertitude maximale. Les scénarios explorent une plage très large, allant de températures modérées à des valeurs nettement au-dessus du seuil, ce qui reflète la difficulté à prévoir avec précision une journée estivale précise à Bordeaux plusieurs mois à l'avance. Cette incertitude symétrique autour du seuil explique que la probabilité soit proche d'un résultat sur deux.",
+      "hash": "1f7dcc7358872058"
+    },
+    {
+      "category": "marches",
+      "statement": "Le CAC 40 clôturera à 8 400 points ou plus le 13 juillet 2026.",
+      "probability": 69,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-13",
+      "deadline": "2026-07-13T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 13 juillet 2026, la clôture du CAC 40 relevée sur Yahoo Finance est supérieure ou égale à 8 400 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^FCHI",
+          "threshold": 8400,
+          "comparator": ">=",
+          "atMs": 1783980000000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 8516.41,
+          "volatilite_journaliere": 0.01066,
+          "horizon_jours": 7,
+          "seuil": 8400,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-07-06-1749d1",
+      "reasoning": "Le CAC 40 se trouve actuellement environ 100 points au-dessus du seuil de 8 400, ce qui représente un écart modeste au regard des mouvements habituels de l'indice sur une semaine. La volatilité observée est suffisante pour que l'indice franchisse ce seuil à la baisse, mais le coussin de sécurité actuel rend ce scénario moins probable que son contraire. C'est cet équilibre entre la distance au seuil et l'amplitude typique des fluctuations qui fonde le niveau de probabilité retenu.",
+      "hash": "2b3052727b161467"
+    },
+    {
+      "category": "marches",
+      "statement": "Le S&P 500 clôturera à 7 550 points ou plus le 27 juillet 2026.",
+      "probability": 41,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-27",
+      "deadline": "2026-07-27T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 27 juillet 2026, la clôture du S&P 500 relevée sur Yahoo Finance est supérieure ou égale à 7 550 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^GSPC",
+          "threshold": 7550,
+          "comparator": ">=",
+          "atMs": 1785189600000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 7483.24,
+          "volatilite_journaliere": 0.00867,
+          "horizon_jours": 21,
+          "seuil": 7550,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-07-06-a39ccf",
+      "reasoning": "Le S&P 500 se situe actuellement à 7 475 points et devrait franchir 7 550 points dans les trois prochaines semaines, soit une progression d'environ 1 % par rapport au niveau actuel. Avec une volatilité quotidienne proche de 0,9 %, le marché peut facilement atteindre ce seuil, mais il peut tout aussi bien s'en éloigner, car aucune tendance directionnelle n'est intégrée dans le calcul. Le niveau de probabilité reflète cette incertitude symétrique, le seuil étant atteignable mais pas suffisamment proche pour être considéré comme probable.",
+      "hash": "f88496eae05789ac"
+    },
+    {
+      "category": "marches",
+      "statement": "Le Nasdaq clôturera à 25 450 points ou plus le 13 juillet 2026.",
+      "probability": 67,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-13",
+      "deadline": "2026-07-13T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 13 juillet 2026, la clôture du Nasdaq Composite relevée sur Yahoo Finance est supérieure ou égale à 25 450 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^IXIC",
+          "threshold": 25450,
+          "comparator": ">=",
+          "atMs": 1783980000000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 25832.67,
+          "volatilite_journaliere": 0.01317,
+          "horizon_jours": 7,
+          "seuil": 25450,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-07-06-77ef08",
+      "reasoning": "Le Nasdaq évolue actuellement à environ 400 points au-dessus du seuil, ce qui représente une marge modeste au regard des fluctuations habituelles de l'indice sur une semaine. Avec une volatilité quotidienne d'environ 1,32 %, les mouvements cumulés sur sept jours sont suffisamment importants pour que le franchissement du seuil reste une possibilité réelle, même si le point de départ reste confortable. Le modèle retenu suppose qu'aucune tendance ne favorise a priori une direction plutôt qu'une autre, ce qui explique que la probabilité de rester au-dessus soit clairement majoritaire sans pour autant être certaine.",
+      "hash": "88d5a7514a10f03b"
+    },
+    {
+      "category": "marches",
+      "statement": "L'once d'or clôturera à 4 240 dollars ou plus le 27 juillet 2026.",
+      "probability": 40,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-27",
+      "deadline": "2026-07-27T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 27 juillet 2026, la clôture du cours de l'or (once) relevée sur Yahoo Finance est supérieure ou égale à 4 240 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "GC=F",
+          "threshold": 4240,
+          "comparator": ">=",
+          "atMs": 1785189600000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 4167.5,
+          "volatilite_journaliere": 0.01482,
+          "horizon_jours": 21,
+          "seuil": 4240,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-07-06-9332fa",
+      "reasoning": "L'or s'échange actuellement à 4 160 dollars l'once et doit progresser d'environ 80 dollars supplémentaires pour franchir le seuil de 4 240 dollars d'ici trois semaines. Les mouvements quotidiens du métal restent relativement modérés, ce qui rend une telle hausse possible mais loin d'être acquise sur cette courte période. Le modèle retenu suppose que l'or n'a pas de tendance particulière à monter ou à descendre, si bien que le résultat dépend uniquement de la taille habituelle de ses fluctuations rapportée à l'écart qu'il reste à combler.",
+      "hash": "134ec4afabf9e23a"
+    },
+    {
+      "category": "marches",
+      "statement": "Le baril de pétrole (WTI) clôturera à 65 dollars ou plus le 13 juillet 2026.",
+      "probability": 68,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-13",
+      "deadline": "2026-07-13T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 13 juillet 2026, la clôture du baril de pétrole WTI relevée sur Yahoo Finance est supérieure ou égale à 65 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "CL=F",
+          "threshold": 65,
+          "comparator": ">=",
+          "atMs": 1783980000000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 68.61,
+          "volatilite_journaliere": 0.04344,
+          "horizon_jours": 7,
+          "seuil": 65,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-07-06-abd9a4",
+      "reasoning": "Le baril de WTI s'échange actuellement à 69 dollars, soit un écart d'environ 4 dollars au-dessus du seuil de 65 dollars. Compte tenu des fluctuations habituelles du pétrole, cet écart représente moins d'une journée de variation typique, ce qui laisse une marge relativement faible pour absorber une baisse sur sept jours. Le cours pourrait donc rester au-dessus de ce seuil, mais une série de mouvements défavorables suffirait à l'en rapprocher ou à le franchir.",
+      "hash": "df9cac83eb07834c"
+    },
+    {
+      "category": "marches",
+      "statement": "L'euro clôturera à 1,1500 dollars ou plus le 27 juillet 2026.",
+      "probability": 33,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-27",
+      "deadline": "2026-07-27T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 27 juillet 2026, la clôture du taux euro / dollar relevée sur Yahoo Finance est supérieure ou égale à 1,1500 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "EURUSD=X",
+          "threshold": 1.1500000000000001,
+          "comparator": ">=",
+          "atMs": 1785189600000,
+          "decimals": 4,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 1.142074,
+          "volatilite_journaliere": 0.00337,
+          "horizon_jours": 21,
+          "seuil": 1.1500000000000001,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-07-06-24356b",
+      "reasoning": "L'euro s'échange actuellement à 1,1400 dollar et doit progresser d'environ un centime pour atteindre le seuil de 1,1500 en trois semaines. Les mouvements quotidiens de ce taux restent modestes, ce qui rend une hausse de cette ampleur possible mais loin d'être acquise sur la période. Le modèle retenu suppose que la devise ne suit aucune tendance particulière, ce qui pèse mécaniquement sur la probabilité d'atteindre ce niveau.",
+      "hash": "51e034c0eac5e5bb"
+    },
+    {
+      "category": "sport",
+      "statement": "Spain battra Portugal le 6 juillet 2026 (Coupe du Monde).",
+      "probability": 43,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-06",
+      "deadline": "2026-07-06T23:00:00.000Z",
+      "resolution": {
+        "criterion": "Le 6 juillet 2026, Spain gagne son match contre Portugal (résultat final, source ESPN). Un nul ou une défaite compte comme raté.",
+        "method": "sport.matchResult",
+        "params": {
+          "slug": "fifa.world",
+          "idEvent": "760506",
+          "matchMs": 1783364400000,
+          "side": "away",
+          "favTeam": "Spain",
+          "otherTeam": "Portugal"
+        }
+      },
+      "model": {
+        "name": "Modèle Elo bâti sur les matchs internationaux récents + avantage du terrain",
+        "inputs": {
+          "force_favori": 1643,
+          "force_adverse": 1583,
+          "avantage_terrain_elo": 15,
+          "proba_nul_estimee": 0.27
+        }
+      },
+      "id": "sport-2026-07-06-bc5c13",
+      "reasoning": "L'Espagne aborde ce match avec une cote Elo légèrement supérieure à celle du Portugal, ce qui en fait le favori, mais l'écart entre les deux équipes reste faible. Dans un choc de cette envergure entre deux nations de très haut niveau, le match nul constitue une issue tout à fait plausible, et aucun résultat ne peut vraiment être écarté.",
+      "hash": "87f7d1ef3b0301c8"
+    },
+    {
+      "category": "sport",
+      "statement": "United States battra Belgium le 7 juillet 2026 (Coupe du Monde).",
+      "probability": 36,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-07",
+      "deadline": "2026-07-07T04:00:00.000Z",
+      "resolution": {
+        "criterion": "Le 7 juillet 2026, United States gagne son match contre Belgium (résultat final, source ESPN). Un nul ou une défaite compte comme raté.",
+        "method": "sport.matchResult",
+        "params": {
+          "slug": "fifa.world",
+          "idEvent": "760507",
+          "matchMs": 1783382400000,
+          "side": "home",
+          "favTeam": "United States",
+          "otherTeam": "Belgium"
+        }
+      },
+      "model": {
+        "name": "Modèle Elo bâti sur les matchs internationaux récents + avantage du terrain",
+        "inputs": {
+          "force_favori": 1572,
+          "force_adverse": 1583,
+          "avantage_terrain_elo": 15,
+          "proba_nul_estimee": 0.3
+        }
+      },
+      "id": "sport-2026-07-06-559c82",
+      "reasoning": "Les deux équipes affichent des forces très proches, la Belgique disposant même d'un léger avantage selon les estimations. Dans ce contexte, aucune des deux sélections ne part avec une vraie supériorité, ce qui explique que la victoire américaine reste une issue parmi d'autres, sans être la plus probable. Le match nul représente lui aussi une issue crédible, ce qui reflète l'incertitude réelle qui entoure cette rencontre.",
+      "hash": "3544e1e90a3fa3ef"
+    },
+    {
+      "category": "sport",
+      "statement": "Argentina battra Egypt le 7 juillet 2026 (Coupe du Monde).",
+      "probability": 42,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-07",
+      "deadline": "2026-07-07T20:00:00.000Z",
+      "resolution": {
+        "criterion": "Le 7 juillet 2026, Argentina gagne son match contre Egypt (résultat final, source ESPN). Un nul ou une défaite compte comme raté.",
+        "method": "sport.matchResult",
+        "params": {
+          "slug": "fifa.world",
+          "idEvent": "760509",
+          "matchMs": 1783440000000,
+          "side": "home",
+          "favTeam": "Argentina",
+          "otherTeam": "Egypt"
+        }
+      },
+      "model": {
+        "name": "Modèle Elo bâti sur les matchs internationaux récents + avantage du terrain",
+        "inputs": {
+          "force_favori": 1636,
+          "force_adverse": 1610,
+          "avantage_terrain_elo": 15,
+          "proba_nul_estimee": 0.28
+        }
+      },
+      "id": "sport-2026-07-06-7a3d36",
+      "reasoning": "L'Argentine et l'Égypte affichent des niveaux de force très proches, ce qui rend la rencontre particulièrement ouverte et difficile à trancher. L'Argentine part avec un léger avantage, mais l'écart entre les deux équipes est trop faible pour en faire une favorite nette. Le match nul reste une issue tout à fait plausible, ce qui reflète bien l'équilibre général attendu entre ces deux sélections.",
+      "hash": "1cfc14575ec612c3"
+    },
+    {
+      "category": "sport",
+      "statement": "Switzerland battra Colombia le 7 juillet 2026 (Coupe du Monde).",
+      "probability": 44,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-07",
+      "deadline": "2026-07-08T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Le 7 juillet 2026, Switzerland gagne son match contre Colombia (résultat final, source ESPN). Un nul ou une défaite compte comme raté.",
+        "method": "sport.matchResult",
+        "params": {
+          "slug": "fifa.world",
+          "idEvent": "760508",
+          "matchMs": 1783454400000,
+          "side": "home",
+          "favTeam": "Switzerland",
+          "otherTeam": "Colombia"
+        }
+      },
+      "model": {
+        "name": "Modèle Elo bâti sur les matchs internationaux récents + avantage du terrain",
+        "inputs": {
+          "force_favori": 1599,
+          "force_adverse": 1560,
+          "avantage_terrain_elo": 15,
+          "proba_nul_estimee": 0.27
+        }
+      },
+      "id": "sport-2026-07-06-3f976b",
+      "reasoning": "La Suisse aborde ce match avec un léger avantage au classement mondial face à la Colombie, mais l'écart entre les deux équipes est suffisamment réduit pour que le résultat reste très ouvert. Dans un contexte de Coupe du Monde où les matchs sont souvent fermés et disputés, le nul représente une issue plausible. La victoire suisse reste l'issue la plus probable, sans pour autant s'imposer comme une évidence.",
+      "hash": "fc6afb4ea8fc7de8"
+    },
+    {
+      "category": "sport",
+      "statement": "Morocco battra France le 9 juillet 2026 (Coupe du Monde).",
+      "probability": 35,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-09",
+      "deadline": "2026-07-10T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Le 9 juillet 2026, Morocco gagne son match contre France (résultat final, source ESPN). Un nul ou une défaite compte comme raté.",
+        "method": "sport.matchResult",
+        "params": {
+          "slug": "fifa.world",
+          "idEvent": "760510",
+          "matchMs": 1783627200000,
+          "side": "away",
+          "favTeam": "Morocco",
+          "otherTeam": "France"
+        }
+      },
+      "model": {
+        "name": "Modèle Elo bâti sur les matchs internationaux récents + avantage du terrain",
+        "inputs": {
+          "force_favori": 1677,
+          "force_adverse": 1662,
+          "avantage_terrain_elo": 15,
+          "proba_nul_estimee": 0.3
+        }
+      },
+      "id": "sport-2026-07-06-89fa08",
+      "reasoning": "Le Maroc et la France affichent des forces très proches selon les données disponibles, ce qui rend ce match particulièrement ouvert. L'avantage du Maroc est réel mais minime, et la probabilité d'un match nul reste élevée dans ce type de confrontation équilibrée. Une victoire française ou un résultat partagé demeurent donc des scénarios tout aussi crédibles.",
+      "hash": "974541456b06e123"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 10 ans clôturera à 4,45 % ou plus le 16 juillet 2026.",
+      "probability": 60,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-16",
+      "deadline": "2026-07-16T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 16 juillet 2026, le taux à 10 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 4,45 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TNX",
+          "threshold": 4.45,
+          "comparator": ">=",
+          "atMs": 1784239200000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 4.485,
+          "volatilite_quotidienne": 0.0419,
+          "horizon_jours": 10,
+          "seuil_pct": 4.45,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-07-06-96370c",
+      "reasoning": "Le taux américain à dix ans se situe actuellement légèrement au-dessus du seuil de 4,45 %, ce qui signifie qu'il suffit d'une baisse modeste pour franchir ce niveau. Les mouvements quotidiens observés sur ce marché sont suffisamment réguliers pour rendre ce scénario réaliste sur dix jours, sans qu'il soit pour autant certain, car le taux peut tout aussi bien continuer à monter ou rester stable.",
+      "hash": "2fd1554fa24f71e1"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 30 ans clôturera à 5,05 % ou plus le 27 juillet 2026.",
+      "probability": 34,
+      "created_at": "2026-07-06T11:10:43.274Z",
+      "target_date": "2026-07-27",
+      "deadline": "2026-07-27T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 27 juillet 2026, le taux à 30 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 5,05 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TYX",
+          "threshold": 5.050000000000001,
+          "comparator": ">=",
+          "atMs": 1785189600000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 4.985,
+          "volatilite_quotidienne": 0.035,
+          "horizon_jours": 21,
+          "seuil_pct": 5.050000000000001,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-07-06-352af9",
+      "reasoning": "Le taux américain à 30 ans se situe actuellement à 4,99 %, soit très près du seuil de 5,05 % à franchir. Malgré cette faible distance, les mouvements quotidiens du taux restent modestes, ce qui limite la probabilité d'atteindre ce niveau en trois semaines. Le marché peut tout aussi bien dériver à la baisse qu'à la hausse, et la marge à parcourir, bien que réduite, n'est pas négligeable au regard de l'agitation habituelle du taux.",
+      "hash": "953ff22e3fcd2d4b"
     }
   ]
 }
