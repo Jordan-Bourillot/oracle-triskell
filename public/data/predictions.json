@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-06T11:12:30.064Z",
+  "updated_at": "2026-07-07T10:16:34.298Z",
   "predictions": [
     {
       "category": "crypto",
@@ -1257,7 +1257,16 @@
       },
       "id": "marches-2026-06-29-abfd16",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur une semaine, où le CAC 40 peut fluctuer autour de son niveau actuel sans tendance marquée. Le modèle utilisé suppose que les mouvements quotidiens restent imprévisibles et de taille similaire, ce qui limite la confiance dans une direction précise.",
-      "hash": "31f3c459d45b56e6"
+      "hash": "31f3c459d45b56e6",
+      "result": {
+        "resolved_at": "2026-07-07T10:16:33.402Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 8511,
+        "actual_label": "8 511 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFCHI?period1=1782684000&period2=1784066400&interval=1d",
+        "measured_at": "2026-07-07T07:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -1323,7 +1332,16 @@
       },
       "id": "marches-2026-06-29-3658fa",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur une semaine, où le cours actuel du Nasdaq Composite se situe légèrement au-dessus du seuil de 24 950 points. Le modèle utilisé, qui suppose une marche aléatoire sans tendance marquée, indique une légère préférence pour une stabilité autour de ce niveau dans un horizon de 7 jours.",
-      "hash": "1e6caac25574aed3"
+      "hash": "1e6caac25574aed3",
+      "result": {
+        "resolved_at": "2026-07-07T10:16:33.402Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 26121,
+        "actual_label": "26 121 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1782684000&period2=1784066400&interval=1d",
+        "measured_at": "2026-07-06T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -1389,7 +1407,16 @@
       },
       "id": "marches-2026-06-29-1ca4c4",
       "reasoning": "La probabilité de 64 % reflète la tendance actuelle du baril de pétrole WTI à évoluer autour de son cours de 70 dollars, proche du seuil de 67 dollars. Le modèle utilisé, basé sur une marche aléatoire sans tendance marquée, suggère que les variations restent limitées dans cet intervalle sur les sept prochains jours.",
-      "hash": "ae432c6136638040"
+      "hash": "ae432c6136638040",
+      "result": {
+        "resolved_at": "2026-07-07T10:16:33.402Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 69,
+        "actual_label": "69 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1782684000&period2=1784066400&interval=1d",
+        "measured_at": "2026-07-07T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -2233,7 +2260,16 @@
       },
       "id": "sport-2026-07-06-bc5c13",
       "reasoning": "L'Espagne aborde ce match avec une cote Elo légèrement supérieure à celle du Portugal, ce qui en fait le favori, mais l'écart entre les deux équipes reste faible. Dans un choc de cette envergure entre deux nations de très haut niveau, le match nul constitue une issue tout à fait plausible, et aucun résultat ne peut vraiment être écarté.",
-      "hash": "87f7d1ef3b0301c8"
+      "hash": "87f7d1ef3b0301c8",
+      "result": {
+        "resolved_at": "2026-07-07T10:16:33.402Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Portugal 0-1 Spain",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260704-20260708",
+        "measured_at": "2026-07-07T10:16:34.235Z"
+      }
     },
     {
       "category": "sport",
@@ -2265,7 +2301,16 @@
       },
       "id": "sport-2026-07-06-559c82",
       "reasoning": "Les deux équipes affichent des forces très proches, la Belgique disposant même d'un léger avantage selon les estimations. Dans ce contexte, aucune des deux sélections ne part avec une vraie supériorité, ce qui explique que la victoire américaine reste une issue parmi d'autres, sans être la plus probable. Le match nul représente lui aussi une issue crédible, ce qui reflète l'incertitude réelle qui entoure cette rencontre.",
-      "hash": "3544e1e90a3fa3ef"
+      "hash": "3544e1e90a3fa3ef",
+      "result": {
+        "resolved_at": "2026-07-07T10:16:33.402Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "United States 1-4 Belgium",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260705-20260709",
+        "measured_at": "2026-07-07T10:16:34.298Z"
+      }
     },
     {
       "category": "sport",
