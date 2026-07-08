@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-07T10:16:34.298Z",
+  "updated_at": "2026-07-08T09:18:43.505Z",
   "predictions": [
     {
       "category": "crypto",
@@ -2342,7 +2342,16 @@
       },
       "id": "sport-2026-07-06-7a3d36",
       "reasoning": "L'Argentine et l'Égypte affichent des niveaux de force très proches, ce qui rend la rencontre particulièrement ouverte et difficile à trancher. L'Argentine part avec un léger avantage, mais l'écart entre les deux équipes est trop faible pour en faire une favorite nette. Le match nul reste une issue tout à fait plausible, ce qui reflète bien l'équilibre général attendu entre ces deux sélections.",
-      "hash": "1cfc14575ec612c3"
+      "hash": "1cfc14575ec612c3",
+      "result": {
+        "resolved_at": "2026-07-08T09:18:43.279Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Argentina 3-2 Egypt",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260705-20260709",
+        "measured_at": "2026-07-08T09:18:43.489Z"
+      }
     },
     {
       "category": "sport",
@@ -2374,7 +2383,16 @@
       },
       "id": "sport-2026-07-06-3f976b",
       "reasoning": "La Suisse aborde ce match avec un léger avantage au classement mondial face à la Colombie, mais l'écart entre les deux équipes est suffisamment réduit pour que le résultat reste très ouvert. Dans un contexte de Coupe du Monde où les matchs sont souvent fermés et disputés, le nul représente une issue plausible. La victoire suisse reste l'issue la plus probable, sans pour autant s'imposer comme une évidence.",
-      "hash": "fc6afb4ea8fc7de8"
+      "hash": "fc6afb4ea8fc7de8",
+      "result": {
+        "resolved_at": "2026-07-08T09:18:43.279Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": null,
+        "actual_label": "Switzerland 0-0 Colombia",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260705-20260709",
+        "measured_at": "2026-07-08T09:18:43.505Z"
+      }
     },
     {
       "category": "sport",
