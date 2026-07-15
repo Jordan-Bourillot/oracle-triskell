@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-14T08:57:11.579Z",
+  "updated_at": "2026-07-15T09:03:13.853Z",
   "predictions": [
     {
       "category": "crypto",
@@ -71,7 +71,16 @@
       },
       "id": "crypto-2026-06-24-15a8bc",
       "reasoning": "Le Bitcoin se trouve actuellement à un niveau légèrement en dessous du seuil visé, et la volatilité quotidienne observée reste modérée pour cet actif. Dans un modèle qui ne suppose aucune tendance haussière ou baissière particulière, atteindre ce seuil en trois semaines est donc possible mais loin d'être certain, car le prix peut tout autant s'éloigner dans la direction opposée. C'est cette symétrie, combinée à la distance encore à parcourir, qui explique une probabilité inférieure à une chance sur deux.",
-      "hash": "3680acf064ebb160"
+      "hash": "3680acf064ebb160",
+      "result": {
+        "resolved_at": "2026-07-15T09:03:08.803Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 64964.48,
+        "actual_label": "64 964 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1783944000&to=1784203200",
+        "measured_at": "2026-07-15T00:00:35.221Z"
+      }
     },
     {
       "category": "crypto",
@@ -102,7 +111,16 @@
       },
       "id": "crypto-2026-06-24-5afaae",
       "reasoning": "Ethereum évolue actuellement près du seuil visé, ce qui le rend accessible en théorie, mais un marché sans tendance marquée rend le franchissement incertain. La volatilité quotidienne est suffisante pour atteindre ce niveau en trois semaines, tout comme elle peut entraîner le prix dans la direction opposée. Le résultat est donc légèrement en dessous d'un pile ou face, sans signal directionnel clair qui pencherait franchement d'un côté.",
-      "hash": "59c84ddcac70f9e7"
+      "hash": "59c84ddcac70f9e7",
+      "result": {
+        "resolved_at": "2026-07-15T09:03:08.803Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 1889.48,
+        "actual_label": "1 889 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1783944000&to=1784203200",
+        "measured_at": "2026-07-15T00:00:38.760Z"
+      }
     },
     {
       "category": "crypto",
@@ -213,7 +231,16 @@
       },
       "id": "crypto-2026-06-24-c6c8a7",
       "reasoning": "Solana affiche une volatilité quotidienne notable, ce qui lui donne techniquement la capacité d'atteindre 72 dollars en trois semaines. Cependant, le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, ce qui signifie que le prix est aussi susceptible de reculer que d'avancer. Le seuil visé représente une progression d'environ 4 % par rapport au niveau actuel, ce qui reste atteignable mais n'est pas l'issue la plus probable dans ce cadre neutre.",
-      "hash": "b4bd79cfff360169"
+      "hash": "b4bd79cfff360169",
+      "result": {
+        "resolved_at": "2026-07-15T09:03:08.803Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 77.77,
+        "actual_label": "78 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1783944000&to=1784203200",
+        "measured_at": "2026-07-15T00:01:25.386Z"
+      }
     },
     {
       "category": "meteo",
@@ -3138,7 +3165,16 @@
       },
       "id": "sport-2026-07-13-f3921f",
       "reasoning": "La France et l'Espagne affichent des forces très proches, ce qui en fait l'un des affrontements les plus équilibrés que l'on puisse rencontrer en Coupe du Monde. Dans ce contexte, l'avantage accordé à la France reste très mince, et un match nul ou une victoire espagnole sont des issues tout aussi crédibles.",
-      "hash": "5ff46366620d55b0"
+      "hash": "5ff46366620d55b0",
+      "result": {
+        "resolved_at": "2026-07-15T09:03:08.803Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "France 0-2 Spain",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260712-20260716",
+        "measured_at": "2026-07-15T09:03:13.853Z"
+      }
     },
     {
       "category": "sport",
