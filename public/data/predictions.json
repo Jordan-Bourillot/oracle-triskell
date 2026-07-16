@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-15T09:03:13.853Z",
+  "updated_at": "2026-07-16T09:07:11.379Z",
   "predictions": [
     {
       "category": "crypto",
@@ -475,7 +475,16 @@
       },
       "id": "marches-2026-06-24-dd11c8",
       "reasoning": "Le S&P 500 se trouve actuellement sous le seuil de 7 450 points, et le franchir en 21 jours représente un mouvement qui dépasse légèrement la volatilité habituelle observée sur cet indice. Le modèle utilisé suppose que les hausses et les baisses sont également probables, sans tendance particulière dans un sens ou dans l'autre. C'est cette neutralité, combinée à la distance encore à parcourir, qui explique que la probabilité reste inférieure à une chance sur deux.",
-      "hash": "d787b3b80cf20757"
+      "hash": "d787b3b80cf20757",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 7572,
+        "actual_label": "7 572 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783461600&period2=1784844000&interval=1d",
+        "measured_at": "2026-07-15T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -550,7 +559,16 @@
       },
       "id": "marches-2026-06-24-55dc0a",
       "reasoning": "L'or s'échange actuellement autour de 4 080 dollars l'once et devrait dépasser 4 160 dollars dans les trois prochaines semaines, ce qui représente une hausse d'environ 2 %. Les fluctuations quotidiennes du métal sont relativement modérées, ce qui rend ce franchissement possible mais pas acquis sur un horizon aussi court. Le modèle retenu suppose que l'or n'a pas de tendance particulière à la hausse ou à la baisse, ce qui explique que la probabilité reste en deçà d'un résultat sur deux.",
-      "hash": "300f7426543a35a9"
+      "hash": "300f7426543a35a9",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4039,
+        "actual_label": "4 039 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1783461600&period2=1784844000&interval=1d",
+        "measured_at": "2026-07-16T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -625,7 +643,16 @@
       },
       "id": "marches-2026-06-24-063a53",
       "reasoning": "L'euro se trouve exactement au niveau du seuil, ce qui signifie que la moindre variation peut faire basculer le cours dans un sens ou dans l'autre. Sur trois semaines, les mouvements quotidiens restent modérés, ce qui limite les grandes amplitudes mais laisse une incertitude réelle. Le résultat est donc proche d'un partage équilibré entre les deux issues, sans qu'aucune direction ne s'impose clairement.",
-      "hash": "36296fd1325fe792"
+      "hash": "36296fd1325fe792",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 1.1468,
+        "actual_label": "1,1468 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1783461600&period2=1784844000&interval=1d",
+        "measured_at": "2026-07-16T09:07:03.000Z"
+      }
     },
     {
       "category": "sport",
@@ -905,7 +932,16 @@
       },
       "id": "economie-2026-06-24-40c67f",
       "reasoning": "Le taux à 30 ans américain se situe actuellement très près du seuil de 4,95 %, avec seulement quelques centièmes de points d'écart. Les mouvements quotidiens habituels sur ce taux restent modestes, ce qui rend le franchissement du seuil possible mais pas certain sur trois semaines. La probabilité reflète cette situation intermédiaire : le seuil est proche, mais les oscillations quotidiennes sont suffisamment faibles pour qu'il ne soit pas atteint dans la moitié des scénarios envisageables.",
-      "hash": "2732593f849c0fe9"
+      "hash": "2732593f849c0fe9",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.08,
+        "actual_label": "5,08 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETYX?period1=1783461600&period2=1784844000&interval=1d",
+        "measured_at": "2026-07-15T12:20:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -1814,7 +1850,16 @@
       },
       "id": "crypto-2026-07-06-33e2c1",
       "reasoning": "Le Bitcoin évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour l'atteindre. Sur dix jours, les fluctuations habituelles du Bitcoin sont suffisantes pour couvrir cet écart dans un sens comme dans l'autre, ce qui rend le franchissement de ce niveau tout à fait accessible. La probabilité reflète donc le fait que, compte tenu de l'agitation naturelle du marché, le prix a des chances significatives de redescendre jusqu'à ce seuil, sans qu'aucune tendance particulière ne soit supposée.",
-      "hash": "f40edf42aef34b25"
+      "hash": "f40edf42aef34b25",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 64722.06,
+        "actual_label": "64 722 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1784030400&to=1784289600",
+        "measured_at": "2026-07-16T00:01:13.547Z"
+      }
     },
     {
       "category": "crypto",
@@ -1907,7 +1952,16 @@
       },
       "id": "crypto-2026-07-06-5ff845",
       "reasoning": "Ethereum évolue actuellement au-dessus du seuil visé, ce qui signifie qu'une baisse est nécessaire pour que la prédiction se réalise. Sur dix jours, les fluctuations habituelles du prix sont suffisamment importantes pour rendre ce recul plausible, sans qu'il soit pour autant certain. Le modèle considère que le marché n'a pas de tendance particulière, ce qui laisse une probabilité notable que le prix descende toucher ce niveau avant l'échéance.",
-      "hash": "c255db7a253e0010"
+      "hash": "c255db7a253e0010",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 1916.77,
+        "actual_label": "1 917 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1784030400&to=1784289600",
+        "measured_at": "2026-07-16T00:01:13.616Z"
+      }
     },
     {
       "category": "crypto",
@@ -1938,7 +1992,16 @@
       },
       "id": "crypto-2026-07-06-8831ab",
       "reasoning": "Solana affiche une volatilité quotidienne notable, ce qui signifie que son prix fluctue suffisamment pour atteindre le seuil de 78 dollars en l'espace de dix jours, même sans tendance particulière à la baisse. Le modèle utilisé suppose que les mouvements futurs sont imprévisibles et symétriques, ce qui donne une chance raisonnable que le prix descende jusqu'à ce niveau, mais aussi qu'il reparte à la hausse sans jamais l'atteindre. Le seuil visé est relativement proche du prix actuel, ce qui explique que la probabilité soit modérée sans pour autant être certaine.",
-      "hash": "5fc03dedcc20d196"
+      "hash": "5fc03dedcc20d196",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 77.26,
+        "actual_label": "77 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1784030400&to=1784289600",
+        "measured_at": "2026-07-16T00:01:14.907Z"
+      }
     },
     {
       "category": "crypto",
@@ -3206,7 +3269,16 @@
       },
       "id": "sport-2026-07-13-d6badc",
       "reasoning": "Les deux équipes affichent des forces quasi identiques selon les données utilisées, ce qui rend toute hiérarchie très fragile. L'Angleterre est désignée favorite dans un sens purement technique, mais l'écart est si minime qu'un nul ou une victoire argentine restent des issues tout aussi plausibles. Dans un choc de cette envergure entre deux nations historiques du football mondial, l'incertitude est au cœur de la prédiction.",
-      "hash": "094d1a5a2a277b76"
+      "hash": "094d1a5a2a277b76",
+      "result": {
+        "resolved_at": "2026-07-16T09:07:06.284Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "England 1-2 Argentina",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260713-20260717",
+        "measured_at": "2026-07-16T09:07:11.378Z"
+      }
     },
     {
       "category": "sport",
