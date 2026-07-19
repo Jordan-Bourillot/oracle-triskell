@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-17T09:02:02.529Z",
+  "updated_at": "2026-07-19T09:00:17.895Z",
   "predictions": [
     {
       "category": "crypto",
@@ -3355,7 +3355,16 @@
       },
       "id": "sport-2026-07-13-a6246e",
       "reasoning": "Les deux équipes qui s'affrontent dans ce match pour la troisième place arrivent avec des forces estimées strictement identiques, ce qui en fait une rencontre parfaitement équilibrée sur le papier. Aucune des deux ne peut être considérée comme favorite, et la probabilité d'un match nul reste significative, reflétant cette parité totale. À cela s'ajoute le contexte particulier de ce type de rencontre, où la motivation des équipes éliminées en demi-finale est souvent difficile à évaluer, ce qui introduit une incertitude supplémentaire sur le résultat.",
-      "hash": "2579089b0594b799"
+      "hash": "2579089b0594b799",
+      "result": {
+        "resolved_at": "2026-07-19T09:00:17.614Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": null,
+        "actual_label": "France 4-6 England",
+        "evidence_url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260716-20260720",
+        "measured_at": "2026-07-19T09:00:17.895Z"
+      }
     },
     {
       "category": "sport",
