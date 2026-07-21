@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-20T09:41:25.699Z",
+  "updated_at": "2026-07-21T09:21:19.533Z",
   "predictions": [
     {
       "category": "crypto",
@@ -1416,7 +1416,16 @@
       },
       "id": "marches-2026-06-29-96eb55",
       "reasoning": "Cette probabilité reflète la tendance du marché à osciller autour de son cours actuel sans direction claire, dans un cadre où les variations quotidiennes restent limitées. Le seuil de 7 425 points, proche du niveau actuel, agit comme une zone de résistance naturelle, rendant un franchissement incertain à court terme.",
-      "hash": "6ec12cab54140128"
+      "hash": "6ec12cab54140128",
+      "result": {
+        "resolved_at": "2026-07-21T09:21:19.181Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 7443,
+        "actual_label": "7 443 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783893600&period2=1785276000&interval=1d",
+        "measured_at": "2026-07-20T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -1491,7 +1500,16 @@
       },
       "id": "marches-2026-06-29-9dc671",
       "reasoning": "Le modèle utilisé suppose que les variations du cours de l’or suivent un hasard pur, sans tendance marquée sur cette période. Avec un seuil proche du niveau actuel et une volatilité modérée, la probabilité reflète simplement l’incertitude naturelle des mouvements de prix dans ce cadre.",
-      "hash": "03f800e8e2df3f76"
+      "hash": "03f800e8e2df3f76",
+      "result": {
+        "resolved_at": "2026-07-21T09:21:19.181Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4070,
+        "actual_label": "4 070 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1783893600&period2=1785276000&interval=1d",
+        "measured_at": "2026-07-21T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -1566,7 +1584,16 @@
       },
       "id": "marches-2026-06-29-5477ea",
       "reasoning": "Le niveau de probabilité reflète l’incertitude naturelle du marché sur une période courte. Avec un seuil proche du cours actuel et une volatilité modérée, le modèle estime que la probabilité de franchir ce niveau reste limitée.",
-      "hash": "2acbbe5067bf7353"
+      "hash": "2acbbe5067bf7353",
+      "result": {
+        "resolved_at": "2026-07-21T09:21:19.181Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 1.1429,
+        "actual_label": "1,1429 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1783893600&period2=1785276000&interval=1d",
+        "measured_at": "2026-07-21T09:20:21.000Z"
+      }
     },
     {
       "category": "sport",
@@ -1846,7 +1873,16 @@
       },
       "id": "economie-2026-06-29-85a448",
       "reasoning": "Le niveau de probabilité s’explique par la proximité du taux actuel avec le seuil fixé à 4,90 %. Le modèle, basé sur une marche aléatoire, anticipe des mouvements limités sur 21 jours, ce qui réduit la chance de franchir ce seuil malgré une volatilité quotidienne mesurée.",
-      "hash": "afeed121c821d649"
+      "hash": "afeed121c821d649",
+      "result": {
+        "resolved_at": "2026-07-21T09:21:19.181Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.12,
+        "actual_label": "5,12 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETYX?period1=1783893600&period2=1785276000&interval=1d",
+        "measured_at": "2026-07-20T12:20:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -3103,7 +3139,16 @@
       },
       "id": "marches-2026-07-13-de18e8",
       "reasoning": "Le CAC 40 se situe actuellement environ 100 points au-dessus du seuil de 8 250, ce qui représente un coussin modeste au regard des fluctuations habituelles de l'indice sur une semaine. Avec une volatilité journalière proche de 1 %, une baisse suffisante pour franchir ce seuil en sept séances reste tout à fait possible, sans être le scénario le plus probable. Le niveau de probabilité retenu reflète cet équilibre entre la marge de sécurité existante et l'incertitude naturelle qui s'accumule sur l'horizon considéré.",
-      "hash": "05b9364bda809d37"
+      "hash": "05b9364bda809d37",
+      "result": {
+        "resolved_at": "2026-07-21T09:21:19.181Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 8351,
+        "actual_label": "8 351 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFCHI?period1=1783893600&period2=1785276000&interval=1d",
+        "measured_at": "2026-07-21T07:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -3169,7 +3214,16 @@
       },
       "id": "marches-2026-07-13-3f1b82",
       "reasoning": "Le Nasdaq Composite se situe actuellement environ 400 points au-dessus du seuil de 25 900, ce qui représente un écart modeste au regard des variations quotidiennes habituelles de l'indice. Sur une semaine, ces fluctuations peuvent s'accumuler et franchir ce seuil dans les deux sens, mais la marge de protection reste suffisante pour que le cours finisse plus souvent au-dessus qu'en dessous. C'est cette combinaison entre la distance au seuil et l'amplitude des mouvements attendus qui fonde le niveau de probabilité retenu.",
-      "hash": "4e74dd98fe09d6ff"
+      "hash": "4e74dd98fe09d6ff",
+      "result": {
+        "resolved_at": "2026-07-21T09:21:19.181Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 25508,
+        "actual_label": "25 508 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1783893600&period2=1785276000&interval=1d",
+        "measured_at": "2026-07-20T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -3235,7 +3289,16 @@
       },
       "id": "marches-2026-07-13-363f34",
       "reasoning": "Le baril de WTI s'échange actuellement à 73 dollars, soit à peine au-dessus du seuil de 70 dollars. Avec des variations journalières qui peuvent dépasser trois dollars dans un sens comme dans l'autre, une semaine suffit pour que le cours s'écarte significativement de son niveau actuel. La probabilité retenue reflète le fait que rester au-dessus de 70 dollars est plausible mais loin d'être garanti, compte tenu de la distance modeste qui sépare le cours actuel de ce seuil.",
-      "hash": "c5edc4f158475b59"
+      "hash": "c5edc4f158475b59",
+      "result": {
+        "resolved_at": "2026-07-21T09:21:19.181Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 82,
+        "actual_label": "82 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1783893600&period2=1785276000&interval=1d",
+        "measured_at": "2026-07-21T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
