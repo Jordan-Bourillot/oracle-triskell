@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-23T09:16:49.286Z",
+  "updated_at": "2026-07-24T09:13:35.817Z",
   "predictions": [
     {
       "category": "crypto",
@@ -3555,7 +3555,16 @@
       },
       "id": "economie-2026-07-13-7d9d67",
       "reasoning": "Le taux américain à dix ans se situe actuellement au-dessus du seuil de 4,50 %, et les mouvements quotidiens observés sur ce marché restent modérés. Pour que le taux repasse sous ce seuil d'ici dix jours, il faudrait un recul cumulé notable, ce que la faible agitation habituelle rend peu fréquent sur une si courte période. La probabilité élevée reflète donc surtout le fait que le taux part d'un niveau proche du seuil et qu'une simple stabilité suffit à valider la prédiction.",
-      "hash": "f5f2e772cd893a63"
+      "hash": "f5f2e772cd893a63",
+      "result": {
+        "resolved_at": "2026-07-24T09:13:34.416Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.7,
+        "actual_label": "4,70 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1784152800&period2=1785535200&interval=1d",
+        "measured_at": "2026-07-23T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -3805,7 +3814,16 @@
       },
       "id": "meteo-2026-07-20-259535",
       "reasoning": "La médiane des scénarios simulés dépasse légèrement le seuil, ce qui place la majorité des trajectoires climatiques au-dessus de 25,5 °C pour ce jour à Paris. La dispersion des résultats reste néanmoins assez large, avec des scénarios allant de températures franchement en dessous jusqu'à des valeurs nettement supérieures, ce qui traduit une incertitude réelle sur cette date en plein été. C'est cette combinaison, une tendance centrale favorable mais une variabilité notable, qui explique une probabilité modérément majoritaire sans être écrasante.",
-      "hash": "b8f6bf8445b56310"
+      "hash": "b8f6bf8445b56310",
+      "result": {
+        "resolved_at": "2026-07-24T09:13:34.416Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 25.1,
+        "actual_label": "25.1 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-24T09:13:35.279Z"
+      }
     },
     {
       "category": "meteo",
@@ -3836,7 +3854,16 @@
       },
       "id": "meteo-2026-07-20-8f9128",
       "reasoning": "La médiane des scénarios simulés se situe légèrement en dessous du seuil de 32,5 °C, ce qui signifie que la majorité des projections aboutissent à une température plus fraîche que ce seuil ce jour-là. La fourchette des résultats s'étend de part et d'autre de cette valeur, mais elle penche davantage vers le bas, laissant peu de scénarios franchir la barre fixée. C'est cette répartition des simulations qui explique une probabilité relativement modeste de dépasser 32,5 °C à Marseille le 23 juillet 2026.",
-      "hash": "accf487a2ed19a37"
+      "hash": "accf487a2ed19a37",
+      "result": {
+        "resolved_at": "2026-07-24T09:13:34.416Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 34.9,
+        "actual_label": "34.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-24T09:13:35.484Z"
+      }
     },
     {
       "category": "meteo",
@@ -3867,7 +3894,16 @@
       },
       "id": "meteo-2026-07-20-31e830",
       "reasoning": "La médiane des scénarios météorologiques simulés pour ce jour se situe légèrement au-dessus du seuil, ce qui signifie que plus de la moitié des configurations envisagées aboutissent à une température dépassant 22,5 °C. La plage de résultats possibles reste toutefois assez large, avec des valeurs qui descendent en dessous du seuil dans les cas les moins chauds, ce qui introduit une incertitude réelle. C'est cet équilibre entre une tendance centrale favorable au dépassement et une dispersion notable des scénarios qui justifie une probabilité majoritaire mais non certaine.",
-      "hash": "bacabd2d735755a5"
+      "hash": "bacabd2d735755a5",
+      "result": {
+        "resolved_at": "2026-07-24T09:13:34.416Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 23.1,
+        "actual_label": "23.1 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-24T09:13:35.650Z"
+      }
     },
     {
       "category": "meteo",
@@ -3898,7 +3934,16 @@
       },
       "id": "meteo-2026-07-20-2d5162",
       "reasoning": "La médiane des scénarios simulés tombe juste en dessous du seuil de 33 °C, ce qui signifie que les deux issues sont presque aussi probables l'une que l'autre. La fourchette des résultats est large, allant de moins de 30 °C à plus de 38 °C, ce qui reflète l'incertitude naturelle des prévisions à cette échéance estivale à Bordeaux.",
-      "hash": "8955f19a8a73f1d9"
+      "hash": "8955f19a8a73f1d9",
+      "result": {
+        "resolved_at": "2026-07-24T09:13:34.416Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 33.8,
+        "actual_label": "33.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-24T09:13:35.817Z"
+      }
     },
     {
       "category": "marches",
