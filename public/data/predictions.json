@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-27T10:15:48.620Z",
+  "updated_at": "2026-07-28T09:29:41.291Z",
   "predictions": [
     {
       "category": "crypto",
@@ -2357,7 +2357,16 @@
       },
       "id": "marches-2026-07-06-a39ccf",
       "reasoning": "Le S&P 500 se situe actuellement à 7 475 points et devrait franchir 7 550 points dans les trois prochaines semaines, soit une progression d'environ 1 % par rapport au niveau actuel. Avec une volatilité quotidienne proche de 0,9 %, le marché peut facilement atteindre ce seuil, mais il peut tout aussi bien s'en éloigner, car aucune tendance directionnelle n'est intégrée dans le calcul. Le niveau de probabilité reflète cette incertitude symétrique, le seuil étant atteignable mais pas suffisamment proche pour être considéré comme probable.",
-      "hash": "f88496eae05789ac"
+      "hash": "f88496eae05789ac",
+      "result": {
+        "resolved_at": "2026-07-28T09:29:40.961Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 7413,
+        "actual_label": "7 413 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1784498400&period2=1785880800&interval=1d",
+        "measured_at": "2026-07-27T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -2432,7 +2441,16 @@
       },
       "id": "marches-2026-07-06-9332fa",
       "reasoning": "L'or s'échange actuellement à 4 160 dollars l'once et doit progresser d'environ 80 dollars supplémentaires pour franchir le seuil de 4 240 dollars d'ici trois semaines. Les mouvements quotidiens du métal restent relativement modérés, ce qui rend une telle hausse possible mais loin d'être acquise sur cette courte période. Le modèle retenu suppose que l'or n'a pas de tendance particulière à monter ou à descendre, si bien que le résultat dépend uniquement de la taille habituelle de ses fluctuations rapportée à l'écart qu'il reste à combler.",
-      "hash": "134ec4afabf9e23a"
+      "hash": "134ec4afabf9e23a",
+      "result": {
+        "resolved_at": "2026-07-28T09:29:40.961Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4043,
+        "actual_label": "4 043 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1784498400&period2=1785880800&interval=1d",
+        "measured_at": "2026-07-28T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -2507,7 +2525,16 @@
       },
       "id": "marches-2026-07-06-24356b",
       "reasoning": "L'euro s'échange actuellement à 1,1400 dollar et doit progresser d'environ un centime pour atteindre le seuil de 1,1500 en trois semaines. Les mouvements quotidiens de ce taux restent modestes, ce qui rend une hausse de cette ampleur possible mais loin d'être acquise sur la période. Le modèle retenu suppose que la devise ne suit aucune tendance particulière, ce qui pèse mécaniquement sur la probabilité d'atteindre ce niveau.",
-      "hash": "51e034c0eac5e5bb"
+      "hash": "51e034c0eac5e5bb",
+      "result": {
+        "resolved_at": "2026-07-28T09:29:40.961Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 1.137,
+        "actual_label": "1,1370 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1784498400&period2=1785880800&interval=1d",
+        "measured_at": "2026-07-28T09:29:22.000Z"
+      }
     },
     {
       "category": "sport",
@@ -2787,7 +2814,16 @@
       },
       "id": "economie-2026-07-06-352af9",
       "reasoning": "Le taux américain à 30 ans se situe actuellement à 4,99 %, soit très près du seuil de 5,05 % à franchir. Malgré cette faible distance, les mouvements quotidiens du taux restent modestes, ce qui limite la probabilité d'atteindre ce niveau en trois semaines. Le marché peut tout aussi bien dériver à la baisse qu'à la hausse, et la marge à parcourir, bien que réduite, n'est pas négligeable au regard de l'agitation habituelle du taux.",
-      "hash": "953ff22e3fcd2d4b"
+      "hash": "953ff22e3fcd2d4b",
+      "result": {
+        "resolved_at": "2026-07-28T09:29:40.961Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.13,
+        "actual_label": "5,13 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETYX?period1=1784498400&period2=1785880800&interval=1d",
+        "measured_at": "2026-07-27T12:20:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -4003,7 +4039,16 @@
       },
       "id": "marches-2026-07-20-3471f5",
       "reasoning": "Le CAC 40 se trouve actuellement à 8 350 points, soit légèrement au-dessus du seuil de 8 300 points. La volatilité quotidienne de l'indice reste modérée, ce qui signifie que les mouvements journaliers attendus sont relativement limités et qu'une chute de 50 points en une semaine représente un scénario possible mais pas certain. Le modèle suppose que le marché n'a pas de tendance particulière à la hausse ou à la baisse, ce qui explique que la probabilité de rester au-dessus du seuil soit légèrement en faveur du oui, sans pour autant être très élevée.",
-      "hash": "29295c7b1d6295c4"
+      "hash": "29295c7b1d6295c4",
+      "result": {
+        "resolved_at": "2026-07-28T09:29:40.961Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 8440,
+        "actual_label": "8 440 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFCHI?period1=1784498400&period2=1785880800&interval=1d",
+        "measured_at": "2026-07-28T07:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -4069,7 +4114,16 @@
       },
       "id": "marches-2026-07-20-5e21ef",
       "reasoning": "Le Nasdaq évolue actuellement avec des fluctuations quotidiennes modérées, ce qui signifie qu'un recul jusqu'au seuil de 25 150 points en une semaine représente un mouvement relativement contenu par rapport au niveau actuel. Sur sept jours, ces petites variations journalières peuvent s'accumuler dans un sens comme dans l'autre, mais la distance à franchir reste suffisamment faible pour rester accessible. C'est pourquoi le modèle juge probable que l'indice touche ou franchisse ce seuil au moins une fois d'ici là.",
-      "hash": "b3c0c5f92cbf682d"
+      "hash": "b3c0c5f92cbf682d",
+      "result": {
+        "resolved_at": "2026-07-28T09:29:40.961Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 24932,
+        "actual_label": "24 932 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1784498400&period2=1785880800&interval=1d",
+        "measured_at": "2026-07-27T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -4135,7 +4189,16 @@
       },
       "id": "marches-2026-07-20-2b1cf9",
       "reasoning": "Le baril de WTI s'échange actuellement à 81 dollars, ce qui lui laisse une marge d'environ trois dollars avant d'atteindre le seuil de 78 dollars. Avec des fluctuations journalières qui tournent autour de 3,4 % en moyenne, ce coussin peut être absorbé assez rapidement si le marché se retourne. C'est pourquoi il reste une probabilité réelle, bien que minoritaire, que le cours descende sous ce seuil d'ici une semaine.",
-      "hash": "014912ac7ef51b6e"
+      "hash": "014912ac7ef51b6e",
+      "result": {
+        "resolved_at": "2026-07-28T09:29:40.961Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 81,
+        "actual_label": "81 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1784498400&period2=1785880800&interval=1d",
+        "measured_at": "2026-07-28T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
