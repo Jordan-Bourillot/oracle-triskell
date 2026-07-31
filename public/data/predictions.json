@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-07-30T09:23:58.624Z",
+  "updated_at": "2026-07-31T09:35:33.052Z",
   "predictions": [
     {
       "category": "crypto",
@@ -4291,7 +4291,16 @@
       },
       "id": "economie-2026-07-20-a12bba",
       "reasoning": "Le taux américain à dix ans se situe actuellement légèrement au-dessus du seuil de 4,50 %, ce qui signifie qu'il suffit d'une baisse modeste pour franchir ce niveau dans les dix prochains jours. Les mouvements quotidiens observés sur ce taux restent assez contenus, de sorte qu'un tel repli est plausible mais loin d'être certain. C'est cette combinaison entre la proximité du seuil et l'amplitude habituelle des variations qui justifie une probabilité légèrement en faveur du franchissement.",
-      "hash": "cdb3f2042e128ea9"
+      "hash": "cdb3f2042e128ea9",
+      "result": {
+        "resolved_at": "2026-07-31T09:35:32.129Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.66,
+        "actual_label": "4,66 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1784757600&period2=1786140000&interval=1d",
+        "measured_at": "2026-07-30T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -4541,7 +4550,16 @@
       },
       "id": "meteo-2026-07-27-8a73fe",
       "reasoning": "La probabilité annoncée s’appuie sur les scénarios simulés pour Paris le 30 juillet 2026, où plus de la moitié des cas dépassent le seuil de 35,5 °C. La température médiane de 36 °C confirme une tendance générale vers des valeurs élevées, même si certains scénarios restent bien en dessous.",
-      "hash": "1f0f845426d19ab0"
+      "hash": "1f0f845426d19ab0",
+      "result": {
+        "resolved_at": "2026-07-31T09:35:32.129Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 31,
+        "actual_label": "31.0 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-31T09:35:32.684Z"
+      }
     },
     {
       "category": "meteo",
@@ -4572,7 +4590,16 @@
       },
       "id": "meteo-2026-07-27-b49c0c",
       "reasoning": "La probabilité reflète la position de la médiane proche du seuil, avec une partie des scénarios dépassant légèrement la valeur critique. La fourchette montre que les températures pourraient s'approcher ou franchir ce niveau sans être systématiquement au-dessus.",
-      "hash": "786dda932399897d"
+      "hash": "786dda932399897d",
+      "result": {
+        "resolved_at": "2026-07-31T09:35:32.129Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 28.3,
+        "actual_label": "28.3 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-31T09:35:32.842Z"
+      }
     },
     {
       "category": "meteo",
@@ -4603,7 +4630,16 @@
       },
       "id": "meteo-2026-07-27-ee4db7",
       "reasoning": "La probabilité reflète la position de la médiane au-dessus du seuil, avec une majorité de scénarios dépassant la valeur de référence. Les données montrent une tendance chaude et une répartition des températures concentrée dans des valeurs élevées.",
-      "hash": "63f7d63ec1eb47ff"
+      "hash": "63f7d63ec1eb47ff",
+      "result": {
+        "resolved_at": "2026-07-31T09:35:32.129Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 27.7,
+        "actual_label": "27.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-31T09:35:32.948Z"
+      }
     },
     {
       "category": "meteo",
@@ -4634,7 +4670,16 @@
       },
       "id": "meteo-2026-07-27-a71ff8",
       "reasoning": "Cette probabilité reflète la répartition des scénarios simulés pour Bordeaux le 30 juillet 2026, où près de la moitié des cas dépassent le seuil de 34,5 °C. La fourchette large entre 27,2 °C et 39,8 °C montre une incertitude marquée, mais la médiane à 34 °C confirme une tendance générale vers des températures élevées.",
-      "hash": "659c655ee0dc8d37"
+      "hash": "659c655ee0dc8d37",
+      "result": {
+        "resolved_at": "2026-07-31T09:35:32.129Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 31,
+        "actual_label": "31.0 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-07-31T09:35:33.052Z"
+      }
     },
     {
       "category": "marches",
