@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-03T10:12:26.769Z",
+  "updated_at": "2026-08-04T09:31:52.590Z",
   "predictions": [
     {
       "category": "crypto",
@@ -3298,7 +3298,16 @@
       },
       "id": "marches-2026-07-13-e7d46b",
       "reasoning": "Le S&P 500 se trouve actuellement à 7 575 points, ce qui signifie qu'il lui faudrait progresser d'environ 75 points supplémentaires pour franchir le seuil de 7 650 points d'ici trois semaines. Avec une volatilité quotidienne modérée, ce mouvement est possible mais demande que le marché évolue globalement dans la bonne direction sans trop d'oscillations contraires. Le modèle utilisé ne suppose aucune tendance particulière à la hausse ou à la baisse, ce qui explique que la probabilité reste inférieure à une chance sur deux.",
-      "hash": "c6a3fafbab6c768d"
+      "hash": "c6a3fafbab6c768d",
+      "result": {
+        "resolved_at": "2026-08-04T09:31:52.176Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 7490,
+        "actual_label": "7 490 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1785103200&period2=1786485600&interval=1d",
+        "measured_at": "2026-07-31T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -3373,7 +3382,16 @@
       },
       "id": "marches-2026-07-13-0ff299",
       "reasoning": "L'or s'échange actuellement autour de 4 080 dollars l'once et doit donc progresser d'environ 1,5 % pour franchir le seuil de 4 140 dollars dans les trois prochaines semaines. Ce gain paraît modeste, mais l'or fluctue en moyenne d'un peu plus de 1 % par jour, ce qui signifie que chaque séance peut aussi bien rapprocher que s'éloigner de cet objectif. Le modèle retenu suppose qu'aucune tendance particulière ne pousse le cours dans un sens ou dans l'autre, ce qui rend l'issue incertaine et explique que la probabilité reste inférieure à une chance sur deux.",
-      "hash": "6bfe6b38c131f46a"
+      "hash": "6bfe6b38c131f46a",
+      "result": {
+        "resolved_at": "2026-08-04T09:31:52.176Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4105,
+        "actual_label": "4 105 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1785103200&period2=1786485600&interval=1d",
+        "measured_at": "2026-08-04T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -3448,7 +3466,16 @@
       },
       "id": "marches-2026-07-13-98b1f0",
       "reasoning": "L'euro s'échange actuellement à 1,1400 dollar et le seuil à franchir, fixé à 1,1500 dollar, représente une hausse d'environ un centime sur trois semaines. Les mouvements quotidiens de ce taux de change sont habituellement assez modestes, ce qui rend un tel écart difficile à combler dans ce délai. Le modèle part du principe qu'aucune tendance particulière ne pousse le cours dans un sens ou dans l'autre, ce qui explique que la probabilité reste inférieure à une chance sur deux.",
-      "hash": "0cd869b186f6adc5"
+      "hash": "0cd869b186f6adc5",
+      "result": {
+        "resolved_at": "2026-08-04T09:31:52.176Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 1.1513,
+        "actual_label": "1,1513 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1785103200&period2=1786485600&interval=1d",
+        "measured_at": "2026-08-04T09:30:55.000Z"
+      }
     },
     {
       "category": "sport",
@@ -3687,7 +3714,16 @@
       },
       "id": "economie-2026-07-13-84982c",
       "reasoning": "Le taux à 30 ans américain se situe juste en dessous du seuil de 5,10 %, avec seulement quelques centièmes de point à franchir en vingt et un jours. Les mouvements quotidiens habituels de ce taux sont suffisamment modestes pour que ce franchissement ne soit ni assuré ni improbable, ce qui place la situation dans une zone d'incertitude réelle. Le niveau de probabilité retenu reflète cette proximité du seuil, tempérée par le fait que les taux peuvent tout aussi bien reculer qu'avancer sur un horizon aussi court.",
-      "hash": "561571d80eef59c0"
+      "hash": "561571d80eef59c0",
+      "result": {
+        "resolved_at": "2026-08-04T09:31:52.176Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.28,
+        "actual_label": "5,28 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETYX?period1=1785103200&period2=1786485600&interval=1d",
+        "measured_at": "2026-07-31T12:20:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -4739,7 +4775,16 @@
       },
       "id": "marches-2026-07-27-1ddf41",
       "reasoning": "Le modèle utilisé suppose que les variations du CAC 40 suivent un hasard sans tendance claire sur cette période. Avec un écart actuel de 100 points par rapport au seuil, la probabilité reflète l’incertitude naturelle des marchés dans un horizon court.",
-      "hash": "4f65ca2aec31d71b"
+      "hash": "4f65ca2aec31d71b",
+      "result": {
+        "resolved_at": "2026-08-04T09:31:52.176Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 8609,
+        "actual_label": "8 609 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFCHI?period1=1785103200&period2=1786485600&interval=1d",
+        "measured_at": "2026-08-04T07:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -4805,7 +4850,16 @@
       },
       "id": "marches-2026-07-27-a0a75c",
       "reasoning": "Le modèle utilisé suppose que les variations du Nasdaq Composite suivent un hasard pur sans tendance marquée. Avec une volatilité quotidienne de 1,32 %, les mouvements sont suffisamment importants pour que le seuil de 24 800 points soit franchi dans un délai d’une semaine.",
-      "hash": "1f441fcd955238f7"
+      "hash": "1f441fcd955238f7",
+      "result": {
+        "resolved_at": "2026-08-04T09:31:52.176Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 25374,
+        "actual_label": "25 374 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1785103200&period2=1786485600&interval=1d",
+        "measured_at": "2026-07-31T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -4871,7 +4925,16 @@
       },
       "id": "marches-2026-07-27-376286",
       "reasoning": "Le niveau de probabilité reflète l’écart actuel entre le cours du baril et le seuil fixé, dans un contexte où les variations quotidiennes restent modérées. Le modèle utilisé suppose que les mouvements futurs suivent une logique aléatoire autour de cette tendance, sans tendance marquée à la hausse ou à la baisse.",
-      "hash": "26ab2b8b7b8f67fa"
+      "hash": "26ab2b8b7b8f67fa",
+      "result": {
+        "resolved_at": "2026-08-04T09:31:52.176Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 82,
+        "actual_label": "82 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1785103200&period2=1786485600&interval=1d",
+        "measured_at": "2026-08-04T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
