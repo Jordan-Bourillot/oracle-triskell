@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-06T09:33:18.891Z",
+  "updated_at": "2026-08-07T08:03:34.088Z",
   "predictions": [
     {
       "category": "crypto",
@@ -5027,7 +5027,16 @@
       },
       "id": "economie-2026-07-27-cf4585",
       "reasoning": "Le modèle estime que le taux à 10 ans des États-Unis a 65 % de chances de rester au-dessus de 4,65 % dans les 10 prochains jours, car il évolue actuellement à 4,70 %, un niveau proche du seuil tout en affichant une volatilité quotidienne limitée. Cette probabilité reflète la tendance récente du taux à osciller autour de son niveau actuel sans s’en éloigner significativement.",
-      "hash": "b31924a3e629d308"
+      "hash": "b31924a3e629d308",
+      "result": {
+        "resolved_at": "2026-08-07T08:03:32.777Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.67,
+        "actual_label": "4,67 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1785362400&period2=1786744800&interval=1d",
+        "measured_at": "2026-08-06T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -5277,7 +5286,16 @@
       },
       "id": "meteo-2026-08-03-eb91f2",
       "reasoning": "Cette probabilité reflète la position de la température médiane par rapport au seuil fixé, avec une majorité des scénarios dépassant cette valeur. La fourchette large montre une incertitude sur les conditions exactes, mais la tendance centrale reste proche du seuil.",
-      "hash": "5c81b95b63cc58b2"
+      "hash": "5c81b95b63cc58b2",
+      "result": {
+        "resolved_at": "2026-08-07T08:03:32.777Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 25.9,
+        "actual_label": "25.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-07T08:03:33.555Z"
+      }
     },
     {
       "category": "meteo",
@@ -5308,7 +5326,16 @@
       },
       "id": "meteo-2026-08-03-74ba60",
       "reasoning": "La probabilité reflète la position de la médiane (32,4 °C) juste en dessous du seuil (32,5 °C), avec près de la moitié des scénarios dépassant ce niveau. Les écarts observés dans les prévisions montrent une tendance chaude, mais sans consensus fort sur un dépassement systématique.",
-      "hash": "e841d359feb9c1c2"
+      "hash": "e841d359feb9c1c2",
+      "result": {
+        "resolved_at": "2026-08-07T08:03:32.777Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 34.5,
+        "actual_label": "34.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-07T08:03:33.771Z"
+      }
     },
     {
       "category": "meteo",
@@ -5339,7 +5366,16 @@
       },
       "id": "meteo-2026-08-03-e8b178",
       "reasoning": "Cette probabilité reflète la position de la médiane à 23,9 °C, proche du seuil de 23,5 °C, avec une majorité des scénarios (68 %) dépassant ce niveau. La fourchette large, de 20,1 °C à 27,1 °C, montre une incertitude marquée mais une tendance générale à des températures élevées.",
-      "hash": "47a62382ad57be2f"
+      "hash": "47a62382ad57be2f",
+      "result": {
+        "resolved_at": "2026-08-07T08:03:32.777Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 23.7,
+        "actual_label": "23.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-07T08:03:33.929Z"
+      }
     },
     {
       "category": "meteo",
@@ -5370,7 +5406,16 @@
       },
       "id": "meteo-2026-08-03-cc52ac",
       "reasoning": "Cette probabilité reflète la position de la température médiane à Bordeaux le 6 août 2026, proche mais légèrement en dessous du seuil de 28°C, avec une partie des scénarios dépassant ce niveau. Les variations possibles, allant de 21,6°C à 30°C, montrent une tendance chaude mais pas systématiquement au-dessus de la limite.",
-      "hash": "e8e57bd5e3546fda"
+      "hash": "e8e57bd5e3546fda",
+      "result": {
+        "resolved_at": "2026-08-07T08:03:32.777Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 28.7,
+        "actual_label": "28.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-07T08:03:34.088Z"
+      }
     },
     {
       "category": "marches",
