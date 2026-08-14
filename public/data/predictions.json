@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-13T08:09:02.189Z",
+  "updated_at": "2026-08-14T08:05:22.849Z",
   "predictions": [
     {
       "category": "crypto",
@@ -5763,7 +5763,16 @@
       },
       "id": "economie-2026-08-03-98ee55",
       "reasoning": "Le niveau de probabilité s’explique par la proximité du taux à 10 ans des États-Unis avec son seuil de référence, combinée à une volatilité quotidienne faible. Le modèle, qui suit une marche aléatoire, estime ainsi une chance modérée de franchir ce seuil dans les dix prochains jours.",
-      "hash": "ab83f5cd659c5aae"
+      "hash": "ab83f5cd659c5aae",
+      "result": {
+        "resolved_at": "2026-08-14T08:05:21.353Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4.64,
+        "actual_label": "4,64 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1785967200&period2=1787349600&interval=1d",
+        "measured_at": "2026-08-13T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -6013,7 +6022,16 @@
       },
       "id": "meteo-2026-08-10-3cc050",
       "reasoning": "La probabilité annoncée s’appuie sur une médiane des scénarios à 37,6 °C, dépassant le seuil de 37 °C, avec plus de la moitié des simulations (58 %) prévoyant des températures au-dessus de ce niveau. La fourchette large, allant de 33,3 °C à 40,2 °C, reflète une incertitude liée à la variabilité des conditions météo pour cette date.",
-      "hash": "b9119cc940256271"
+      "hash": "b9119cc940256271",
+      "result": {
+        "resolved_at": "2026-08-14T08:05:21.353Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 37.5,
+        "actual_label": "37.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-14T08:05:22.034Z"
+      }
     },
     {
       "category": "meteo",
@@ -6044,7 +6062,16 @@
       },
       "id": "meteo-2026-08-10-962529",
       "reasoning": "Cette probabilité reflète la proximité de la température médiane (32,4 °C) avec le seuil de 32,5 °C, ce qui rend le dépassement incertain malgré une fourchette large et une majorité de scénarios proches de la limite.",
-      "hash": "93d1b728ce8fec36"
+      "hash": "93d1b728ce8fec36",
+      "result": {
+        "resolved_at": "2026-08-14T08:05:21.353Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 33.7,
+        "actual_label": "33.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-14T08:05:22.471Z"
+      }
     },
     {
       "category": "meteo",
@@ -6075,7 +6102,16 @@
       },
       "id": "meteo-2026-08-10-72749b",
       "reasoning": "Cette probabilité reflète la position de la médiane à 35,4 °C, soit au-dessus du seuil de 34,5 °C, avec une majorité des scénarios (68 %) dépassant cette valeur. La fourchette large, de 31,4 °C à 39,0 °C, montre une incertitude persistante mais confirme une tendance générale à des températures élevées.",
-      "hash": "e2954c867c0dba22"
+      "hash": "e2954c867c0dba22",
+      "result": {
+        "resolved_at": "2026-08-14T08:05:21.353Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 35.3,
+        "actual_label": "35.3 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-14T08:05:22.635Z"
+      }
     },
     {
       "category": "meteo",
@@ -6106,7 +6142,16 @@
       },
       "id": "meteo-2026-08-10-530165",
       "reasoning": "Cette probabilité reflète la position de la température médiane à Bordeaux le 13 août 2026, proche du seuil de 40°C, avec une majorité des scénarios qui s’en approchent ou le dépassent légèrement. La répartition des résultats montre une tendance marquée vers des valeurs élevées, sans garantie absolue mais avec une forte incertitude autour de ce seuil.",
-      "hash": "00f0a12fc754bf3d"
+      "hash": "00f0a12fc754bf3d",
+      "result": {
+        "resolved_at": "2026-08-14T08:05:21.353Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 39.8,
+        "actual_label": "39.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-14T08:05:22.849Z"
+      }
     },
     {
       "category": "marches",
