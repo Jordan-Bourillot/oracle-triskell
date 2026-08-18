@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-17T07:31:20.076Z",
+  "updated_at": "2026-08-18T07:27:32.410Z",
   "predictions": [
     {
       "category": "crypto",
@@ -4934,7 +4934,16 @@
       },
       "id": "marches-2026-07-27-7d51b3",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur un horizon court, où les mouvements quotidiens aléatoires peuvent facilement faire varier le cours de plus de 75 points. Le modèle utilisé suppose que les variations futures ne dépendent que du hasard, sans tendance marquée, ce qui limite la prévisibilité à ce seuil précis.",
-      "hash": "155be1615f59e7b6"
+      "hash": "155be1615f59e7b6",
+      "result": {
+        "resolved_at": "2026-08-18T07:27:31.933Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 7786,
+        "actual_label": "7 786 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1786312800&period2=1787695200&interval=1d",
+        "measured_at": "2026-08-14T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -5009,7 +5018,16 @@
       },
       "id": "marches-2026-07-27-050a3b",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du cours de l’or autour de son niveau actuel, sans tendance marquée à la hausse ou à la baisse. Le modèle utilisé suppose que les variations quotidiennes restent aléatoires et de taille limitée, ce qui explique pourquoi le seuil n’est pas franchi plus souvent.",
-      "hash": "af74030716cbad6f"
+      "hash": "af74030716cbad6f",
+      "result": {
+        "resolved_at": "2026-08-18T07:27:31.933Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4455,
+        "actual_label": "4 455 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1786312800&period2=1787695200&interval=1d",
+        "measured_at": "2026-08-18T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -5084,7 +5102,16 @@
       },
       "id": "marches-2026-07-27-3b4855",
       "reasoning": "Le niveau de probabilité de 50 % reflète l'absence de tendance claire dans le mouvement du taux euro/dollar sur la période considérée. Le modèle utilisé suppose que les variations futures sont aléatoires, sans direction privilégiée, ce qui explique cette neutralité.",
-      "hash": "aa2e6e36e1fe6b94"
+      "hash": "aa2e6e36e1fe6b94",
+      "result": {
+        "resolved_at": "2026-08-18T07:27:31.933Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 1.1578,
+        "actual_label": "1,1578 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1786312800&period2=1787695200&interval=1d",
+        "measured_at": "2026-08-18T07:26:55.000Z"
+      }
     },
     {
       "category": "economie",
@@ -5159,7 +5186,16 @@
       },
       "id": "economie-2026-07-27-00d197",
       "reasoning": "Le niveau de probabilité reflète la proximité du taux à 30 ans des États-Unis avec son seuil de 5,20 %. Comme le modèle suppose un mouvement aléatoire autour du niveau actuel, la faible distance entre les deux valeurs explique cette probabilité modérée.",
-      "hash": "6308e6a07dbb7489"
+      "hash": "6308e6a07dbb7489",
+      "result": {
+        "resolved_at": "2026-08-18T07:27:31.933Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.26,
+        "actual_label": "5,26 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETYX?period1=1786312800&period2=1787695200&interval=1d",
+        "measured_at": "2026-08-14T12:20:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -6211,7 +6247,16 @@
       },
       "id": "marches-2026-08-10-e10d2b",
       "reasoning": "Cette probabilité reflète la tendance naturelle du marché à osciller autour de son niveau actuel, sans direction marquée. Le modèle suppose que les variations futures dépendent uniquement du hasard, ce qui limite la certitude sur un mouvement précis à court terme.",
-      "hash": "316342aa01912da0"
+      "hash": "316342aa01912da0",
+      "result": {
+        "resolved_at": "2026-08-18T07:27:31.933Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 8567,
+        "actual_label": "8 567 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFCHI?period1=1786312800&period2=1787695200&interval=1d",
+        "measured_at": "2026-08-18T07:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -6277,7 +6322,16 @@
       },
       "id": "marches-2026-08-10-77feec",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur une semaine, où le cours actuel du Nasdaq Composite se situe légèrement au-dessus du seuil de 26 300 points. Le modèle utilisé, qui suppose une marche aléatoire sans tendance, indique simplement que le cours a une chance sur trois de revenir en dessous de ce niveau dans les sept jours à venir.",
-      "hash": "2591da18941face2"
+      "hash": "2591da18941face2",
+      "result": {
+        "resolved_at": "2026-08-18T07:27:31.933Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 26729,
+        "actual_label": "26 729 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1786312800&period2=1787695200&interval=1d",
+        "measured_at": "2026-08-14T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -6343,7 +6397,16 @@
       },
       "id": "marches-2026-08-10-ab1751",
       "reasoning": "Le modèle utilisé suppose que les variations du cours du baril de pétrole WTI suivent un hasard sans tendance marquée, comme des pas au hasard. Avec une volatilité quotidienne de 3,52 %, les mouvements possibles sur 7 jours restent limités, ce qui explique une probabilité de 67 % de rester au-dessus de 75 dollars.",
-      "hash": "7365b63755d22c39"
+      "hash": "7365b63755d22c39",
+      "result": {
+        "resolved_at": "2026-08-18T07:27:31.933Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 85,
+        "actual_label": "85 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1786312800&period2=1787695200&interval=1d",
+        "measured_at": "2026-08-18T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
