@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-18T07:27:32.410Z",
+  "updated_at": "2026-08-20T07:30:57.355Z",
   "predictions": [
     {
       "category": "crypto",
@@ -5899,7 +5899,16 @@
       },
       "id": "crypto-2026-08-10-cdb208",
       "reasoning": "Cette probabilité reflète la tendance du Bitcoin à osciller autour de son prix actuel, sans direction claire sur 10 jours. Le modèle, qui suppose des mouvements aléatoires sans tendance marquée, estime que le cours a plus de chances de rester proche de 64 000 dollars que de s’en éloigner significativement.",
-      "hash": "82fd134fa310c221"
+      "hash": "82fd134fa310c221",
+      "result": {
+        "resolved_at": "2026-08-20T07:30:52.373Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 69418.44,
+        "actual_label": "69 418 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1787054400&to=1787313600",
+        "measured_at": "2026-08-20T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -5992,7 +6001,16 @@
       },
       "id": "crypto-2026-08-10-58724c",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur une courte période, où les mouvements de prix restent imprévisibles malgré une tendance neutre. Le modèle utilisé suppose que les variations passées ne permettent pas d’anticiper les prochains changements, d’où une chance légèrement supérieure à la moitié que le prix reste proche de son niveau actuel.",
-      "hash": "6b6bb39cb4f66ea5"
+      "hash": "6b6bb39cb4f66ea5",
+      "result": {
+        "resolved_at": "2026-08-20T07:30:52.373Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 2253.56,
+        "actual_label": "2 254 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1787054400&to=1787313600",
+        "measured_at": "2026-08-20T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -6023,7 +6041,16 @@
       },
       "id": "crypto-2026-08-10-ed0306",
       "reasoning": "La probabilité de 68 % reflète l’incertitude naturelle du marché sur une courte période, où les mouvements de prix restent imprévisibles malgré une tendance neutre. Le modèle utilisé suppose que chaque variation quotidienne est indépendante, sans direction privilégiée, ce qui limite la certitude sur l’évolution du cours dans les dix prochains jours.",
-      "hash": "f9bb68c80c1fe3ed"
+      "hash": "f9bb68c80c1fe3ed",
+      "result": {
+        "resolved_at": "2026-08-20T07:30:52.373Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 85.47,
+        "actual_label": "85 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1787054400&to=1787313600",
+        "measured_at": "2026-08-20T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
