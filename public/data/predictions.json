@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-20T07:30:57.355Z",
+  "updated_at": "2026-08-21T07:33:09.655Z",
   "predictions": [
     {
       "category": "crypto",
@@ -6499,7 +6499,16 @@
       },
       "id": "economie-2026-08-10-af80a0",
       "reasoning": "Le niveau de probabilité s’explique par la proximité du taux à 10 ans des États-Unis avec son seuil actuel, dans un contexte où les variations quotidiennes restent modérées. Le modèle, basé sur une marche aléatoire, reflète une tendance stable avec une marge de fluctuation limitée sur la période considérée.",
-      "hash": "5dbf4193673237a6"
+      "hash": "5dbf4193673237a6",
+      "result": {
+        "resolved_at": "2026-08-21T07:33:08.386Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.7,
+        "actual_label": "4,70 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1786572000&period2=1787954400&interval=1d",
+        "measured_at": "2026-08-20T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -6749,7 +6758,16 @@
       },
       "id": "meteo-2026-08-17-f6c9b3",
       "reasoning": "Cette probabilité reflète la position de la température médiane par rapport au seuil fixé, avec une majorité des scénarios dépassant cette valeur. La fourchette indique une tendance générale vers des températures élevées, sans garantie absolue.",
-      "hash": "6061926e336c9996"
+      "hash": "6061926e336c9996",
+      "result": {
+        "resolved_at": "2026-08-21T07:33:08.386Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 25.5,
+        "actual_label": "25.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-21T07:33:09.213Z"
+      }
     },
     {
       "category": "meteo",
@@ -6780,7 +6798,16 @@
       },
       "id": "meteo-2026-08-17-3d3374",
       "reasoning": "Cette probabilité s’appuie sur les scénarios simulés pour Marseille le 20 août 2026, où la moitié des cas dépassent le seuil de 30,5 °C. La fourchette des températures possibles montre que les valeurs restent proches de ce seuil, ce qui explique une part majoritaire de scénarios au-dessus de la limite.",
-      "hash": "3459536977f5949d"
+      "hash": "3459536977f5949d",
+      "result": {
+        "resolved_at": "2026-08-21T07:33:08.386Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 29.7,
+        "actual_label": "29.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-21T07:33:09.402Z"
+      }
     },
     {
       "category": "meteo",
@@ -6811,7 +6838,16 @@
       },
       "id": "meteo-2026-08-17-d5d02d",
       "reasoning": "Cette probabilité reflète la position de la médiane à 22,5 °C, supérieure au seuil de 21,5 °C, avec une majorité des scénarios (74 %) dépassant ce seuil. La fourchette large (16,4 °C à 25,8 °C) montre une incertitude, mais la tendance centrale reste au-dessus de la valeur attendue.",
-      "hash": "ecc4f12ce2a76e76"
+      "hash": "ecc4f12ce2a76e76",
+      "result": {
+        "resolved_at": "2026-08-21T07:33:08.386Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 20.4,
+        "actual_label": "20.4 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-21T07:33:09.529Z"
+      }
     },
     {
       "category": "meteo",
@@ -6842,7 +6878,16 @@
       },
       "id": "meteo-2026-08-17-b07315",
       "reasoning": "Cette probabilité reflète une situation où la moitié des scénarios dépassent légèrement le seuil de 26,5 °C à Bordeaux ce jour-là, avec une fourchette de températures assez resserrée autour de cette valeur. L’incertitude reste modérée, car les écarts entre les scénarios ne sont pas extrêmes.",
-      "hash": "0ff5edf169772a89"
+      "hash": "0ff5edf169772a89",
+      "result": {
+        "resolved_at": "2026-08-21T07:33:08.386Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 25.3,
+        "actual_label": "25.3 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-21T07:33:09.654Z"
+      }
     },
     {
       "category": "marches",
