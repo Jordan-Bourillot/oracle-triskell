@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-21T07:33:09.655Z",
+  "updated_at": "2026-08-24T07:36:07.482Z",
   "predictions": [
     {
       "category": "crypto",
@@ -5266,7 +5266,16 @@
       },
       "id": "crypto-2026-08-03-0c3401",
       "reasoning": "Le modèle utilisé suppose que les variations de prix du Bitcoin suivent un hasard pur, sans tendance claire à la hausse ou à la baisse. Avec une volatilité quotidienne modérée et un écart actuel encore significatif par rapport au seuil visé, la probabilité reflète simplement l’incertitude inhérente à ce type de mouvement aléatoire.",
-      "hash": "ba1717a5c7518e13"
+      "hash": "ba1717a5c7518e13",
+      "result": {
+        "resolved_at": "2026-08-24T07:34:21.033Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 77677.99,
+        "actual_label": "77 678 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1787400000&to=1787659200",
+        "measured_at": "2026-08-24T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -5297,7 +5306,16 @@
       },
       "id": "crypto-2026-08-03-c5ccc5",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur une période courte. Le modèle utilisé suppose que les variations de prix sont imprévisibles et suivent un hasard pur, sans tendance marquée.",
-      "hash": "662e25ae39a41868"
+      "hash": "662e25ae39a41868",
+      "result": {
+        "resolved_at": "2026-08-24T07:34:21.033Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 2460.93,
+        "actual_label": "2 461 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1787400000&to=1787659200",
+        "measured_at": "2026-08-24T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -5408,7 +5426,16 @@
       },
       "id": "crypto-2026-08-03-7e2495",
       "reasoning": "Le modèle utilisé suppose que les variations du prix de Solana suivent un hasard pur sans tendance marquée. Avec une volatilité quotidienne de 2,79 % et un écart de 4 dollars entre le cours actuel et le seuil visé, la probabilité reflète simplement la répartition naturelle des mouvements de prix dans ce cadre.",
-      "hash": "92b4eb369f7bf522"
+      "hash": "92b4eb369f7bf522",
+      "result": {
+        "resolved_at": "2026-08-24T07:34:21.033Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 95.32,
+        "actual_label": "95 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1787400000&to=1787659200",
+        "measured_at": "2026-08-24T00:00:00.000Z"
+      }
     },
     {
       "category": "meteo",
@@ -7152,6 +7179,580 @@
       "id": "economie-2026-08-17-a421be",
       "reasoning": "Le niveau de probabilité reflète la proximité du taux à 30 ans des États-Unis avec son seuil de 5,30 %. Comme le modèle suppose un mouvement aléatoire autour du niveau actuel, la probabilité reste modérée en raison de la faible volatilité quotidienne.",
       "hash": "eda25af836f6e9e0"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 76 000 $ ou plus le 3 septembre 2026.",
+      "probability": 61,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-03",
+      "deadline": "2026-09-03T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 3 septembre 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 76 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 76000,
+          "comparator": ">=",
+          "atMs": 1788393600000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 77500.36,
+          "volatilite_journaliere": 0.02125,
+          "horizon_jours": 10,
+          "seuil_usd": 76000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-08-24-d13838",
+      "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur une courte période. Le modèle utilisé ne prévoit pas de tendance forte, ce qui limite la certitude sur le dépassement du seuil. La volatilité mesurée rend plausible aussi bien une hausse qu’une baisse dans les jours à venir.",
+      "hash": "c59c38909836401b"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 80 000 $ ou plus le 14 septembre 2026.",
+      "probability": 37,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-14",
+      "deadline": "2026-09-14T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 14 septembre 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 80 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 80000,
+          "comparator": ">=",
+          "atMs": 1789344000000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 77500.36,
+          "volatilite_journaliere": 0.02125,
+          "horizon_jours": 21,
+          "seuil_usd": 80000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-08-24-db018c",
+      "reasoning": "Le modèle utilisé suppose que les variations de prix du Bitcoin suivent un hasard pur sans tendance claire sur cette période. Avec une volatilité modérée et un écart limité entre le cours actuel et le seuil visé, la probabilité reflète simplement l'incertitude naturelle des mouvements de prix dans ce cadre.",
+      "hash": "66e0d5131607f3d7"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 2 600 $ ou plus le 14 septembre 2026.",
+      "probability": 35,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-14",
+      "deadline": "2026-09-14T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 14 septembre 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 2 600 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 2600,
+          "comparator": ">=",
+          "atMs": 1789344000000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 2458.87,
+          "volatilite_journaliere": 0.03196,
+          "horizon_jours": 21,
+          "seuil_usd": 2600,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-08-24-3f7bff",
+      "reasoning": "La probabilité de 35% reflète l’incertitude naturelle du marché sur une période courte, où les mouvements de prix restent imprévisibles malgré une tendance légère à la hausse. Avec une volatilité quotidienne modérée, les fluctuations peuvent aussi bien faire monter qu’abaisser le cours sans garantie de franchir le seuil visé.",
+      "hash": "d091ca4264b16ff0"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 2 400 $ ou plus le 3 septembre 2026.",
+      "probability": 59,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-03",
+      "deadline": "2026-09-03T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 3 septembre 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 2 400 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 2400,
+          "comparator": ">=",
+          "atMs": 1788393600000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 2458.87,
+          "volatilite_journaliere": 0.03196,
+          "horizon_jours": 10,
+          "seuil_usd": 2400,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-08-24-73daf3",
+      "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur 10 jours, où les mouvements de prix d’Ethereum, déjà volatils, peuvent osciller autour de son niveau actuel sans tendance marquée. Le modèle utilisé, qui suppose une absence de direction claire, estime ainsi une chance légèrement supérieure à la moitié que le prix reste ou évolue dans une fourchette proche de 2400 dollars d’ici là.",
+      "hash": "24a4fcdcb5c11cd9"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 91 $ ou plus le 3 septembre 2026.",
+      "probability": 65,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-03",
+      "deadline": "2026-09-03T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 3 septembre 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 91 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 91,
+          "comparator": ">=",
+          "atMs": 1788393600000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 94.35,
+          "volatilite_journaliere": 0.02943,
+          "horizon_jours": 10,
+          "seuil_usd": 91,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-08-24-9a504e",
+      "reasoning": "Le modèle estime une probabilité de 65 % car Solana évolue actuellement près d’un seuil de prix proche de sa valeur actuelle, dans un contexte de volatilité modérée sur 10 jours. Cette probabilité reflète l’incertitude naturelle des mouvements de prix dans un marché sans tendance marquée.",
+      "hash": "9678f87e1cdc92ff"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 98 $ ou plus le 14 septembre 2026.",
+      "probability": 39,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-14",
+      "deadline": "2026-09-14T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 14 septembre 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 98 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 98,
+          "comparator": ">=",
+          "atMs": 1789344000000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 94.35,
+          "volatilite_journaliere": 0.02943,
+          "horizon_jours": 21,
+          "seuil_usd": 98,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-08-24-cbd467",
+      "reasoning": "Le niveau de probabilité reflète l’incertitude naturelle du marché sur une période courte. Avec une volatilité quotidienne modérée et un écart de prix limité à atteindre, le modèle estime que les mouvements aléatoires rendent cette hausse plausible sans garantie.",
+      "hash": "d875b8eccade4b07"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Paris, la température maximale atteindra 27,0 °C ou plus le 27 aout 2026.",
+      "probability": 68,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-08-27",
+      "deadline": "2026-08-27T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 27 aout 2026, la température maximale relevée à Paris (Open-Meteo) est supérieure ou égale à 27,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "paris",
+          "dateISO": "2026-08-27",
+          "threshold": 27,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 27.9,
+          "min_celsius": 23.2,
+          "max_celsius": 31.4,
+          "seuil_celsius": 27
+        }
+      },
+      "id": "meteo-2026-08-24-484f11",
+      "reasoning": "Cette probabilité reflète la position de la température médiane à 27,9 °C, au-dessus du seuil de 27 °C, avec une majorité des scénarios (68 %) dépassant ce niveau. La fourchette large (de 23,2 °C à 31,4 °C) montre une incertitude sur l’ampleur du dépassement, mais la tendance centrale reste clairement orientée vers un épisode chaud.",
+      "hash": "002dd0a590457e94"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Marseille, la température maximale atteindra 30,0 °C ou plus le 27 aout 2026.",
+      "probability": 55,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-08-27",
+      "deadline": "2026-08-27T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 27 aout 2026, la température maximale relevée à Marseille (Open-Meteo) est supérieure ou égale à 30,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "marseille",
+          "dateISO": "2026-08-27",
+          "threshold": 30,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 30.1,
+          "min_celsius": 28.4,
+          "max_celsius": 32.5,
+          "seuil_celsius": 30
+        }
+      },
+      "id": "meteo-2026-08-24-43fdf8",
+      "reasoning": "Cette probabilité reflète la position de la médiane légèrement au-dessus du seuil de 30°C, ce qui indique une tendance générale à des températures élevées pour cette date à Marseille. La fourchette des scénarios possibles montre que plusieurs simulations dépassent ce seuil, confirmant une tendance à des températures potentiellement élevées.",
+      "hash": "2b3e0ffb206b5f30"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Lille, la température maximale atteindra 26,0 °C ou plus le 27 aout 2026.",
+      "probability": 71,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-08-27",
+      "deadline": "2026-08-27T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 27 aout 2026, la température maximale relevée à Lille (Open-Meteo) est supérieure ou égale à 26,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "lille",
+          "dateISO": "2026-08-27",
+          "threshold": 26,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 26.8,
+          "min_celsius": 24.2,
+          "max_celsius": 30.7,
+          "seuil_celsius": 26
+        }
+      },
+      "id": "meteo-2026-08-24-1d72dd",
+      "reasoning": "Cette probabilité reflète une tendance générale des scénarios météo pour Lille à cette date, où la majorité des modèles prévoient des températures supérieures au seuil de 26°C. La médiane à 26,8°C et la fourchette large montrent une forte probabilité de dépasser ce seuil, sans garantie absolue en raison de quelques scénarios plus frais.",
+      "hash": "3be58a031c2430f8"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Bordeaux, la température maximale atteindra 28,5 °C ou plus le 27 aout 2026.",
+      "probability": 55,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-08-27",
+      "deadline": "2026-08-27T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 27 aout 2026, la température maximale relevée à Bordeaux (Open-Meteo) est supérieure ou égale à 28,5 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "bordeaux",
+          "dateISO": "2026-08-27",
+          "threshold": 28.5,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 28.6,
+          "min_celsius": 21.4,
+          "max_celsius": 34.6,
+          "seuil_celsius": 28.5
+        }
+      },
+      "id": "meteo-2026-08-24-66d886",
+      "reasoning": "La probabilité reflète la position de la médiane à 28,6 °C, juste au-dessus du seuil de 28,5 °C, ce qui signifie que plus de la moitié des scénarios simulés dépassent ce niveau. La fourchette large (de 21,4 °C à 34,6 °C) montre une incertitude importante, mais la concentration des résultats autour de la médiane justifie cette estimation.",
+      "hash": "82a342ebeddbd85a"
+    },
+    {
+      "category": "marches",
+      "statement": "Le CAC 40 clôturera à 8 400 points ou plus le 31 aout 2026.",
+      "probability": 68,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-08-31",
+      "deadline": "2026-08-31T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 31 aout 2026, la clôture du CAC 40 relevée sur Yahoo Finance est supérieure ou égale à 8 400 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^FCHI",
+          "threshold": 8400,
+          "comparator": ">=",
+          "atMs": 1788213600000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 8470.99,
+          "volatilite_journaliere": 0.00693,
+          "horizon_jours": 7,
+          "seuil": 8400,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-08-24-3f471c",
+      "reasoning": "Cette probabilité reflète la tendance du CAC 40 à évoluer autour de son niveau actuel, sans direction marquée sur une semaine, dans un marché où les variations quotidiennes restent modérées. Le modèle utilisé suppose que les mouvements futurs dépendent surtout des fluctuations passées, sans biais haussier ou baissier identifiable.",
+      "hash": "d75085e171fefd28"
+    },
+    {
+      "category": "marches",
+      "statement": "Le S&P 500 clôturera à 7 750 points ou plus le 14 septembre 2026.",
+      "probability": 40,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-14",
+      "deadline": "2026-09-14T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 14 septembre 2026, la clôture du S&P 500 relevée sur Yahoo Finance est supérieure ou égale à 7 750 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^GSPC",
+          "threshold": 7750,
+          "comparator": ">=",
+          "atMs": 1789423200000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 7674.37,
+          "volatilite_journaliere": 0.00854,
+          "horizon_jours": 21,
+          "seuil": 7750,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-08-24-9477e2",
+      "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur un horizon court, où les mouvements aléatoires dominent souvent les tendances. Le modèle suppose que les cours suivent une marche sans direction fixe, ce qui limite la prévisibilité même avec une volatilité modérée.",
+      "hash": "9b8974b936498f54"
+    },
+    {
+      "category": "marches",
+      "statement": "Le Nasdaq clôturera à 25 800 points ou plus le 31 aout 2026.",
+      "probability": 66,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-08-31",
+      "deadline": "2026-08-31T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 31 aout 2026, la clôture du Nasdaq Composite relevée sur Yahoo Finance est supérieure ou égale à 25 800 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^IXIC",
+          "threshold": 25800,
+          "comparator": ">=",
+          "atMs": 1788213600000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 26180.46,
+          "volatilite_journaliere": 0.01362,
+          "horizon_jours": 7,
+          "seuil": 25800,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-08-24-5f9308",
+      "reasoning": "Cette probabilité reflète la tendance naturelle du marché à fluctuer autour de son niveau actuel, sans direction privilégiée. Le modèle utilisé suppose que les variations quotidiennes restent aléatoires, ce qui limite la capacité à prédire un mouvement net sur une semaine.",
+      "hash": "e5c956508ee24144"
+    },
+    {
+      "category": "marches",
+      "statement": "L'once d'or clôturera à 4 800 dollars ou plus le 14 septembre 2026.",
+      "probability": 39,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-14",
+      "deadline": "2026-09-14T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 14 septembre 2026, la clôture du cours de l'or (once) relevée sur Yahoo Finance est supérieure ou égale à 4 800 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "GC=F",
+          "threshold": 4800,
+          "comparator": ">=",
+          "atMs": 1789423200000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 4701.1,
+          "volatilite_journaliere": 0.01627,
+          "horizon_jours": 21,
+          "seuil": 4800,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-08-24-c66a66",
+      "reasoning": "Le modèle utilisé suppose que les variations du cours de l’or suivent un hasard pur, sans tendance marquée. Avec une volatilité quotidienne de 1,63 %, les mouvements sont fréquents mais imprévisibles, ce qui limite la probabilité de franchir le seuil de 4 800 dollars en 21 jours.",
+      "hash": "3f64612f5e49e98d"
+    },
+    {
+      "category": "marches",
+      "statement": "Le baril de pétrole (WTI) clôturera à 82 dollars ou plus le 31 aout 2026.",
+      "probability": 67,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-08-31",
+      "deadline": "2026-08-31T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 31 aout 2026, la clôture du baril de pétrole WTI relevée sur Yahoo Finance est supérieure ou égale à 82 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "CL=F",
+          "threshold": 82,
+          "comparator": ">=",
+          "atMs": 1788213600000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 85.19,
+          "volatilite_journaliere": 0.03326,
+          "horizon_jours": 7,
+          "seuil": 82,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-08-24-f56d8f",
+      "reasoning": "Cette probabilité reflète la position actuelle du cours du baril de pétrole WTI à 85 dollars, proche du seuil de 82 dollars. Le modèle de marche aléatoire sans dérive suppose que les variations futures dépendent principalement de la volatilité quotidienne de 3,33 %.",
+      "hash": "58beecddd8f3f3e4"
+    },
+    {
+      "category": "marches",
+      "statement": "L'euro clôturera à 1,1700 dollars ou plus le 14 septembre 2026.",
+      "probability": 45,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-14",
+      "deadline": "2026-09-14T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 14 septembre 2026, la clôture du taux euro / dollar relevée sur Yahoo Finance est supérieure ou égale à 1,1700 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "EURUSD=X",
+          "threshold": 1.17,
+          "comparator": ">=",
+          "atMs": 1789423200000,
+          "decimals": 4,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 1.167951,
+          "volatilite_journaliere": 0.00292,
+          "horizon_jours": 21,
+          "seuil": 1.17,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-08-24-86bec9",
+      "reasoning": "Le niveau de probabilité reflète l’absence de tendance claire dans les mouvements du taux euro/dollar sur la période, avec un cours actuel proche du seuil sans force motrice identifiable. La volatilité modérée indique des variations possibles mais sans direction privilégiée, ce qui limite la capacité à prédire un franchissement net.",
+      "hash": "3aae9fada2730c5c"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 10 ans clôturera à 4,70 % ou plus le 3 septembre 2026.",
+      "probability": 62,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-03",
+      "deadline": "2026-09-03T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 3 septembre 2026, le taux à 10 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 4,70 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TNX",
+          "threshold": 4.7,
+          "comparator": ">=",
+          "atMs": 1788472800000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 4.738,
+          "volatilite_quotidienne": 0.039,
+          "horizon_jours": 10,
+          "seuil_pct": 4.7,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-08-24-cdff12",
+      "reasoning": "Le modèle estime cette probabilité car le taux à 10 ans des États-Unis est actuellement légèrement au-dessus du seuil de 4,70 %, avec une volatilité quotidienne faible qui limite les mouvements brusques. La marche aléatoire suppose que les variations futures restent proches des fluctuations passées, sans tendance marquée.",
+      "hash": "05113bff99ef4adf"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 30 ans clôturera à 5,30 % ou plus le 14 septembre 2026.",
+      "probability": 44,
+      "created_at": "2026-08-24T07:34:26.183Z",
+      "target_date": "2026-09-14",
+      "deadline": "2026-09-14T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 14 septembre 2026, le taux à 30 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 5,30 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TYX",
+          "threshold": 5.300000000000001,
+          "comparator": ">=",
+          "atMs": 1789423200000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 5.276,
+          "volatilite_quotidienne": 0.0356,
+          "horizon_jours": 21,
+          "seuil_pct": 5.300000000000001,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-08-24-f8b7e6",
+      "reasoning": "Le modèle estime une probabilité de 44 % car le taux actuel est très proche du seuil, avec une faible volatilité quotidienne qui limite les mouvements brusques. La prévision repose sur l’hypothèse d’une marche aléatoire, où les variations restent modérées sur un horizon de 21 jours.",
+      "hash": "13b2f085ecf1d709"
     }
   ]
 }
