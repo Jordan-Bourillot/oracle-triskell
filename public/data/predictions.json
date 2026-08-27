@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-25T07:33:57.345Z",
+  "updated_at": "2026-08-27T17:56:49.104Z",
   "predictions": [
     {
       "category": "crypto",
@@ -6635,7 +6635,16 @@
       },
       "id": "crypto-2026-08-17-d3e892",
       "reasoning": "Le modèle utilisé suppose que les mouvements du prix du Bitcoin suivent une marche aléatoire, sans tendance particulière à la hausse ou à la baisse. Avec une volatilité quotidienne de 1,76 %, les variations possibles sur 10 jours rendent plausible un retour vers le seuil de 62 000 dollars, expliquant cette probabilité.",
-      "hash": "5b3e8e4172ed0688"
+      "hash": "5b3e8e4172ed0688",
+      "result": {
+        "resolved_at": "2026-08-27T17:56:44.090Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 79018.03,
+        "actual_label": "79 018 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1787659200&to=1787918400",
+        "measured_at": "2026-08-27T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -6728,7 +6737,16 @@
       },
       "id": "crypto-2026-08-17-bfcb68",
       "reasoning": "Le niveau de probabilité reflète la tendance récente du prix d’Ethereum à osciller autour de son niveau actuel, avec des mouvements modérés et sans direction claire sur la période considérée. Le modèle utilisé suppose que les variations de prix suivent un hasard pur, sans tendance marquée, ce qui explique cette estimation.",
-      "hash": "383cb69f55fe8428"
+      "hash": "383cb69f55fe8428",
+      "result": {
+        "resolved_at": "2026-08-27T17:56:44.090Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 2506.34,
+        "actual_label": "2 506 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1787659200&to=1787918400",
+        "measured_at": "2026-08-27T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -6759,7 +6777,16 @@
       },
       "id": "crypto-2026-08-17-6f034c",
       "reasoning": "Le modèle utilisé suppose que les mouvements du prix de Solana (SOL) suivent une marche aléatoire, sans tendance marquée à la hausse ou à la baisse. Avec une volatilité journalière de 2,65 %, les variations possibles sur 10 jours rendent plausible une baisse jusqu’à 73 $, d’où cette probabilité de 67 %.",
-      "hash": "3f60f0db24d1fc44"
+      "hash": "3f60f0db24d1fc44",
+      "result": {
+        "resolved_at": "2026-08-27T17:56:44.090Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 102.05,
+        "actual_label": "102 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1787659200&to=1787918400",
+        "measured_at": "2026-08-27T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
