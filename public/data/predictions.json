@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-08-27T17:56:49.104Z",
+  "updated_at": "2026-08-28T19:06:54.025Z",
   "predictions": [
     {
       "category": "crypto",
@@ -7235,7 +7235,16 @@
       },
       "id": "economie-2026-08-17-d5b0af",
       "reasoning": "Le modèle estime cette probabilité car le taux actuel (4,70 %) dépasse légèrement le seuil (4,65 %), et la volatilité quotidienne (0,043 point) suggère que le taux pourrait fluctuer autour de ce seuil dans les 10 jours. La marche aléatoire utilisée suppose que chaque mouvement est indépendant, ce qui explique un niveau de probabilité modéré sans tendance marquée.",
-      "hash": "17394bde61e061c0"
+      "hash": "17394bde61e061c0",
+      "result": {
+        "resolved_at": "2026-08-28T19:06:53.062Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.67,
+        "actual_label": "4,67 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1787176800&period2=1788559200&interval=1d",
+        "measured_at": "2026-08-27T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -7485,7 +7494,16 @@
       },
       "id": "meteo-2026-08-24-484f11",
       "reasoning": "Cette probabilité reflète la position de la température médiane à 27,9 °C, au-dessus du seuil de 27 °C, avec une majorité des scénarios (68 %) dépassant ce niveau. La fourchette large (de 23,2 °C à 31,4 °C) montre une incertitude sur l’ampleur du dépassement, mais la tendance centrale reste clairement orientée vers un épisode chaud.",
-      "hash": "002dd0a590457e94"
+      "hash": "002dd0a590457e94",
+      "result": {
+        "resolved_at": "2026-08-28T19:06:53.062Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 27,
+        "actual_label": "27.0 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-28T19:06:53.647Z"
+      }
     },
     {
       "category": "meteo",
@@ -7516,7 +7534,16 @@
       },
       "id": "meteo-2026-08-24-43fdf8",
       "reasoning": "Cette probabilité reflète la position de la médiane légèrement au-dessus du seuil de 30°C, ce qui indique une tendance générale à des températures élevées pour cette date à Marseille. La fourchette des scénarios possibles montre que plusieurs simulations dépassent ce seuil, confirmant une tendance à des températures potentiellement élevées.",
-      "hash": "2b3e0ffb206b5f30"
+      "hash": "2b3e0ffb206b5f30",
+      "result": {
+        "resolved_at": "2026-08-28T19:06:53.062Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 32.5,
+        "actual_label": "32.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-28T19:06:53.809Z"
+      }
     },
     {
       "category": "meteo",
@@ -7547,7 +7574,16 @@
       },
       "id": "meteo-2026-08-24-1d72dd",
       "reasoning": "Cette probabilité reflète une tendance générale des scénarios météo pour Lille à cette date, où la majorité des modèles prévoient des températures supérieures au seuil de 26°C. La médiane à 26,8°C et la fourchette large montrent une forte probabilité de dépasser ce seuil, sans garantie absolue en raison de quelques scénarios plus frais.",
-      "hash": "3be58a031c2430f8"
+      "hash": "3be58a031c2430f8",
+      "result": {
+        "resolved_at": "2026-08-28T19:06:53.062Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 27.5,
+        "actual_label": "27.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-28T19:06:53.918Z"
+      }
     },
     {
       "category": "meteo",
@@ -7578,7 +7614,16 @@
       },
       "id": "meteo-2026-08-24-66d886",
       "reasoning": "La probabilité reflète la position de la médiane à 28,6 °C, juste au-dessus du seuil de 28,5 °C, ce qui signifie que plus de la moitié des scénarios simulés dépassent ce niveau. La fourchette large (de 21,4 °C à 34,6 °C) montre une incertitude importante, mais la concentration des résultats autour de la médiane justifie cette estimation.",
-      "hash": "82a342ebeddbd85a"
+      "hash": "82a342ebeddbd85a",
+      "result": {
+        "resolved_at": "2026-08-28T19:06:53.062Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 27.6,
+        "actual_label": "27.6 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-08-28T19:06:54.025Z"
+      }
     },
     {
       "category": "marches",
