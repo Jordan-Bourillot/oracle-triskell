@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-01T12:10:07.438Z",
+  "updated_at": "2026-09-03T11:47:51.239Z",
   "predictions": [
     {
       "category": "crypto",
@@ -7371,7 +7371,16 @@
       },
       "id": "crypto-2026-08-24-d13838",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur une courte période. Le modèle utilisé ne prévoit pas de tendance forte, ce qui limite la certitude sur le dépassement du seuil. La volatilité mesurée rend plausible aussi bien une hausse qu’une baisse dans les jours à venir.",
-      "hash": "c59c38909836401b"
+      "hash": "c59c38909836401b",
+      "result": {
+        "resolved_at": "2026-09-03T11:47:46.427Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 77297.13,
+        "actual_label": "77 297 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1788264000&to=1788523200",
+        "measured_at": "2026-09-03T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -7464,7 +7473,16 @@
       },
       "id": "crypto-2026-08-24-73daf3",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur 10 jours, où les mouvements de prix d’Ethereum, déjà volatils, peuvent osciller autour de son niveau actuel sans tendance marquée. Le modèle utilisé, qui suppose une absence de direction claire, estime ainsi une chance légèrement supérieure à la moitié que le prix reste ou évolue dans une fourchette proche de 2400 dollars d’ici là.",
-      "hash": "24a4fcdcb5c11cd9"
+      "hash": "24a4fcdcb5c11cd9",
+      "result": {
+        "resolved_at": "2026-09-03T11:47:46.427Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 2390.78,
+        "actual_label": "2 391 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1788264000&to=1788523200",
+        "measured_at": "2026-09-03T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -7495,7 +7513,16 @@
       },
       "id": "crypto-2026-08-24-9a504e",
       "reasoning": "Le modèle estime une probabilité de 65 % car Solana évolue actuellement près d’un seuil de prix proche de sa valeur actuelle, dans un contexte de volatilité modérée sur 10 jours. Cette probabilité reflète l’incertitude naturelle des mouvements de prix dans un marché sans tendance marquée.",
-      "hash": "9678f87e1cdc92ff"
+      "hash": "9678f87e1cdc92ff",
+      "result": {
+        "resolved_at": "2026-09-03T11:47:46.427Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 100.39,
+        "actual_label": "100 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1788264000&to=1788523200",
+        "measured_at": "2026-09-03T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
