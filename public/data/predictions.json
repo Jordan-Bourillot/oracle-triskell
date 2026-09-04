@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-03T11:47:51.239Z",
+  "updated_at": "2026-09-04T11:49:05.444Z",
   "predictions": [
     {
       "category": "crypto",
@@ -7971,7 +7971,16 @@
       },
       "id": "economie-2026-08-24-cdff12",
       "reasoning": "Le modèle estime cette probabilité car le taux à 10 ans des États-Unis est actuellement légèrement au-dessus du seuil de 4,70 %, avec une volatilité quotidienne faible qui limite les mouvements brusques. La marche aléatoire suppose que les variations futures restent proches des fluctuations passées, sans tendance marquée.",
-      "hash": "05113bff99ef4adf"
+      "hash": "05113bff99ef4adf",
+      "result": {
+        "resolved_at": "2026-09-04T11:49:04.153Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.76,
+        "actual_label": "4,76 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1787781600&period2=1789164000&interval=1d",
+        "measured_at": "2026-09-03T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -8221,7 +8230,16 @@
       },
       "id": "meteo-2026-08-31-2c232d",
       "reasoning": "La probabilité annoncée s’appuie sur les scénarios calculés pour Paris le 3 septembre 2026, où la température médiane dépasse le seuil de 28°C. Comme la majorité des simulations (68 %) prévoient des valeurs supérieures à ce seuil, le niveau de probabilité reflète cette tendance centrale.",
-      "hash": "3d52f5d2e003ea99"
+      "hash": "3d52f5d2e003ea99",
+      "result": {
+        "resolved_at": "2026-09-04T11:49:04.153Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 27.6,
+        "actual_label": "27.6 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-04T11:49:04.930Z"
+      }
     },
     {
       "category": "meteo",
@@ -8252,7 +8270,16 @@
       },
       "id": "meteo-2026-08-31-dcad8c",
       "reasoning": "La probabilité reflète la position de la médiane à 29,7°C, proche du seuil de 30°C, avec une fourchette qui s’étend au-dessus. Un tiers des scénarios dépassent le seuil, ce qui explique ce niveau de prévision sans garantie absolue.",
-      "hash": "ac4dd6f9466b10e9"
+      "hash": "ac4dd6f9466b10e9",
+      "result": {
+        "resolved_at": "2026-09-04T11:49:04.153Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 32.8,
+        "actual_label": "32.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-04T11:49:05.133Z"
+      }
     },
     {
       "category": "meteo",
@@ -8283,7 +8310,16 @@
       },
       "id": "meteo-2026-08-31-7750ea",
       "reasoning": "Cette probabilité reflète le fait que la médiane des scénarios dépasse le seuil de 22,5 °C, avec une majorité des simulations (71 %) prévoyant des températures au-dessus de cette valeur. La fourchette large (de 20,1 °C à 25,7 °C) montre une incertitude sur l’ampleur exacte du dépassement, mais confirme une tendance générale à des températures élevées pour cette date et cette ville.",
-      "hash": "8f51e41eda71a47f"
+      "hash": "8f51e41eda71a47f",
+      "result": {
+        "resolved_at": "2026-09-04T11:49:04.153Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 21.4,
+        "actual_label": "21.4 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-04T11:49:05.288Z"
+      }
     },
     {
       "category": "meteo",
@@ -8314,7 +8350,16 @@
       },
       "id": "meteo-2026-08-31-369e5d",
       "reasoning": "Cette probabilité reflète une situation où la température médiane prévue reste juste en dessous du seuil, mais où près de la moitié des scénarios dépassent ce niveau. La fourchette large montre une incertitude notable, avec des valeurs possibles bien au-dessus comme en dessous de la limite.",
-      "hash": "c4d9b333a0197c54"
+      "hash": "c4d9b333a0197c54",
+      "result": {
+        "resolved_at": "2026-09-04T11:49:04.153Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 30.9,
+        "actual_label": "30.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-04T11:49:05.444Z"
+      }
     },
     {
       "category": "marches",
