@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-08T11:49:23.445Z",
+  "updated_at": "2026-09-10T11:54:36.095Z",
   "predictions": [
     {
       "category": "crypto",
@@ -8107,7 +8107,16 @@
       },
       "id": "crypto-2026-08-31-85c478",
       "reasoning": "Le modèle suppose que les variations du prix du Bitcoin suivent un hasard sans tendance marquée, où chaque mouvement est indépendant des précédents. Avec une volatilité quotidienne de 2 %, l’écart entre le cours actuel et le seuil visé reste dans une fourchette plausible sur 10 jours. La probabilité reflète simplement la fréquence à laquelle un tel écart se produit dans ce cadre aléatoire.",
-      "hash": "eb78977e913f4b03"
+      "hash": "eb78977e913f4b03",
+      "result": {
+        "resolved_at": "2026-09-10T11:54:31.157Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 78283.06,
+        "actual_label": "78 283 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1788868800&to=1789128000",
+        "measured_at": "2026-09-10T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -8200,7 +8209,16 @@
       },
       "id": "crypto-2026-08-31-e4d530",
       "reasoning": "La probabilité de 57 % reflète l’incertitude naturelle du marché sur une courte période, où les mouvements de prix restent imprévisibles malgré une tendance neutre. Avec une volatilité quotidienne modérée et un seuil proche du prix actuel, le modèle estime que les fluctuations ont plus de chances de maintenir ou de dépasser légèrement le niveau visé.",
-      "hash": "8713d48105da4475"
+      "hash": "8713d48105da4475",
+      "result": {
+        "resolved_at": "2026-09-10T11:54:31.157Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 2467.53,
+        "actual_label": "2 468 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1788868800&to=1789128000",
+        "measured_at": "2026-09-10T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -8231,7 +8249,16 @@
       },
       "id": "crypto-2026-08-31-eeb5c2",
       "reasoning": "La probabilité reflète l’incertitude naturelle du marché sur une courte période, où les mouvements de prix restent imprévisibles malgré une tendance légère à la baisse. Avec une volatilité modérée et un écart limité entre le cours actuel et le seuil visé, le modèle estime que les fluctuations aléatoires pourraient amener le prix à ce niveau sans garantie.",
-      "hash": "bb1e21c61830e0b2"
+      "hash": "bb1e21c61830e0b2",
+      "result": {
+        "resolved_at": "2026-09-10T11:54:31.157Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 101.57,
+        "actual_label": "102 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1788868800&to=1789128000",
+        "measured_at": "2026-09-10T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
