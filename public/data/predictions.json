@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-10T11:54:36.095Z",
+  "updated_at": "2026-09-11T11:53:27.424Z",
   "predictions": [
     {
       "category": "crypto",
@@ -8707,7 +8707,16 @@
       },
       "id": "economie-2026-08-31-36ac7b",
       "reasoning": "Le modèle estime cette probabilité car le taux à 10 ans des États-Unis évolue actuellement autour d’un niveau proche du seuil, avec une volatilité faible sur la période considérée. La marche aléatoire utilisée suppose que les mouvements futurs restent limités et aléatoires, ce qui justifie ce niveau de certitude sans tendance marquée.",
-      "hash": "8dad4885b982ddb8"
+      "hash": "8dad4885b982ddb8",
+      "result": {
+        "resolved_at": "2026-09-11T11:53:26.551Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.94,
+        "actual_label": "4,94 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1788386400&period2=1789768800&interval=1d",
+        "measured_at": "2026-09-10T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -8957,7 +8966,16 @@
       },
       "id": "meteo-2026-09-07-d81469",
       "reasoning": "Sur 31 scénarios météo, la température max à Paris le 10 septembre 2026 se situe surtout autour de 23 °C (de 19 à 25 °C). La part de scénarios atteignant 23,0 °C donne cette probabilité.",
-      "hash": "dccfcef354e3368c"
+      "hash": "dccfcef354e3368c",
+      "result": {
+        "resolved_at": "2026-09-11T11:53:26.551Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 21.2,
+        "actual_label": "21.2 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-11T11:53:27.102Z"
+      }
     },
     {
       "category": "meteo",
@@ -8988,7 +9006,16 @@
       },
       "id": "meteo-2026-09-07-80ffbe",
       "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 10 septembre 2026 se situe surtout autour de 26 °C (de 23 à 28 °C). La part de scénarios atteignant 26,0 °C donne cette probabilité.",
-      "hash": "e2754046a416508a"
+      "hash": "e2754046a416508a",
+      "result": {
+        "resolved_at": "2026-09-11T11:53:26.551Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 25.9,
+        "actual_label": "25.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-11T11:53:27.224Z"
+      }
     },
     {
       "category": "meteo",
@@ -9019,7 +9046,16 @@
       },
       "id": "meteo-2026-09-07-fc5602",
       "reasoning": "Sur 31 scénarios météo, la température max à Lille le 10 septembre 2026 se situe surtout autour de 21 °C (de 17 à 23 °C). La part de scénarios atteignant 20,0 °C donne cette probabilité.",
-      "hash": "6d73c9a5a9db6bc1"
+      "hash": "6d73c9a5a9db6bc1",
+      "result": {
+        "resolved_at": "2026-09-11T11:53:26.551Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 20.9,
+        "actual_label": "20.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-11T11:53:27.324Z"
+      }
     },
     {
       "category": "meteo",
@@ -9050,7 +9086,16 @@
       },
       "id": "meteo-2026-09-07-51bf9c",
       "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 10 septembre 2026 se situe surtout autour de 25 °C (de 23 à 27 °C). La part de scénarios atteignant 25,5 °C donne cette probabilité.",
-      "hash": "d31651c36ccc22b0"
+      "hash": "d31651c36ccc22b0",
+      "result": {
+        "resolved_at": "2026-09-11T11:53:26.551Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 23.9,
+        "actual_label": "23.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-11T11:53:27.424Z"
+      }
     },
     {
       "category": "marches",
