@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-17T12:16:18.635Z",
+  "updated_at": "2026-09-18T11:56:01.947Z",
   "predictions": [
     {
       "category": "crypto",
@@ -9443,7 +9443,16 @@
       },
       "id": "economie-2026-09-07-60557d",
       "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 4,78 %. Au vu de ses variations quotidiennes récentes, atteindre 4,75 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "566bb354fc8120a0"
+      "hash": "566bb354fc8120a0",
+      "result": {
+        "resolved_at": "2026-09-18T11:56:00.678Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 4.95,
+        "actual_label": "4,95 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1788991200&period2=1790373600&interval=1d",
+        "measured_at": "2026-09-17T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -9693,7 +9702,16 @@
       },
       "id": "meteo-2026-09-14-5f6b4d",
       "reasoning": "Sur 31 scénarios météo, la température max à Paris le 17 septembre 2026 se situe surtout autour de 20 °C (de 16 à 22 °C). La part de scénarios atteignant 19,0 °C donne cette probabilité.",
-      "hash": "97ffa4d85e336c3a"
+      "hash": "97ffa4d85e336c3a",
+      "result": {
+        "resolved_at": "2026-09-18T11:56:00.678Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 21.9,
+        "actual_label": "21.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-18T11:56:01.457Z"
+      }
     },
     {
       "category": "meteo",
@@ -9724,7 +9742,16 @@
       },
       "id": "meteo-2026-09-14-6b14ff",
       "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 17 septembre 2026 se situe surtout autour de 24 °C (de 23 à 28 °C). La part de scénarios atteignant 24,5 °C donne cette probabilité.",
-      "hash": "e3d1f524efce7e4e"
+      "hash": "e3d1f524efce7e4e",
+      "result": {
+        "resolved_at": "2026-09-18T11:56:00.678Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 26.3,
+        "actual_label": "26.3 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-18T11:56:01.665Z"
+      }
     },
     {
       "category": "meteo",
@@ -9755,7 +9782,16 @@
       },
       "id": "meteo-2026-09-14-c97745",
       "reasoning": "Sur 31 scénarios météo, la température max à Lille le 17 septembre 2026 se situe surtout autour de 18 °C (de 16 à 21 °C). La part de scénarios atteignant 17,5 °C donne cette probabilité.",
-      "hash": "eb0aaec5c177a06c"
+      "hash": "eb0aaec5c177a06c",
+      "result": {
+        "resolved_at": "2026-09-18T11:56:00.678Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 17.5,
+        "actual_label": "17.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-18T11:56:01.806Z"
+      }
     },
     {
       "category": "meteo",
@@ -9786,7 +9822,16 @@
       },
       "id": "meteo-2026-09-14-9b05f3",
       "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 17 septembre 2026 se situe surtout autour de 22 °C (de 19 à 27 °C). La part de scénarios atteignant 22,5 °C donne cette probabilité.",
-      "hash": "0fdd1509ba74e93b"
+      "hash": "0fdd1509ba74e93b",
+      "result": {
+        "resolved_at": "2026-09-18T11:56:00.678Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 22.2,
+        "actual_label": "22.2 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-18T11:56:01.946Z"
+      }
     },
     {
       "category": "marches",
