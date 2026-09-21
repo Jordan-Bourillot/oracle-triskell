@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-18T11:56:01.947Z",
+  "updated_at": "2026-09-21T13:05:51.301Z",
   "predictions": [
     {
       "category": "crypto",
@@ -8210,7 +8210,16 @@
       },
       "id": "crypto-2026-08-31-c0c5a5",
       "reasoning": "Cette probabilité reflète l’incertitude naturelle du marché sur un horizon court, où les variations quotidiennes de 2 % rendent un dépassement du seuil de 80 000 dollars aussi probable qu’improbable sans tendance marquée. Le modèle, qui suppose une marche aléatoire sans direction privilégiée, ne privilégie ni l’atteinte ni l’échec de ce niveau dans les 21 jours à venir.",
-      "hash": "42523a54b81b02e1"
+      "hash": "42523a54b81b02e1",
+      "result": {
+        "resolved_at": "2026-09-21T13:04:20.584Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 81169.04,
+        "actual_label": "81 169 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1789819200&to=1790078400",
+        "measured_at": "2026-09-21T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -8241,7 +8250,16 @@
       },
       "id": "crypto-2026-08-31-d49b70",
       "reasoning": "Le modèle utilisé suppose que les variations de prix d’Ethereum suivent un mouvement aléatoire sans tendance marquée, comme une marche au hasard. Avec une volatilité quotidienne de 3,1 % et un écart de 156 dollars vers un seuil à 2600, la probabilité reste modérée car les fluctuations peuvent aussi bien rapprocher qu’éloigner le prix de cette cible dans les 21 jours.",
-      "hash": "8767d73d90d0be02"
+      "hash": "8767d73d90d0be02",
+      "result": {
+        "resolved_at": "2026-09-21T13:04:20.584Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 2644.73,
+        "actual_label": "2 645 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1789819200&to=1790078400",
+        "measured_at": "2026-09-21T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -8352,7 +8370,16 @@
       },
       "id": "crypto-2026-08-31-646e75",
       "reasoning": "Le modèle suppose que les variations de prix de Solana suivent un hasard pur, sans tendance claire ni mémoire des mouvements passés. Avec une volatilité quotidienne de 3 % sur 21 jours, les écarts possibles s’accumulent sans direction privilégiée, ce qui limite la probabilité d’atteindre 110 $ sans rebond imprévu.",
-      "hash": "2a12d8bb48aa00b3"
+      "hash": "2a12d8bb48aa00b3",
+      "result": {
+        "resolved_at": "2026-09-21T13:04:20.584Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 111.15,
+        "actual_label": "111 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1789819200&to=1790078400",
+        "measured_at": "2026-09-21T00:00:00.000Z"
+      }
     },
     {
       "category": "meteo",
@@ -10096,6 +10123,580 @@
       "id": "economie-2026-09-14-437ef6",
       "reasoning": "Le taux à 30 ans des États-Unis tourne autour de 5,36 %. Au vu de ses variations quotidiennes récentes, atteindre 5,40 % d'ici 21 jours correspond à cette probabilité, sans supposer de tendance.",
       "hash": "53ddda4cc5b86bb3"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 83 000 $ ou plus le 1 octobre 2026.",
+      "probability": 66,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-01",
+      "deadline": "2026-10-01T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 1 octobre 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 83 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 83000,
+          "comparator": ">=",
+          "atMs": 1790812800000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 85259.27,
+          "volatilite_journaliere": 0.02024,
+          "horizon_jours": 10,
+          "seuil_usd": 83000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-09-21-c7467d",
+      "reasoning": "Sur 90 jours, le BTC bouge d'environ 2.0 % par jour. Partant de 85 259 $, atteindre 83 000 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "6468b7a9460a68a4"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 88 000 $ ou plus le 12 octobre 2026.",
+      "probability": 37,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-12",
+      "deadline": "2026-10-12T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 12 octobre 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 88 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 88000,
+          "comparator": ">=",
+          "atMs": 1791763200000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 85259.27,
+          "volatilite_journaliere": 0.02024,
+          "horizon_jours": 21,
+          "seuil_usd": 88000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-09-21-409a90",
+      "reasoning": "Sur 90 jours, le BTC bouge d'environ 2.0 % par jour. Partant de 85 259 $, atteindre 88 000 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "bd5abef14b4d6d57"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 2 800 $ ou plus le 12 octobre 2026.",
+      "probability": 43,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-12",
+      "deadline": "2026-10-12T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 12 octobre 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 2 800 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 2800,
+          "comparator": ">=",
+          "atMs": 1791763200000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 2735.03,
+          "volatilite_journaliere": 0.02819,
+          "horizon_jours": 21,
+          "seuil_usd": 2800,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-09-21-760fb7",
+      "reasoning": "Sur 90 jours, le ETH bouge d'environ 2.8 % par jour. Partant de 2 735 $, atteindre 2 800 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "4a447d1b0d7af788"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 2 600 $ ou plus le 1 octobre 2026.",
+      "probability": 71,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-01",
+      "deadline": "2026-10-01T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 1 octobre 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 2 600 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 2600,
+          "comparator": ">=",
+          "atMs": 1790812800000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 2735.03,
+          "volatilite_journaliere": 0.02819,
+          "horizon_jours": 10,
+          "seuil_usd": 2600,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-09-21-647f51",
+      "reasoning": "Sur 90 jours, le ETH bouge d'environ 2.8 % par jour. Partant de 2 735 $, atteindre 2 600 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "1743dbb34199c761"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 110 $ ou plus le 1 octobre 2026.",
+      "probability": 74,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-01",
+      "deadline": "2026-10-01T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 1 octobre 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 110 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 110,
+          "comparator": ">=",
+          "atMs": 1790812800000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 116.93,
+          "volatilite_journaliere": 0.0296,
+          "horizon_jours": 10,
+          "seuil_usd": 110,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-09-21-d74edf",
+      "reasoning": "Sur 90 jours, le SOL bouge d'environ 3.0 % par jour. Partant de 117 $, atteindre 110 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "6c9d60930e57f460"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 120 $ ou plus le 12 octobre 2026.",
+      "probability": 42,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-12",
+      "deadline": "2026-10-12T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 12 octobre 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 120 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 120,
+          "comparator": ">=",
+          "atMs": 1791763200000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 116.93,
+          "volatilite_journaliere": 0.0296,
+          "horizon_jours": 21,
+          "seuil_usd": 120,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-09-21-cd279f",
+      "reasoning": "Sur 90 jours, le SOL bouge d'environ 3.0 % par jour. Partant de 117 $, atteindre 120 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "1ce2f61022374170"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Paris, la température maximale atteindra 22,0 °C ou plus le 24 septembre 2026.",
+      "probability": 65,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-09-24",
+      "deadline": "2026-09-24T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 24 septembre 2026, la température maximale relevée à Paris (Open-Meteo) est supérieure ou égale à 22,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "paris",
+          "dateISO": "2026-09-24",
+          "threshold": 22,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 22.4,
+          "min_celsius": 17.6,
+          "max_celsius": 26.3,
+          "seuil_celsius": 22
+        }
+      },
+      "id": "meteo-2026-09-21-3fbe5c",
+      "reasoning": "Sur 31 scénarios météo, la température max à Paris le 24 septembre 2026 se situe surtout autour de 22 °C (de 18 à 26 °C). La part de scénarios atteignant 22,0 °C donne cette probabilité.",
+      "hash": "b2783c59116a1aa4"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Marseille, la température maximale atteindra 26,5 °C ou plus le 24 septembre 2026.",
+      "probability": 42,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-09-24",
+      "deadline": "2026-09-24T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 24 septembre 2026, la température maximale relevée à Marseille (Open-Meteo) est supérieure ou égale à 26,5 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "marseille",
+          "dateISO": "2026-09-24",
+          "threshold": 26.5,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 26.2,
+          "min_celsius": 23,
+          "max_celsius": 27.7,
+          "seuil_celsius": 26.5
+        }
+      },
+      "id": "meteo-2026-09-21-c0d00b",
+      "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 24 septembre 2026 se situe surtout autour de 26 °C (de 23 à 28 °C). La part de scénarios atteignant 26,5 °C donne cette probabilité.",
+      "hash": "826e6ebe0f55118a"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Lille, la température maximale atteindra 18,0 °C ou plus le 24 septembre 2026.",
+      "probability": 74,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-09-24",
+      "deadline": "2026-09-24T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 24 septembre 2026, la température maximale relevée à Lille (Open-Meteo) est supérieure ou égale à 18,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "lille",
+          "dateISO": "2026-09-24",
+          "threshold": 18,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 19.1,
+          "min_celsius": 15.2,
+          "max_celsius": 21.5,
+          "seuil_celsius": 18
+        }
+      },
+      "id": "meteo-2026-09-21-82e591",
+      "reasoning": "Sur 31 scénarios météo, la température max à Lille le 24 septembre 2026 se situe surtout autour de 19 °C (de 15 à 22 °C). La part de scénarios atteignant 18,0 °C donne cette probabilité.",
+      "hash": "0301313c6476e50d"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Bordeaux, la température maximale atteindra 32,0 °C ou plus le 24 septembre 2026.",
+      "probability": 48,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-09-24",
+      "deadline": "2026-09-24T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 24 septembre 2026, la température maximale relevée à Bordeaux (Open-Meteo) est supérieure ou égale à 32,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "bordeaux",
+          "dateISO": "2026-09-24",
+          "threshold": 32,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 31.9,
+          "min_celsius": 26.8,
+          "max_celsius": 34.7,
+          "seuil_celsius": 32
+        }
+      },
+      "id": "meteo-2026-09-21-438149",
+      "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 24 septembre 2026 se situe surtout autour de 32 °C (de 27 à 35 °C). La part de scénarios atteignant 32,0 °C donne cette probabilité.",
+      "hash": "a28c442363d8c963"
+    },
+    {
+      "category": "marches",
+      "statement": "Le CAC 40 clôturera à 8 050 points ou plus le 28 septembre 2026.",
+      "probability": 71,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-09-28",
+      "deadline": "2026-09-28T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 28 septembre 2026, la clôture du CAC 40 relevée sur Yahoo Finance est supérieure ou égale à 8 050 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^FCHI",
+          "threshold": 8050,
+          "comparator": ">=",
+          "atMs": 1790632800000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 8139.49,
+          "volatilite_journaliere": 0.00747,
+          "horizon_jours": 7,
+          "seuil": 8050,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-09-21-d38b01",
+      "reasoning": "Sur trois mois, CAC 40 bouge d'environ 0.7 % par jour. Partant de 8 150 points, atteindre 8 050 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "f2bee5bb322a20de"
+    },
+    {
+      "category": "marches",
+      "statement": "Le S&P 500 clôturera à 7 725 points ou plus le 12 octobre 2026.",
+      "probability": 38,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-12",
+      "deadline": "2026-10-12T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 12 octobre 2026, la clôture du S&P 500 relevée sur Yahoo Finance est supérieure ou égale à 7 725 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^GSPC",
+          "threshold": 7725,
+          "comparator": ">=",
+          "atMs": 1791842400000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 7650.5,
+          "volatilite_journaliere": 0.00705,
+          "horizon_jours": 21,
+          "seuil": 7725,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-09-21-7523ae",
+      "reasoning": "Sur trois mois, S&P 500 bouge d'environ 0.7 % par jour. Partant de 7 650 points, atteindre 7 725 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "9da73d643941f99f"
+    },
+    {
+      "category": "marches",
+      "statement": "Le Nasdaq clôturera à 26 200 points ou plus le 28 septembre 2026.",
+      "probability": 66,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-09-28",
+      "deadline": "2026-09-28T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 28 septembre 2026, la clôture du Nasdaq Composite relevée sur Yahoo Finance est supérieure ou égale à 26 200 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^IXIC",
+          "threshold": 26200,
+          "comparator": ">=",
+          "atMs": 1790632800000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 26522.54,
+          "volatilite_journaliere": 0.01107,
+          "horizon_jours": 7,
+          "seuil": 26200,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-09-21-fe1eed",
+      "reasoning": "Sur trois mois, Nasdaq Composite bouge d'environ 1.1 % par jour. Partant de 26 500 points, atteindre 26 200 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "c4ee9aea714cef97"
+    },
+    {
+      "category": "marches",
+      "statement": "L'once d'or clôturera à 4 460 dollars ou plus le 12 octobre 2026.",
+      "probability": 41,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-12",
+      "deadline": "2026-10-12T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 12 octobre 2026, la clôture du cours de l'or (once) relevée sur Yahoo Finance est supérieure ou égale à 4 460 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "GC=F",
+          "threshold": 4460,
+          "comparator": ">=",
+          "atMs": 1791842400000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 4392.3,
+          "volatilite_journaliere": 0.01415,
+          "horizon_jours": 21,
+          "seuil": 4460,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-09-21-57c8ce",
+      "reasoning": "Sur trois mois, cours de l'or (once) bouge d'environ 1.4 % par jour. Partant de 4 400 dollars, atteindre 4 460 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "fb17ec9d8785958d"
+    },
+    {
+      "category": "marches",
+      "statement": "Le baril de pétrole (WTI) clôturera à 90 dollars ou plus le 28 septembre 2026.",
+      "probability": 67,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-09-28",
+      "deadline": "2026-09-28T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 28 septembre 2026, la clôture du baril de pétrole WTI relevée sur Yahoo Finance est supérieure ou égale à 90 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "CL=F",
+          "threshold": 90,
+          "comparator": ">=",
+          "atMs": 1790632800000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 93.49,
+          "volatilite_journaliere": 0.03282,
+          "horizon_jours": 7,
+          "seuil": 90,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-09-21-319725",
+      "reasoning": "Sur trois mois, baril de pétrole WTI bouge d'environ 3.3 % par jour. Partant de 93 dollars, atteindre 90 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "d5ab5d3a6742f02e"
+    },
+    {
+      "category": "marches",
+      "statement": "L'euro clôturera à 1,1500 dollars ou plus le 12 octobre 2026.",
+      "probability": 46,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-12",
+      "deadline": "2026-10-12T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 12 octobre 2026, la clôture du taux euro / dollar relevée sur Yahoo Finance est supérieure ou égale à 1,1500 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "EURUSD=X",
+          "threshold": 1.1500000000000001,
+          "comparator": ">=",
+          "atMs": 1791842400000,
+          "decimals": 4,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 1.148633,
+          "volatilite_journaliere": 0.00272,
+          "horizon_jours": 21,
+          "seuil": 1.1500000000000001,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-09-21-a7dbbc",
+      "reasoning": "Sur trois mois, taux euro / dollar bouge d'environ 0.3 % par jour. Partant de 1,1500 dollars, atteindre 1,1500 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "4faa5980500cb7ca"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 10 ans clôturera à 4,90 % ou plus le 1 octobre 2026.",
+      "probability": 69,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-01",
+      "deadline": "2026-10-01T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 1 octobre 2026, le taux à 10 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 4,90 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TNX",
+          "threshold": 4.9,
+          "comparator": ">=",
+          "atMs": 1790892000000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 4.965,
+          "volatilite_quotidienne": 0.0403,
+          "horizon_jours": 10,
+          "seuil_pct": 4.9,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-09-21-fd732b",
+      "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 4,97 %. Au vu de ses variations quotidiennes récentes, atteindre 4,90 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "52be3dc311050e39"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 30 ans clôturera à 5,35 % ou plus le 12 octobre 2026.",
+      "probability": 38,
+      "created_at": "2026-09-21T13:04:25.667Z",
+      "target_date": "2026-10-12",
+      "deadline": "2026-10-12T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 12 octobre 2026, le taux à 30 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 5,35 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TYX",
+          "threshold": 5.3500000000000005,
+          "comparator": ">=",
+          "atMs": 1791842400000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 5.298,
+          "volatilite_quotidienne": 0.0362,
+          "horizon_jours": 21,
+          "seuil_pct": 5.3500000000000005,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-09-21-1ed91a",
+      "reasoning": "Le taux à 30 ans des États-Unis tourne autour de 5,30 %. Au vu de ses variations quotidiennes récentes, atteindre 5,35 % d'ici 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "0c2edda7ccb30369"
     }
   ]
 }
