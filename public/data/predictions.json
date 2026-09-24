@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-22T12:10:53.106Z",
+  "updated_at": "2026-09-24T12:22:02.727Z",
   "predictions": [
     {
       "category": "crypto",
@@ -9579,7 +9579,16 @@
       },
       "id": "crypto-2026-09-14-758131",
       "reasoning": "Sur 90 jours, le BTC bouge d'environ 1.9 % par jour. Partant de 77 665 $, atteindre 76 000 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "8988bd5b242d129a"
+      "hash": "8988bd5b242d129a",
+      "result": {
+        "resolved_at": "2026-09-24T12:21:57.544Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 84382.4,
+        "actual_label": "84 382 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1790078400&to=1790337600",
+        "measured_at": "2026-09-24T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -9672,7 +9681,16 @@
       },
       "id": "crypto-2026-09-14-b4646f",
       "reasoning": "Sur 90 jours, le ETH bouge d'environ 2.7 % par jour. Partant de 2 499 $, atteindre 2 400 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "a982bc4115a4ad99"
+      "hash": "a982bc4115a4ad99",
+      "result": {
+        "resolved_at": "2026-09-24T12:21:57.544Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 2684.34,
+        "actual_label": "2 684 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1790078400&to=1790337600",
+        "measured_at": "2026-09-24T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -9703,7 +9721,16 @@
       },
       "id": "crypto-2026-09-14-0abb72",
       "reasoning": "Sur 90 jours, le SOL bouge d'environ 2.7 % par jour. Partant de 101 $, atteindre 98 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "e841dc1348ca5958"
+      "hash": "e841dc1348ca5958",
+      "result": {
+        "resolved_at": "2026-09-24T12:21:57.544Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 114.99,
+        "actual_label": "115 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1790078400&to=1790337600",
+        "measured_at": "2026-09-24T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
