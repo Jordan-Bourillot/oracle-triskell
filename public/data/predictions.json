@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-09-24T12:22:02.727Z",
+  "updated_at": "2026-09-25T12:22:34.186Z",
   "predictions": [
     {
       "category": "crypto",
@@ -10179,7 +10179,16 @@
       },
       "id": "economie-2026-09-14-700b93",
       "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 4,98 %. Au vu de ses variations quotidiennes récentes, atteindre 4,95 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "571b47c03332016d"
+      "hash": "571b47c03332016d",
+      "result": {
+        "resolved_at": "2026-09-25T12:22:33.257Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.16,
+        "actual_label": "5,16 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1789596000&period2=1790978400&interval=1d",
+        "measured_at": "2026-09-24T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -10429,7 +10438,16 @@
       },
       "id": "meteo-2026-09-21-3fbe5c",
       "reasoning": "Sur 31 scénarios météo, la température max à Paris le 24 septembre 2026 se situe surtout autour de 22 °C (de 18 à 26 °C). La part de scénarios atteignant 22,0 °C donne cette probabilité.",
-      "hash": "b2783c59116a1aa4"
+      "hash": "b2783c59116a1aa4",
+      "result": {
+        "resolved_at": "2026-09-25T12:22:33.257Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 23.2,
+        "actual_label": "23.2 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-25T12:22:33.817Z"
+      }
     },
     {
       "category": "meteo",
@@ -10460,7 +10478,16 @@
       },
       "id": "meteo-2026-09-21-c0d00b",
       "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 24 septembre 2026 se situe surtout autour de 26 °C (de 23 à 28 °C). La part de scénarios atteignant 26,5 °C donne cette probabilité.",
-      "hash": "826e6ebe0f55118a"
+      "hash": "826e6ebe0f55118a",
+      "result": {
+        "resolved_at": "2026-09-25T12:22:33.257Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 24.4,
+        "actual_label": "24.4 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-25T12:22:33.968Z"
+      }
     },
     {
       "category": "meteo",
@@ -10491,7 +10518,16 @@
       },
       "id": "meteo-2026-09-21-82e591",
       "reasoning": "Sur 31 scénarios météo, la température max à Lille le 24 septembre 2026 se situe surtout autour de 19 °C (de 15 à 22 °C). La part de scénarios atteignant 18,0 °C donne cette probabilité.",
-      "hash": "0301313c6476e50d"
+      "hash": "0301313c6476e50d",
+      "result": {
+        "resolved_at": "2026-09-25T12:22:33.257Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 20.8,
+        "actual_label": "20.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-25T12:22:34.082Z"
+      }
     },
     {
       "category": "meteo",
@@ -10522,7 +10558,16 @@
       },
       "id": "meteo-2026-09-21-438149",
       "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 24 septembre 2026 se situe surtout autour de 32 °C (de 27 à 35 °C). La part de scénarios atteignant 32,0 °C donne cette probabilité.",
-      "hash": "a28c442363d8c963"
+      "hash": "a28c442363d8c963",
+      "result": {
+        "resolved_at": "2026-09-25T12:22:33.257Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 32.7,
+        "actual_label": "32.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-09-25T12:22:34.185Z"
+      }
     },
     {
       "category": "marches",
