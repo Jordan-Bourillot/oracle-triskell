@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-10-01T13:58:54.389Z",
+  "updated_at": "2026-10-02T13:16:54.861Z",
   "predictions": [
     {
       "category": "crypto",
@@ -10915,7 +10915,16 @@
       },
       "id": "economie-2026-09-21-fd732b",
       "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 4,97 %. Au vu de ses variations quotidiennes récentes, atteindre 4,90 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "52be3dc311050e39"
+      "hash": "52be3dc311050e39",
+      "result": {
+        "resolved_at": "2026-10-02T13:16:53.906Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.24,
+        "actual_label": "5,24 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1790200800&period2=1791583200&interval=1d",
+        "measured_at": "2026-10-01T12:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -11165,7 +11174,16 @@
       },
       "id": "meteo-2026-09-28-24d800",
       "reasoning": "Sur 31 scénarios météo, la température max à Paris le 1 octobre 2026 se situe surtout autour de 22 °C (de 20 à 25 °C). La part de scénarios atteignant 22,5 °C donne cette probabilité.",
-      "hash": "36567ba7fa6bd74d"
+      "hash": "36567ba7fa6bd74d",
+      "result": {
+        "resolved_at": "2026-10-02T13:16:53.906Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 21.2,
+        "actual_label": "21.2 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-10-02T13:16:54.488Z"
+      }
     },
     {
       "category": "meteo",
@@ -11196,7 +11214,16 @@
       },
       "id": "meteo-2026-09-28-adb2ad",
       "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 1 octobre 2026 se situe surtout autour de 25 °C (de 22 à 26 °C). La part de scénarios atteignant 24,5 °C donne cette probabilité.",
-      "hash": "16169d0eb6aac899"
+      "hash": "16169d0eb6aac899",
+      "result": {
+        "resolved_at": "2026-10-02T13:16:53.906Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 23.1,
+        "actual_label": "23.1 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-10-02T13:16:54.656Z"
+      }
     },
     {
       "category": "meteo",
@@ -11227,7 +11254,16 @@
       },
       "id": "meteo-2026-09-28-adfb29",
       "reasoning": "Sur 31 scénarios météo, la température max à Lille le 1 octobre 2026 se situe surtout autour de 21 °C (de 19 à 23 °C). La part de scénarios atteignant 20,5 °C donne cette probabilité.",
-      "hash": "4745509d2bb81348"
+      "hash": "4745509d2bb81348",
+      "result": {
+        "resolved_at": "2026-10-02T13:16:53.906Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 20.3,
+        "actual_label": "20.3 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-10-02T13:16:54.757Z"
+      }
     },
     {
       "category": "meteo",
@@ -11258,7 +11294,16 @@
       },
       "id": "meteo-2026-09-28-1b8134",
       "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 1 octobre 2026 se situe surtout autour de 23 °C (de 21 à 26 °C). La part de scénarios atteignant 23,5 °C donne cette probabilité.",
-      "hash": "248afed5ea74f438"
+      "hash": "248afed5ea74f438",
+      "result": {
+        "resolved_at": "2026-10-02T13:16:53.906Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 21.5,
+        "actual_label": "21.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-10-02T13:16:54.861Z"
+      }
     },
     {
       "category": "marches",
