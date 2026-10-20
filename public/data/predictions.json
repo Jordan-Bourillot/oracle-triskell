@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-10-19T13:45:41.777Z",
+  "updated_at": "2026-10-20T12:20:59.140Z",
   "predictions": [
     {
       "category": "crypto",
@@ -11558,7 +11558,16 @@
       },
       "id": "marches-2026-09-28-c2ace4",
       "reasoning": "Sur trois mois, S&P 500 bouge d'environ 0.7 % par jour. Partant de 7 700 points, atteindre 7 775 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "a8070fb7d8f773a2"
+      "hash": "a8070fb7d8f773a2",
+      "result": {
+        "resolved_at": "2026-10-20T12:20:58.773Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 7691,
+        "actual_label": "7 691 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1791756000&period2=1793138400&interval=1d",
+        "measured_at": "2026-10-19T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -11633,7 +11642,16 @@
       },
       "id": "marches-2026-09-28-012659",
       "reasoning": "Sur trois mois, cours de l'or (once) bouge d'environ 1.4 % par jour. Partant de 4 180 dollars, atteindre 4 240 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "712e1a2e90953bda"
+      "hash": "712e1a2e90953bda",
+      "result": {
+        "resolved_at": "2026-10-20T12:20:58.773Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4131,
+        "actual_label": "4 131 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1791756000&period2=1793138400&interval=1d",
+        "measured_at": "2026-10-20T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -11708,7 +11726,16 @@
       },
       "id": "marches-2026-09-28-ba3dfc",
       "reasoning": "Sur trois mois, taux euro / dollar bouge d'environ 0.3 % par jour. Partant de 1,1400 dollars, atteindre 1,1400 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "3e7f288532f809bb"
+      "hash": "3e7f288532f809bb",
+      "result": {
+        "resolved_at": "2026-10-20T12:20:58.773Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 1.1222,
+        "actual_label": "1,1222 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1791756000&period2=1793138400&interval=1d",
+        "measured_at": "2026-10-20T12:20:30.000Z"
+      }
     },
     {
       "category": "economie",
@@ -11783,7 +11810,16 @@
       },
       "id": "economie-2026-09-28-87b75a",
       "reasoning": "Le taux à 30 ans des États-Unis tourne autour de 5,54 %. Au vu de ses variations quotidiennes récentes, atteindre 5,60 % d'ici 21 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "af29cccf148fc5ae"
+      "hash": "af29cccf148fc5ae",
+      "result": {
+        "resolved_at": "2026-10-20T12:20:58.773Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 5.47,
+        "actual_label": "5,47 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETYX?period1=1791756000&period2=1793138400&interval=1d",
+        "measured_at": "2026-10-19T12:20:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -12835,7 +12871,16 @@
       },
       "id": "marches-2026-10-12-3f7ae9",
       "reasoning": "Sur trois mois, CAC 40 bouge d'environ 0.7 % par jour. Partant de 7 800 points, atteindre 7 750 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "1bd399df23388fb2"
+      "hash": "1bd399df23388fb2",
+      "result": {
+        "resolved_at": "2026-10-20T12:20:58.773Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 7800,
+        "actual_label": "7 800 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFCHI?period1=1791756000&period2=1793138400&interval=1d",
+        "measured_at": "2026-10-20T07:00:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -12901,7 +12946,16 @@
       },
       "id": "marches-2026-10-12-9a502c",
       "reasoning": "Sur trois mois, Nasdaq Composite bouge d'environ 1.0 % par jour. Partant de 27 300 points, atteindre 27 000 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "ef0f4ee8ee002e1c"
+      "hash": "ef0f4ee8ee002e1c",
+      "result": {
+        "resolved_at": "2026-10-20T12:20:58.773Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 26431,
+        "actual_label": "26 431 points",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1791756000&period2=1793138400&interval=1d",
+        "measured_at": "2026-10-19T13:30:00.000Z"
+      }
     },
     {
       "category": "marches",
@@ -12967,7 +13021,16 @@
       },
       "id": "marches-2026-10-12-ebf475",
       "reasoning": "Sur trois mois, baril de pétrole WTI bouge d'environ 3.0 % par jour. Partant de 94 dollars, atteindre 91 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "0b56980d06dd3f24"
+      "hash": "0b56980d06dd3f24",
+      "result": {
+        "resolved_at": "2026-10-20T12:20:58.773Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 101,
+        "actual_label": "101 dollars",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1791756000&period2=1793138400&interval=1d",
+        "measured_at": "2026-10-20T04:00:00.000Z"
+      }
     },
     {
       "category": "marches",
