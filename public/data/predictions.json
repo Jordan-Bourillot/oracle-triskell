@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-11-05T14:59:53.788Z",
+  "updated_at": "2026-11-06T14:40:08.960Z",
   "predictions": [
     {
       "category": "crypto",
@@ -14595,7 +14595,16 @@
       },
       "id": "economie-2026-10-26-9f828e",
       "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 4,99 %. Au vu de ses variations quotidiennes récentes, atteindre 4,95 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "ed6466d527b02d33"
+      "hash": "ed6466d527b02d33",
+      "result": {
+        "resolved_at": "2026-11-06T14:40:08.635Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4.84,
+        "actual_label": "4,84 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1793224800&period2=1794607200&interval=1d",
+        "measured_at": "2026-11-05T13:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -14845,7 +14854,16 @@
       },
       "id": "meteo-2026-11-02-ea92a0",
       "reasoning": "Sur 31 scénarios météo, la température max à Paris le 5 novembre 2026 se situe surtout autour de 12 °C (de 10 à 13 °C). La part de scénarios atteignant 11,5 °C donne cette probabilité.",
-      "hash": "64a1594be3e05b30"
+      "hash": "64a1594be3e05b30",
+      "result": {
+        "resolved_at": "2026-11-06T14:40:08.635Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 11.6,
+        "actual_label": "11.6 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-06T14:40:08.881Z"
+      }
     },
     {
       "category": "meteo",
@@ -14876,7 +14894,16 @@
       },
       "id": "meteo-2026-11-02-c34419",
       "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 5 novembre 2026 se situe surtout autour de 17 °C (de 15 à 18 °C). La part de scénarios atteignant 17,0 °C donne cette probabilité.",
-      "hash": "0f116b9ccfc166e8"
+      "hash": "0f116b9ccfc166e8",
+      "result": {
+        "resolved_at": "2026-11-06T14:40:08.635Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 19,
+        "actual_label": "19.0 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-06T14:40:08.909Z"
+      }
     },
     {
       "category": "meteo",
@@ -14907,7 +14934,16 @@
       },
       "id": "meteo-2026-11-02-f891a6",
       "reasoning": "Sur 31 scénarios météo, la température max à Lille le 5 novembre 2026 se situe surtout autour de 10 °C (de 8 à 11 °C). La part de scénarios atteignant 9,5 °C donne cette probabilité.",
-      "hash": "77d555d76ba72614"
+      "hash": "77d555d76ba72614",
+      "result": {
+        "resolved_at": "2026-11-06T14:40:08.635Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 9.5,
+        "actual_label": "9.5 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-06T14:40:08.934Z"
+      }
     },
     {
       "category": "meteo",
@@ -14938,7 +14974,16 @@
       },
       "id": "meteo-2026-11-02-ce23a0",
       "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 5 novembre 2026 se situe surtout autour de 16 °C (de 13 à 19 °C). La part de scénarios atteignant 16,0 °C donne cette probabilité.",
-      "hash": "af568a9081754e24"
+      "hash": "af568a9081754e24",
+      "result": {
+        "resolved_at": "2026-11-06T14:40:08.635Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 14.1,
+        "actual_label": "14.1 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-06T14:40:08.960Z"
+      }
     },
     {
       "category": "marches",
