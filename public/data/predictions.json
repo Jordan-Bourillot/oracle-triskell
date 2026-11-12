@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-11-10T15:16:33.633Z",
+  "updated_at": "2026-11-12T15:38:58.425Z",
   "predictions": [
     {
       "category": "crypto",
@@ -14731,7 +14731,16 @@
       },
       "id": "crypto-2026-11-02-13a206",
       "reasoning": "Sur 90 jours, le BTC bouge d'environ 2.0 % par jour. Partant de 77 357 $, atteindre 75 000 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "b67fe765941eb896"
+      "hash": "b67fe765941eb896",
+      "result": {
+        "resolved_at": "2026-11-12T15:38:53.410Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 73974.39,
+        "actual_label": "73 974 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1794312000&to=1794571200",
+        "measured_at": "2026-11-12T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -14824,7 +14833,16 @@
       },
       "id": "crypto-2026-11-02-2fd273",
       "reasoning": "Sur 90 jours, le ETH bouge d'environ 2.7 % par jour. Partant de 2 268 $, atteindre 2 200 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "134ce994cef25e6a"
+      "hash": "134ce994cef25e6a",
+      "result": {
+        "resolved_at": "2026-11-12T15:38:53.410Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 2055.37,
+        "actual_label": "2 055 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1794312000&to=1794571200",
+        "measured_at": "2026-11-12T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -14855,7 +14873,16 @@
       },
       "id": "crypto-2026-11-02-dd139d",
       "reasoning": "Sur 90 jours, le SOL bouge d'environ 3.0 % par jour. Partant de 93 $, atteindre 90 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "336516b277cd96aa"
+      "hash": "336516b277cd96aa",
+      "result": {
+        "resolved_at": "2026-11-12T15:38:53.410Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 83.24,
+        "actual_label": "83 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1794312000&to=1794571200",
+        "measured_at": "2026-11-12T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
