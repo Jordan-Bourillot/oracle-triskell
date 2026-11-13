@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-11-12T15:38:58.425Z",
+  "updated_at": "2026-11-13T14:57:30.512Z",
   "predictions": [
     {
       "category": "crypto",
@@ -15331,7 +15331,16 @@
       },
       "id": "economie-2026-11-02-212976",
       "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 4,91 %. Au vu de ses variations quotidiennes récentes, atteindre 4,85 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "c901909945611075"
+      "hash": "c901909945611075",
+      "result": {
+        "resolved_at": "2026-11-13T14:57:29.966Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.1,
+        "actual_label": "5,10 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1793829600&period2=1795212000&interval=1d",
+        "measured_at": "2026-11-12T13:20:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -15581,7 +15590,16 @@
       },
       "id": "meteo-2026-11-09-c89083",
       "reasoning": "Sur 31 scénarios météo, la température max à Paris le 12 novembre 2026 se situe surtout autour de 12 °C (de 10 à 16 °C). La part de scénarios atteignant 12,0 °C donne cette probabilité.",
-      "hash": "df3db9357243712e"
+      "hash": "df3db9357243712e",
+      "result": {
+        "resolved_at": "2026-11-13T14:57:29.966Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 11.9,
+        "actual_label": "11.9 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-13T14:57:30.416Z"
+      }
     },
     {
       "category": "meteo",
@@ -15612,7 +15630,16 @@
       },
       "id": "meteo-2026-11-09-851dec",
       "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 12 novembre 2026 se situe surtout autour de 18 °C (de 16 à 20 °C). La part de scénarios atteignant 18,0 °C donne cette probabilité.",
-      "hash": "444dda6011fb4026"
+      "hash": "444dda6011fb4026",
+      "result": {
+        "resolved_at": "2026-11-13T14:57:29.966Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 19.8,
+        "actual_label": "19.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-13T14:57:30.449Z"
+      }
     },
     {
       "category": "meteo",
@@ -15643,7 +15670,16 @@
       },
       "id": "meteo-2026-11-09-a1779c",
       "reasoning": "Sur 31 scénarios météo, la température max à Lille le 12 novembre 2026 se situe surtout autour de 10 °C (de 7 à 12 °C). La part de scénarios atteignant 9,0 °C donne cette probabilité.",
-      "hash": "3a9daf1ba110095d"
+      "hash": "3a9daf1ba110095d",
+      "result": {
+        "resolved_at": "2026-11-13T14:57:29.966Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 9.3,
+        "actual_label": "9.3 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-13T14:57:30.480Z"
+      }
     },
     {
       "category": "meteo",
@@ -15674,7 +15710,16 @@
       },
       "id": "meteo-2026-11-09-00ae85",
       "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 12 novembre 2026 se situe surtout autour de 17 °C (de 15 à 21 °C). La part de scénarios atteignant 16,5 °C donne cette probabilité.",
-      "hash": "f3b0e6d21e9d1f66"
+      "hash": "f3b0e6d21e9d1f66",
+      "result": {
+        "resolved_at": "2026-11-13T14:57:29.966Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 15.4,
+        "actual_label": "15.4 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-13T14:57:30.511Z"
+      }
     },
     {
       "category": "marches",
