@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-11-13T14:57:30.512Z",
+  "updated_at": "2026-11-16T16:12:54.671Z",
   "predictions": [
     {
       "category": "crypto",
@@ -14098,7 +14098,16 @@
       },
       "id": "crypto-2026-10-26-3f4743",
       "reasoning": "Sur 90 jours, le BTC bouge d'environ 2.0 % par jour. Partant de 80 061 $, atteindre 82 000 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "504dd42422b5c255"
+      "hash": "504dd42422b5c255",
+      "result": {
+        "resolved_at": "2026-11-16T16:11:22.687Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 65305.28,
+        "actual_label": "65 305 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1794657600&to=1794916800",
+        "measured_at": "2026-11-16T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -14129,7 +14138,16 @@
       },
       "id": "crypto-2026-10-26-5b4bdc",
       "reasoning": "Sur 90 jours, le ETH bouge d'environ 2.7 % par jour. Partant de 2 315 $, atteindre 2 400 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "4297b3ba567a091f"
+      "hash": "4297b3ba567a091f",
+      "result": {
+        "resolved_at": "2026-11-16T16:11:22.687Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 1834.53,
+        "actual_label": "1 835 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1794657600&to=1794916800",
+        "measured_at": "2026-11-16T00:00:00.000Z"
+      }
     },
     {
       "category": "crypto",
@@ -14240,7 +14258,16 @@
       },
       "id": "crypto-2026-10-26-eaae26",
       "reasoning": "Sur 90 jours, le SOL bouge d'environ 2.9 % par jour. Partant de 101 $, atteindre 110 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
-      "hash": "2bc195d6ae05c04f"
+      "hash": "2bc195d6ae05c04f",
+      "result": {
+        "resolved_at": "2026-11-16T16:11:22.687Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 72.71,
+        "actual_label": "73 $",
+        "evidence_url": "https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=1794657600&to=1794916800",
+        "measured_at": "2026-11-16T00:00:00.000Z"
+      }
     },
     {
       "category": "meteo",
@@ -15984,6 +16011,580 @@
       "id": "economie-2026-11-09-abb6e8",
       "reasoning": "Le taux à 30 ans des États-Unis tourne autour de 5,27 %. Au vu de ses variations quotidiennes récentes, atteindre 5,30 % d'ici 21 jours correspond à cette probabilité, sans supposer de tendance.",
       "hash": "bc131fdd0e7de97d"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 63 000 $ ou plus le 26 novembre 2026.",
+      "probability": 62,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-26",
+      "deadline": "2026-11-26T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 26 novembre 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 63 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 63000,
+          "comparator": ">=",
+          "atMs": 1795651200000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 64380.6,
+          "volatilite_journaliere": 0.02343,
+          "horizon_jours": 10,
+          "seuil_usd": 63000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-11-16-bdcdd8",
+      "reasoning": "Sur 90 jours, le BTC bouge d'environ 2.3 % par jour. Partant de 64 381 $, atteindre 63 000 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "04d1cd318162e528"
+    },
+    {
+      "category": "crypto",
+      "statement": "Bitcoin (BTC) vaudra 67 000 $ ou plus le 7 decembre 2026.",
+      "probability": 36,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-12-07",
+      "deadline": "2026-12-07T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 7 decembre 2026, le prix du BTC relevé sur CoinGecko est supérieur ou égal à 67 000 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "bitcoin",
+          "threshold": 67000,
+          "comparator": ">=",
+          "atMs": 1796601600000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 64380.6,
+          "volatilite_journaliere": 0.02343,
+          "horizon_jours": 21,
+          "seuil_usd": 67000,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-11-16-1effc8",
+      "reasoning": "Sur 90 jours, le BTC bouge d'environ 2.3 % par jour. Partant de 64 381 $, atteindre 67 000 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "ace99754937e740d"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 1 900 $ ou plus le 7 decembre 2026.",
+      "probability": 38,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-12-07",
+      "deadline": "2026-12-07T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 7 decembre 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 900 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 1900,
+          "comparator": ">=",
+          "atMs": 1796601600000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 1817.88,
+          "volatilite_journaliere": 0.03196,
+          "horizon_jours": 21,
+          "seuil_usd": 1900,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-11-16-db52e1",
+      "reasoning": "Sur 90 jours, le ETH bouge d'environ 3.2 % par jour. Partant de 1 818 $, atteindre 1 900 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "93bf5d9e4631bcea"
+    },
+    {
+      "category": "crypto",
+      "statement": "Ethereum (ETH) vaudra 1 700 $ ou plus le 26 novembre 2026.",
+      "probability": 75,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-26",
+      "deadline": "2026-11-26T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 26 novembre 2026, le prix du ETH relevé sur CoinGecko est supérieur ou égal à 1 700 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "ethereum",
+          "threshold": 1700,
+          "comparator": ">=",
+          "atMs": 1795651200000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 1817.88,
+          "volatilite_journaliere": 0.03196,
+          "horizon_jours": 10,
+          "seuil_usd": 1700,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-11-16-117688",
+      "reasoning": "Sur 90 jours, le ETH bouge d'environ 3.2 % par jour. Partant de 1 818 $, atteindre 1 700 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "0f04e705f850d91d"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 68 $ ou plus le 26 novembre 2026.",
+      "probability": 63,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-26",
+      "deadline": "2026-11-26T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 26 novembre 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 68 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 68,
+          "comparator": ">=",
+          "atMs": 1795651200000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 70.54,
+          "volatilite_journaliere": 0.03403,
+          "horizon_jours": 10,
+          "seuil_usd": 68,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-11-16-cf1d20",
+      "reasoning": "Sur 90 jours, le SOL bouge d'environ 3.4 % par jour. Partant de 71 $, atteindre 68 $ en 10 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "576c3d3e594a65b3"
+    },
+    {
+      "category": "crypto",
+      "statement": "Solana (SOL) vaudra 74 $ ou plus le 7 decembre 2026.",
+      "probability": 38,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-12-07",
+      "deadline": "2026-12-07T00:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 7 decembre 2026, le prix du SOL relevé sur CoinGecko est supérieur ou égal à 74 $.",
+        "method": "crypto.priceAt",
+        "params": {
+          "id": "solana",
+          "threshold": 74,
+          "comparator": ">=",
+          "atMs": 1796601600000
+        }
+      },
+      "model": {
+        "name": "Marche aleatoire sans derive sur le log-prix (volatilite 90 jours)",
+        "inputs": {
+          "prix_initial_usd": 70.54,
+          "volatilite_journaliere": 0.03403,
+          "horizon_jours": 21,
+          "seuil_usd": 74,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "crypto-2026-11-16-fe86c5",
+      "reasoning": "Sur 90 jours, le SOL bouge d'environ 3.4 % par jour. Partant de 71 $, atteindre 74 $ en 21 jours correspond à cette probabilité selon une marche aléatoire sans tendance supposée.",
+      "hash": "c41f8e9f2771e50e"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Paris, la température maximale atteindra 13,0 °C ou plus le 19 novembre 2026.",
+      "probability": 81,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-19",
+      "deadline": "2026-11-19T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 19 novembre 2026, la température maximale relevée à Paris (Open-Meteo) est supérieure ou égale à 13,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "paris",
+          "dateISO": "2026-11-19",
+          "threshold": 13,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 13.5,
+          "min_celsius": 10.5,
+          "max_celsius": 14.6,
+          "seuil_celsius": 13
+        }
+      },
+      "id": "meteo-2026-11-16-386c00",
+      "reasoning": "Sur 31 scénarios météo, la température max à Paris le 19 novembre 2026 se situe surtout autour de 14 °C (de 11 à 15 °C). La part de scénarios atteignant 13,0 °C donne cette probabilité.",
+      "hash": "ea6ce6b215e4959d"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Marseille, la température maximale atteindra 17,0 °C ou plus le 19 novembre 2026.",
+      "probability": 35,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-19",
+      "deadline": "2026-11-19T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 19 novembre 2026, la température maximale relevée à Marseille (Open-Meteo) est supérieure ou égale à 17,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "marseille",
+          "dateISO": "2026-11-19",
+          "threshold": 17,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 16.8,
+          "min_celsius": 15.3,
+          "max_celsius": 18.4,
+          "seuil_celsius": 17
+        }
+      },
+      "id": "meteo-2026-11-16-5933ee",
+      "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 19 novembre 2026 se situe surtout autour de 17 °C (de 15 à 18 °C). La part de scénarios atteignant 17,0 °C donne cette probabilité.",
+      "hash": "0781c91c424f5963"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Lille, la température maximale atteindra 11,5 °C ou plus le 19 novembre 2026.",
+      "probability": 61,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-19",
+      "deadline": "2026-11-19T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 19 novembre 2026, la température maximale relevée à Lille (Open-Meteo) est supérieure ou égale à 11,5 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "lille",
+          "dateISO": "2026-11-19",
+          "threshold": 11.5,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 11.7,
+          "min_celsius": 10.2,
+          "max_celsius": 13.3,
+          "seuil_celsius": 11.5
+        }
+      },
+      "id": "meteo-2026-11-16-b3c39f",
+      "reasoning": "Sur 31 scénarios météo, la température max à Lille le 19 novembre 2026 se situe surtout autour de 12 °C (de 10 à 13 °C). La part de scénarios atteignant 11,5 °C donne cette probabilité.",
+      "hash": "a923a5444b105605"
+    },
+    {
+      "category": "meteo",
+      "statement": "À Bordeaux, la température maximale atteindra 14,0 °C ou plus le 19 novembre 2026.",
+      "probability": 52,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-19",
+      "deadline": "2026-11-19T23:30:00.000Z",
+      "resolution": {
+        "criterion": "Le 19 novembre 2026, la température maximale relevée à Bordeaux (Open-Meteo) est supérieure ou égale à 14,0 °C.",
+        "method": "meteo.observedTmax",
+        "params": {
+          "city": "bordeaux",
+          "dateISO": "2026-11-19",
+          "threshold": 14,
+          "comparator": ">="
+        }
+      },
+      "model": {
+        "name": "Prevision d'ensemble Open-Meteo (part des scenarios au-dessus du seuil)",
+        "inputs": {
+          "nb_scenarios": 31,
+          "mediane_celsius": 14.1,
+          "min_celsius": 11.9,
+          "max_celsius": 16.1,
+          "seuil_celsius": 14
+        }
+      },
+      "id": "meteo-2026-11-16-2953d5",
+      "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 19 novembre 2026 se situe surtout autour de 14 °C (de 12 à 16 °C). La part de scénarios atteignant 14,0 °C donne cette probabilité.",
+      "hash": "ea878b5fac836675"
+    },
+    {
+      "category": "marches",
+      "statement": "Le CAC 40 clôturera à 8 300 points ou plus le 23 novembre 2026.",
+      "probability": 66,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-23",
+      "deadline": "2026-11-23T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 23 novembre 2026, la clôture du CAC 40 relevée sur Yahoo Finance est supérieure ou égale à 8 300 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^FCHI",
+          "threshold": 8300,
+          "comparator": ">=",
+          "atMs": 1795471200000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 8372.08,
+          "volatilite_journaliere": 0.00783,
+          "horizon_jours": 7,
+          "seuil": 8300,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-11-16-aaf065",
+      "reasoning": "Sur trois mois, CAC 40 bouge d'environ 0.8 % par jour. Partant de 8 350 points, atteindre 8 300 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "6f67481f806fe627"
+    },
+    {
+      "category": "marches",
+      "statement": "Le S&P 500 clôturera à 7 550 points ou plus le 7 decembre 2026.",
+      "probability": 41,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-12-07",
+      "deadline": "2026-12-07T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 7 decembre 2026, la clôture du S&P 500 relevée sur Yahoo Finance est supérieure ou égale à 7 550 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^GSPC",
+          "threshold": 7550,
+          "comparator": ">=",
+          "atMs": 1796680800000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 7474.15,
+          "volatilite_journaliere": 0.00928,
+          "horizon_jours": 21,
+          "seuil": 7550,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-11-16-4df243",
+      "reasoning": "Sur trois mois, S&P 500 bouge d'environ 0.9 % par jour. Partant de 7 475 points, atteindre 7 550 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "f8aa0a62f38daaec"
+    },
+    {
+      "category": "marches",
+      "statement": "Le Nasdaq clôturera à 24 350 points ou plus le 23 novembre 2026.",
+      "probability": 66,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-23",
+      "deadline": "2026-11-23T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 23 novembre 2026, la clôture du Nasdaq Composite relevée sur Yahoo Finance est supérieure ou égale à 24 350 points.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^IXIC",
+          "threshold": 24350,
+          "comparator": ">=",
+          "atMs": 1795471200000,
+          "decimals": 0,
+          "unit": "points"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 24709.11,
+          "volatilite_journaliere": 0.01316,
+          "horizon_jours": 7,
+          "seuil": 24350,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-11-16-911ba3",
+      "reasoning": "Sur trois mois, Nasdaq Composite bouge d'environ 1.3 % par jour. Partant de 24 700 points, atteindre 24 350 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "7a8d24836be95e8d"
+    },
+    {
+      "category": "marches",
+      "statement": "L'once d'or clôturera à 3 920 dollars ou plus le 7 decembre 2026.",
+      "probability": 40,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-12-07",
+      "deadline": "2026-12-07T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 7 decembre 2026, la clôture du cours de l'or (once) relevée sur Yahoo Finance est supérieure ou égale à 3 920 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "GC=F",
+          "threshold": 3920,
+          "comparator": ">=",
+          "atMs": 1796680800000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 3860.5,
+          "volatilite_journaliere": 0.01383,
+          "horizon_jours": 21,
+          "seuil": 3920,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-11-16-36264d",
+      "reasoning": "Sur trois mois, cours de l'or (once) bouge d'environ 1.4 % par jour. Partant de 3 860 dollars, atteindre 3 920 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "b92e9206950f8f2c"
+    },
+    {
+      "category": "marches",
+      "statement": "Le baril de pétrole (WTI) clôturera à 84 dollars ou plus le 23 novembre 2026.",
+      "probability": 67,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-23",
+      "deadline": "2026-11-23T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 23 novembre 2026, la clôture du baril de pétrole WTI relevée sur Yahoo Finance est supérieure ou égale à 84 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "CL=F",
+          "threshold": 84,
+          "comparator": ">=",
+          "atMs": 1795471200000,
+          "decimals": 0,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 86.73,
+          "volatilite_journaliere": 0.02834,
+          "horizon_jours": 7,
+          "seuil": 84,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-11-16-8bb660",
+      "reasoning": "Sur trois mois, baril de pétrole WTI bouge d'environ 2.8 % par jour. Partant de 87 dollars, atteindre 84 en 7 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "0fd78efaa6d3431d"
+    },
+    {
+      "category": "marches",
+      "statement": "L'euro clôturera à 1,1100 dollars ou plus le 7 decembre 2026.",
+      "probability": 28,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-12-07",
+      "deadline": "2026-12-07T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 7 decembre 2026, la clôture du taux euro / dollar relevée sur Yahoo Finance est supérieure ou égale à 1,1100 dollars.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "EURUSD=X",
+          "threshold": 1.11,
+          "comparator": ">=",
+          "atMs": 1796680800000,
+          "decimals": 4,
+          "unit": "dollars"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sans dérive sur le log-cours (volatilité 3 mois)",
+        "inputs": {
+          "cours_initial": 1.1012,
+          "volatilite_journaliere": 0.00304,
+          "horizon_jours": 21,
+          "seuil": 1.11,
+          "formule": "Phi( ln(S0/K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "marches-2026-11-16-0bbe22",
+      "reasoning": "Sur trois mois, taux euro / dollar bouge d'environ 0.3 % par jour. Partant de 1,1000 dollars, atteindre 1,1100 en 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "89eeeb8b213631b5"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 10 ans clôturera à 5,05 % ou plus le 26 novembre 2026.",
+      "probability": 68,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-11-26",
+      "deadline": "2026-11-26T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 26 novembre 2026, le taux à 10 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 5,05 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TNX",
+          "threshold": 5.050000000000001,
+          "comparator": ">=",
+          "atMs": 1795730400000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 5.129,
+          "volatilite_quotidienne": 0.0536,
+          "horizon_jours": 10,
+          "seuil_pct": 5.050000000000001,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-11-16-052dda",
+      "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 5,13 %. Au vu de ses variations quotidiennes récentes, atteindre 5,05 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "ca2b4b20086da530"
+    },
+    {
+      "category": "economie",
+      "statement": "Le taux des obligations américaines à 30 ans clôturera à 5,50 % ou plus le 7 decembre 2026.",
+      "probability": 44,
+      "created_at": "2026-11-16T16:11:27.898Z",
+      "target_date": "2026-12-07",
+      "deadline": "2026-12-07T22:00:00.000Z",
+      "resolution": {
+        "criterion": "Au 7 decembre 2026, le taux à 30 ans des États-Unis relevé sur Yahoo Finance est supérieur ou égal à 5,50 %.",
+        "method": "markets.priceAt",
+        "params": {
+          "symbol": "^TYX",
+          "threshold": 5.5,
+          "comparator": ">=",
+          "atMs": 1796680800000,
+          "decimals": 2,
+          "unit": "%"
+        }
+      },
+      "model": {
+        "name": "Marche aléatoire sur le niveau du taux (volatilité des variations quotidiennes)",
+        "inputs": {
+          "niveau_initial_pct": 5.468,
+          "volatilite_quotidienne": 0.0457,
+          "horizon_jours": 21,
+          "seuil_pct": 5.5,
+          "formule": "Phi( (S0 - K) / (sigma * racine(T)) )"
+        }
+      },
+      "id": "economie-2026-11-16-9609bb",
+      "reasoning": "Le taux à 30 ans des États-Unis tourne autour de 5,47 %. Au vu de ses variations quotidiennes récentes, atteindre 5,50 % d'ici 21 jours correspond à cette probabilité, sans supposer de tendance.",
+      "hash": "df70cb572b5003b1"
     }
   ]
 }
