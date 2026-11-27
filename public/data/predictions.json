@@ -1,6 +1,6 @@
 {
   "title": "L'Oracle",
-  "updated_at": "2026-11-26T17:23:03.774Z",
+  "updated_at": "2026-11-27T17:01:26.102Z",
   "predictions": [
     {
       "category": "crypto",
@@ -16803,7 +16803,16 @@
       },
       "id": "economie-2026-11-16-052dda",
       "reasoning": "Le taux à 10 ans des États-Unis tourne autour de 5,13 %. Au vu de ses variations quotidiennes récentes, atteindre 5,05 % d'ici 10 jours correspond à cette probabilité, sans supposer de tendance.",
-      "hash": "ca2b4b20086da530"
+      "hash": "ca2b4b20086da530",
+      "result": {
+        "resolved_at": "2026-11-27T17:01:25.913Z",
+        "outcome": "loss",
+        "hit": 0,
+        "actual": 4.93,
+        "actual_label": "4,93 %",
+        "evidence_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=1795039200&period2=1796421600&interval=1d",
+        "measured_at": "2026-11-27T15:30:00.000Z"
+      }
     },
     {
       "category": "economie",
@@ -17053,7 +17062,16 @@
       },
       "id": "meteo-2026-11-23-82c1df",
       "reasoning": "Sur 31 scénarios météo, la température max à Paris le 26 novembre 2026 se situe surtout autour de 5 °C (de 3 à 10 °C). La part de scénarios atteignant 5,0 °C donne cette probabilité.",
-      "hash": "5ad6375199e8b327"
+      "hash": "5ad6375199e8b327",
+      "result": {
+        "resolved_at": "2026-11-27T17:01:25.913Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 5.8,
+        "actual_label": "5.8 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-27T17:01:26.071Z"
+      }
     },
     {
       "category": "meteo",
@@ -17084,7 +17102,16 @@
       },
       "id": "meteo-2026-11-23-b96f18",
       "reasoning": "Sur 31 scénarios météo, la température max à Marseille le 26 novembre 2026 se situe surtout autour de 12 °C (de 11 à 13 °C). La part de scénarios atteignant 12,0 °C donne cette probabilité.",
-      "hash": "f894d70e0202e3c1"
+      "hash": "f894d70e0202e3c1",
+      "result": {
+        "resolved_at": "2026-11-27T17:01:25.913Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 14,
+        "actual_label": "14.0 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=43.3&longitude=5.37&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-27T17:01:26.081Z"
+      }
     },
     {
       "category": "meteo",
@@ -17115,7 +17142,16 @@
       },
       "id": "meteo-2026-11-23-6b59f6",
       "reasoning": "Sur 31 scénarios météo, la température max à Lille le 26 novembre 2026 se situe surtout autour de 2 °C (de 0 à 4 °C). La part de scénarios atteignant 1,5 °C donne cette probabilité.",
-      "hash": "b7171add26472796"
+      "hash": "b7171add26472796",
+      "result": {
+        "resolved_at": "2026-11-27T17:01:25.913Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 1.7,
+        "actual_label": "1.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-27T17:01:26.092Z"
+      }
     },
     {
       "category": "meteo",
@@ -17146,7 +17182,16 @@
       },
       "id": "meteo-2026-11-23-b82f01",
       "reasoning": "Sur 31 scénarios météo, la température max à Bordeaux le 26 novembre 2026 se situe surtout autour de 12 °C (de 9 à 14 °C). La part de scénarios atteignant 11,5 °C donne cette probabilité.",
-      "hash": "0d1f3ee719651940"
+      "hash": "0d1f3ee719651940",
+      "result": {
+        "resolved_at": "2026-11-27T17:01:25.913Z",
+        "outcome": "win",
+        "hit": 1,
+        "actual": 11.7,
+        "actual_label": "11.7 °C",
+        "evidence_url": "https://api.open-meteo.com/v1/forecast?latitude=44.84&longitude=-0.58&daily=temperature_2m_max&past_days=10&forecast_days=1&timezone=Europe%2FParis",
+        "measured_at": "2026-11-27T17:01:26.101Z"
+      }
     },
     {
       "category": "marches",
